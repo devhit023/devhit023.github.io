@@ -1,0 +1,799 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&amp;display=swapp"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/badge.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/rank.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/tooltip.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/button.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/checkbox.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/css/radio_button.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/css/toggle_button.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../static/css/input.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/scrollbar.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../scripts/dropdown.js"></script>
+    <script src="../scripts/calendar.js"></script>
+    <!-- Perfect Scrollbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
+    <script>
+      // 스크롤바 초기화
+      new PerfectScrollbar(document.querySelector("body"));
+      new PerfectScrollbar(document.querySelector(".chat_body"));
+      new PerfectScrollbar(document.querySelector(".league-table_body"));
+      new PerfectScrollbar(document.querySelector(".roster_body"));
+    </script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: var(--background-background-tertiary);
+      }
+      body > section {
+        padding: 10px;
+        border: 0.5px solid gray;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      .container {
+        padding: 5px;
+      }
+      .container > *:not(:last-child) {
+        margin-right: 10px;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .row {
+        flex-direction: row;
+      }
+      small {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Text</h2>
+      <p class="body-01-regular">body-01-regular</p>
+      <p class="body-01-semibold">body-01-semibold</p>
+      <p class="body-02-regular">body-02-regular</p>
+      <p class="body-02-semibold">body-02-semibold</p>
+      <p class="body-03-regular">body-03-regular</p>
+      <p class="body-03-semibold">body-03-semibold</p>
+      <br />
+      <p class="heading-01-regular">heading-01-regular</p>
+      <p class="heading-01-semibold">heading-01-semibold</p>
+      <p class="heading-02-regular">heading-02-regular</p>
+      <p class="heading-02-semibold">heading-02-semibold</p>
+    </section>
+    <section>
+      <h2>Badge</h2>
+      <div class="container flex row">
+        <div type="live" class="badge-header">
+          <span class="body-02-semibold">LIVE</span>
+        </div>
+        <div type="premium" class="badge-header">
+          <span class="body-02-semibold">PREMIUM</span>
+        </div>
+      </div>
+      <small class="error">* PREMIUM border color 조정 필요</small>
+      <div class="container flex row">
+        <div type="forward" class="badge-position">
+          <span class="body-02-semibold">F</span>
+        </div>
+        <div type="midfielder" class="badge-position">
+          <span class="body-02-semibold">M</span>
+        </div>
+        <div type="defender" class="badge-position">
+          <span class="body-02-semibold">D</span>
+        </div>
+        <div type="goalkeeper" class="badge-position">
+          <span class="body-02-semibold">G</span>
+        </div>
+        <div type="guard" class="badge-position">
+          <span class="body-02-semibold">G</span>
+        </div>
+        <div type="center" class="badge-position">
+          <span class="body-02-semibold">C</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div value="4.0" class="badge-rating">
+          <span class="body-02-semibold">4.0</span>
+        </div>
+        <div value="5.0" class="badge-rating">
+          <span class="body-02-semibold">5.0</span>
+        </div>
+        <div value="6.0" class="badge-rating">
+          <span class="body-02-semibold">6.0</span>
+        </div>
+        <div value="7.0" class="badge-rating">
+          <span class="body-02-semibold">7.0</span>
+        </div>
+        <div value="8.0" class="badge-rating">
+          <span class="body-02-semibold">8.0</span>
+        </div>
+        <div value="9.0" class="badge-rating">
+          <span class="body-02-semibold">9.0</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div value="20" class="badge-level">
+          <span class="body-02-regular">20</span>
+        </div>
+        <div value="40" class="badge-level">
+          <span class="body-02-regular">40</span>
+        </div>
+        <div value="60" class="badge-level">
+          <span class="body-02-regular">60</span>
+        </div>
+        <div value="80" class="badge-level">
+          <span class="body-02-regular">80</span>
+        </div>
+        <div value="100" class="badge-level">
+          <span class="body-02-regular">100</span>
+        </div>
+        <div value="120" class="badge-level">
+          <span class="body-02-regular">120</span>
+        </div>
+        <div value="140" class="badge-level">
+          <span class="body-02-regular">140</span>
+        </div>
+        <div value="160" class="badge-level">
+          <span class="body-02-regular">160</span>
+        </div>
+        <div value="180" class="badge-level">
+          <span class="body-02-regular">180</span>
+        </div>
+        <div value="200" class="badge-level">
+          <span class="body-02-regular">200</span>
+        </div>
+        <div value="220" class="badge-level">
+          <span class="body-02-regular">220</span>
+        </div>
+        <div value="240" class="badge-level">
+          <span class="body-02-regular">240</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div value="260" class="badge-level">
+          <span class="body-02-regular">260</span>
+        </div>
+        <div value="280" class="badge-level">
+          <span class="body-02-regular">280</span>
+        </div>
+        <div value="300" class="badge-level">
+          <span class="body-02-regular">300</span>
+        </div>
+        <div value="320" class="badge-level">
+          <span class="body-02-regular">320</span>
+        </div>
+        <div value="340" class="badge-level">
+          <span class="body-02-regular">340</span>
+        </div>
+        <div value="360" class="badge-level">
+          <span class="body-02-regular">360</span>
+        </div>
+        <div value="380" class="badge-level">
+          <span class="body-02-regular">380</span>
+        </div>
+        <div value="400" class="badge-level">
+          <span class="body-02-regular">400</span>
+        </div>
+        <div value="420" class="badge-level">
+          <span class="body-02-regular">420</span>
+        </div>
+        <div value="440" class="badge-level">
+          <span class="body-02-regular">440</span>
+        </div>
+        <div value="460" class="badge-level">
+          <span class="body-02-regular">460</span>
+        </div>
+        <div value="480" class="badge-level">
+          <span class="body-02-regular">480</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div value="500" class="badge-level">
+          <span class="body-02-regular">500</span>
+        </div>
+        <div value="520" class="badge-level">
+          <span class="body-02-regular">520</span>
+        </div>
+        <div value="540" class="badge-level">
+          <span class="body-02-regular">540</span>
+        </div>
+        <div value="560" class="badge-level">
+          <span class="body-02-regular">560</span>
+        </div>
+        <div value="580" class="badge-level">
+          <span class="body-02-regular">580</span>
+        </div>
+        <div value="600" class="badge-level">
+          <span class="body-02-regular">600</span>
+        </div>
+        <div value="620" class="badge-level">
+          <span class="body-02-regular">620</span>
+        </div>
+        <div value="640" class="badge-level">
+          <span class="body-02-regular">640</span>
+        </div>
+        <div value="660" class="badge-level">
+          <span class="body-02-regular">660</span>
+        </div>
+        <div value="680" class="badge-level">
+          <span class="body-02-regular">680</span>
+        </div>
+        <div value="700" class="badge-level">
+          <span class="body-02-regular">700</span>
+        </div>
+        <div value="720" class="badge-level">
+          <span class="body-02-regular">720</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div value="740" class="badge-level">
+          <span class="body-02-regular">740</span>
+        </div>
+        <div value="760" class="badge-level">
+          <span class="body-02-regular">760</span>
+        </div>
+        <div value="780" class="badge-level">
+          <span class="body-02-regular">780</span>
+        </div>
+        <div value="800" class="badge-level">
+          <span class="body-02-regular">800</span>
+        </div>
+        <div value="820" class="badge-level">
+          <span class="body-02-regular">820</span>
+        </div>
+        <div value="840" class="badge-level">
+          <span class="body-02-regular">840</span>
+        </div>
+        <div value="860" class="badge-level">
+          <span class="body-02-regular">860</span>
+        </div>
+        <div value="880" class="badge-level">
+          <span class="body-02-regular">880</span>
+        </div>
+        <div value="900" class="badge-level">
+          <span class="body-02-regular">900</span>
+        </div>
+        <div value="920" class="badge-level">
+          <span class="body-02-regular">920</span>
+        </div>
+        <div value="940" class="badge-level">
+          <span class="body-02-regular">940</span>
+        </div>
+        <div value="960" class="badge-level">
+          <span class="body-02-regular">960</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div page="table" match="win" class="badge-form"></div>
+
+        <div page="table" match="draw" class="badge-form"></div>
+
+        <div page="table" match="lose" class="badge-form"></div>
+
+        <div page="table" match="next" class="badge-form"></div>
+      </div>
+      <div class="container flex row">
+        <div page="analysis" match="win" class="badge-form">
+          <span class="body-02-semibold">W</span>
+        </div>
+        <div page="analysis" match="draw" class="badge-form">
+          <span class="body-02-semibold">D</span>
+        </div>
+        <div page="analysis" match="lose" class="badge-form">
+          <span class="body-02-semibold">L</span>
+        </div>
+        <div page="analysis" match="over" class="badge-form">
+          <span class="body-02-semibold">O</span>
+        </div>
+        <div page="analysis" match="under" class="badge-form">
+          <span class="body-02-semibold">U</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div type="foul" class="badge">
+          <span class="body-02-semibold">파울</span>
+        </div>
+        <div type="notice" match="draw" class="badge">
+          <span class="body-02-semibold">공지</span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Rank</h2>
+      <div class="container flex row">
+        <div type="championsleague" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+
+        <div type="championsleague-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="europaleague" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="europaleague-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="conferenceleague" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="conferenceleague-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="conferenceleague-playoff" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+      </div>
+
+      <div class="container flex row">
+        <div type="afc-championsleague" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+
+        <div type="afc-championsleague-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="afc-cup" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="afc-cup-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="copa-libertadores" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="copa-libertadores-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="copa-sudamericana" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="copa-sudamericana-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div type="concacaf-championscup" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+
+        <div type="concacaf-championscup-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="concacaf-leaguescup" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="concacaf-centralamericancup" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="concacaf-caribbeancup" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="caf-championsleague" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="caf-confederationcup" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="ofc-championsleague" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="ofc-championsleague-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+      </div>
+
+      <div class="container flex row">
+        <div type="promotion" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="promotion-playoff" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="promotion-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="promotion-qualifier-playoff" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="relegation" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="relegation-playoff" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="relegation-qualifier" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="relegation-qualifier-playoff" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="promotion-split" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="relegation-split" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div type="promotion" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+
+        <div type="series-final" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="series-semifinal" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="series-quarterfinals" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="series-tournament" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="torneo-final" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+        <div type="gold" class="rank">
+          <span class="body-02-semibold">1</span>
+        </div>
+        <div type="silver" class="rank">
+          <span class="body-02-semibold">1</span>
+        </div>
+        <div type="bronze" class="rank">
+          <span class="body-02-semibold">1</span>
+        </div>
+        <div type="base" class="rank">
+          <span class="body-02-regular">1</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dropdown</h2>
+      <div class="container flex row">
+        <div class="dropdown_wrap" change="false">
+          <div class="dropdown_button button" state="disabled">
+            <span class="heading-01-semibold">배당없음</span>
+            <div class="dropdown-icon_wrap">
+              <img
+                id="expand_image"
+                src="../static/images/Icon/expand-light.svg"
+              />
+              <img
+                id="collapse_image"
+                src="../static/images/Icon/collapse-light.svg"
+              />
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu_list">
+              <li class="dropdown-menu_item" state="active">
+                <span class="body-01-semibold">배당없음</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">승무패</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">핸디캡</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">언오버</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown_wrap" change="false">
+          <div class="dropdown_button button">
+            <span class="heading-01-semibold">배당없음</span>
+            <div class="dropdown-icon_wrap">
+              <img
+                id="expand_image"
+                src="../static/images/Icon/expand-light.svg"
+              />
+              <img
+                id="collapse_image"
+                src="../static/images/Icon/collapse-light.svg"
+              />
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu_list">
+              <li class="dropdown-menu_item" state="active">
+                <span class="body-01-semibold">배당없음</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">승무패</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">핸디캡</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">언오버</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown_wrap" change="false" type="calendar">
+          <div class="dropdown_button button">
+            <div class="date_wrap">
+              <button id="prev" onclick="minusToDay()"></button>
+              <div class="date_content">
+                <div class="date_text">
+                  <span id="search-date" class="body-01-semibold">10-02</span>
+                  <span class="body-01-regular">일</span>
+                </div>
+              </div>
+              <button id="next" onclick="plusToDay()"></button>
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <div class="month_wrap">
+              <button id="prev" onclick="minusToMonth()"></button>
+              <div class="date_content">
+                <span class="body-01-regular">2022-10</span>
+              </div>
+              <button id="next" onclick="plusToMonth()"></button>
+            </div>
+            <ul class="dropdown-menu_list"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div class="dropdown_wrap" type="side" change="false">
+          <div class="dropdown_button button">
+            <span class="heading-02-semibold">Option</span>
+            <div class="dropdown-icon_wrap">
+              <img
+                id="expand_image"
+                src="../static/images/Icon/expand-light.svg"
+              />
+              <img
+                id="collapse_image"
+                src="../static/images/Icon/collapse-light.svg"
+              />
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <ul class="dropdown-menu_list">
+              <li class="dropdown-menu_item" state="active">
+                <span class="body-01-semibold">배당없음</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">승무패</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">핸디캡</span>
+              </li>
+              <li class="dropdown-menu_item">
+                <span class="body-01-regular">언오버</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Tooltip</h2>
+
+      <div class="container flex row">
+        <div class="tooltip_wrap">
+          <span class="body-01-regular">hover</span>
+          <div class="tooltip" position="bottom left">
+            <span class="body-01-regular">Tooltip text</span>
+          </div>
+        </div>
+      </div>
+      <div class="container flex row">
+        <div class="tooltip_wrap" style="width: 100%">
+          <div class="progress_wrap">
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+          <div class="tooltip" position="bottom left">
+            <span class="body-02-regular">5,000</span>&nbsp;
+            <span class="body-02-regular">[50%]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Button</h2>
+
+      <div class="container flex row">
+        <button type="login" class="heading-01-semibold">로그인</button>
+        <button type="close"></button>
+      </div>
+
+      <div class="container flex row">
+        <span state="disabled" class="button heading-01-semibold">Text</span>
+        <span active-background="true" class="button heading-01-semibold"
+          >Text</span
+        >
+        <span active-background="false" class="button heading-01-semibold"
+          >Text</span
+        >
+      </div>
+      <div class="container flex row">
+        <span type="text" class="button heading-01-semibold">Text</span>
+      </div>
+      <div class="container flex row">
+        <span type="default" class="button heading-01-semibold">Text</span>
+      </div>
+    </section>
+    <section>
+      <h2>Button - Match</h2>
+
+      <div class="container flex row">
+        <i type="alarm" change="true" class="match"></i>
+        <i type="alarm" change="true" state="press" class="match"></i>
+        <i type="alarm" change="false" class="match"></i>
+        <i type="alarm" change="false" state="press" class="match"></i>
+        <i type="refresh" class="match"></i>
+        <i type="refresh" state="click" class="match"></i>
+        <i type="refresh" state="delay" class="match"></i>
+
+        <i type="bookmark" change="false" class="match"></i>
+        <i type="bookmark" change="false" state="press" class="match"></i>
+        <i type="bookmark" change="true" class="match"></i>
+        <i type="bookmark" change="true" state="press" class="match"></i>
+      </div>
+      <div class="container flex row">
+        <div class="tooltip_wrap">
+          <div class="match_wrap">
+            <i type="information" class="match"></i>
+          </div>
+          <div class="tooltip" position="bottom left">
+            <span class="body-01-regular">Information</span>
+          </div>
+        </div>
+        <div class="match_wrap">
+          <i type="youtube" class="match"></i>
+        </div>
+
+        <div class="match_wrap">
+          <i type="lm-tracker" change="false" class="match"></i>
+        </div>
+        <div class="match_wrap">
+          <i type="lm-tracker" change="true" class="match"></i>
+          <ul class="dropdown_list">
+            <li>
+              <i type="lm-layout-top" class="match"></i>
+            </li>
+            <li>
+              <i type="lm-layout-bottom" class="match"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="match_wrap">
+          <i type="lm-chat" change="false" class="match"></i>
+        </div>
+        <div class="match_wrap">
+          <i type="lm-chat" change="true" class="match"></i>
+          <ul class="dropdown_list">
+            <li>
+              <i type="lm-layout-top" class="match"></i>
+            </li>
+            <li>
+              <i type="lm-layout-bottom" class="match"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="match_wrap">
+          <i type="lineup" change="false" class="match"></i>
+        </div>
+        <div class="match_wrap">
+          <i type="lineup" change="true" class="match"></i>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Radio Button</h2>
+      <div class="container flex row">
+        <div class="radio_wrap">
+          <input type="radio" id="zoomout" name="scale" value="zoomout" />
+          <label for="zoomout">축소</label>
+        </div>
+        <div class="radio_wrap">
+          <input
+            type="radio"
+            id="default"
+            name="scale"
+            value="default"
+            checked
+          />
+          <label for="default">기본</label>
+        </div>
+        <div class="radio_wrap">
+          <input
+            type="radio"
+            id="zoomin"
+            name="scale"
+            value="zoomin"
+            state="pressed"
+          />
+          <label for="zoomin">확대</label>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Toggle Button</h2>
+      <div class="container flex row">
+        <div class="toggle_wrap">
+          <input type="checkbox" id="toggle1" />
+          <label for="toggle1"></label>
+        </div>
+        <div class="toggle_wrap">
+          <input type="checkbox" id="lightmode" />
+          <label for="lightmode"></label>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Input</h2>
+      <div class="container flex row">
+        <div class="input_wrap body-01-regular">
+          <input type="text" placeholder="please input text" class="input" />
+        </div>
+        <div class="input_wrap error body-01-regular">
+          <input type="text" placeholder="please input text" class="input" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Checkbox</h2>
+      <div class="container flex row">
+        <div class="checkbox_wrap">
+          <input type="checkbox" name="option1" />
+          <label for="option1">Option1</label>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

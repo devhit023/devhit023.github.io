@@ -1,0 +1,77 @@
+/* toggle button */
+.toggle_wrap {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 20px;
+}
+
+.toggle_wrap input[type="checkbox"] {
+    display: none;
+}
+
+.toggle_wrap label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--interactive-toggle-toggle-disabled, #f5f5f8);
+    border-radius: var(--radius-radius-md, 10px);
+    cursor: pointer;
+}
+
+.toggle_wrap:hover label {
+    background-color: var(--interactive-toggle-toggle-disabled-hover, #ededef);
+}
+
+.toggle_wrap label:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--background-background-header, #ffffff);
+    border-radius: 50%;
+    box-shadow: var(--shadow-xs-box-shadow,
+            0px 2px 2px 0px rgba(25, 28, 38, 0.06),
+            0px 2px 4px 0px rgba(25, 28, 38, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.toggle_wrap input#lightmode+label:before {
+    background-image: url("../images/Icon/lightmode-light.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[data-theme="dark"] .toggle_wrap input#lightmode+label:before {
+    background-image: url("../images/Icon/lightmode-dark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toggle_wrap input[type="checkbox"]:checked+label:before {
+    transform: translateX(16px);
+}
+
+.toggle_wrap input[type="checkbox"]:checked+label {
+    background-color: var(--interactive-button-button-primary-enabled, #0059c2);
+}
+
+.toggle_wrap input#lightmode[type="checkbox"]:checked+label::before {
+    background-image: url("../images/Icon/darkmode-light.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[data-theme="dark"] .toggle_wrap input#lightmode[type="checkbox"]:checked+label::before {
+    background-image: url("../images/Icon/darkmode-dark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toggle_wrap:hover input[type="checkbox"]:checked+label {
+    background-color: var(--interactive-button-button-primary-hover, #0075f4);
+}

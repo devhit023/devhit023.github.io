@@ -1,0 +1,197 @@
+/* rank */
+.rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: var(--text-base-text-inverse);
+    border-radius: var(--radius-radius-sm, 5px);
+}
+
+.rank[type="championsleague"] {
+    background: var(--decorative-rank-rank-championsleague, #155eef);
+}
+
+.rank[type="championsleague-qualifier"] {
+    background: var(--decorative-rank-rank-championsleague-qualifier);
+}
+
+.rank[type="europaleague"] {
+    background: var(--decorative-rank-rank-europaleague);
+}
+
+.rank[type="europaleague-qualifier"] {
+    background: var(--decorative-rank-rank-europaleague-qualifier);
+}
+
+.rank[type="conferenceleague"] {
+    background: var(--decorative-rank-rank-conferenceleague);
+}
+
+.rank[type="conferenceleague-qualifier"] {
+    background: var(--decorative-rank-rank-conferenceleague-qualifier);
+}
+
+.rank[type="conferenceleague-playoff"] {
+    background: var(--decorative-rank-rank-conferenceleague-playoff);
+}
+
+.rank[type="afc-championsleague"] {
+    background: var(--decorative-rank-rank-afc-championsleague);
+}
+
+.rank[type="afc-championsleague-qualifier"] {
+    background: var(--decorative-rank-rank-afc-championsleague-qualifier);
+}
+
+.rank[type="afc-cup"] {
+    background: var(--decorative-rank-rank-afc-cup);
+}
+
+.rank[type="afc-cup-qualifier"] {
+    background: var(--decorative-rank-rank-afc-cup-qualifier);
+}
+
+.rank[type="copa-libertadores"] {
+    background: var(--decorative-rank-rank-copa-libertadores);
+}
+
+.rank[type="copa-libertadores-qualifier"] {
+    background: var(--decorative-rank-rank-copa-libertadores-qualifier);
+}
+
+.rank[type="copa-sudamericana"] {
+    background: var(--decorative-rank-rank-copa-sudamericana);
+}
+
+.rank[type="copa-sudamericana-qualifier"] {
+    background: var(--decorative-rank-rank-copa-sudamericana-qualifier);
+}
+
+.rank[type="concacaf-championscup"] {
+    background: var(--decorative-rank-rank-concacaf-championscup);
+}
+
+.rank[type="concacaf-championscup-qualifier"] {
+    background: var(--decorative-rank-rank-concacaf-championscup-qualifier);
+}
+
+.rank[type="concacaf-leaguescup"] {
+    background: var(--decorative-rank-rank-concacaf-leaguescup);
+}
+
+.rank[type="concacaf-centralamericancup"] {
+    background: var(--decorative-rank-rank-concacaf-centralamericancup);
+}
+
+.rank[type="concacaf-caribbeancup"] {
+    background: var(--decorative-rank-rank-concacaf-caribbeancup);
+}
+
+.rank[type="caf-championsleague"] {
+    background: var(--decorative-rank-rank-caf-championsleague);
+}
+
+.rank[type="caf-confederationcup"] {
+    background: var(--decorative-rank-rank-caf-confederationcup);
+}
+
+.rank[type="ofc-championsleague"] {
+    background: var(--decorative-rank-rank-ofc-championsleague);
+}
+
+.rank[type="ofc-championsleague-qualifier"] {
+    background: var(--decorative-rank-rank-ofc-championsleague-qualifier);
+}
+
+.rank[type="promotion"] {
+    background: var(--decorative-rank-rank-promotion);
+}
+
+.rank[type="promotion-playoff"] {
+    background: var(--decorative-rank-rank-promotion-playoff);
+}
+
+.rank[type="promotion-qualifier"] {
+    background: var(--decorative-rank-rank-promotion-qualifier);
+}
+
+.rank[type="promotion-qualifier-playoff"] {
+    background: var(--decorative-rank-rank-promotion-qualifier-playoff);
+}
+
+.rank[type="relegation"] {
+    background: var(--decorative-rank-rank-relegation);
+}
+
+.rank[type="relegation-playoff"] {
+    background: var(--decorative-rank-rank-relegation-playoff);
+}
+
+.rank[type="relegation-qualifier"] {
+    background: var(--decorative-rank-rank-relegation-qualifier);
+}
+
+.rank[type="relegation-qualifier-playoff"] {
+    background: var(--decorative-rank-rank-relegation-qualifier-playoff);
+}
+
+.rank[type="relegation-qualifier-playoff"] {
+    background: var(--decorative-rank-rank-relegation-qualifier-playoff);
+}
+
+.rank[type="relegation-qualifier-playoff"] {
+    background: var(--decorative-rank-rank-relegation-qualifier-playoff);
+}
+
+.rank[type="relegation-qualifier-playoff"] {
+    background: var(--decorative-rank-rank-relegation-qualifier-playoff);
+}
+
+.rank[type="promotion-split"] {
+    background: var(--decorative-rank-rank-promotion-split);
+}
+
+.rank[type="relegation-split"] {
+    background: var(--decorative-rank-rank-relegation-split);
+}
+
+.rank[type="series-final"] {
+    background: var(--decorative-rank-rank-series-final);
+}
+
+.rank[type="series-semifinal"] {
+    background: var(--decorative-rank-rank-series-semifinal);
+}
+
+.rank[type="series-quarterfinals"] {
+    background: var(--decorative-rank-rank-series-quarterfinals);
+}
+
+.rank[type="series-tournament"] {
+    background: var(--decorative-rank-rank-series-tournament);
+}
+
+.rank[type="torneo-final"] {
+    background: var(--decorative-rank-rank-torneo-final);
+}
+
+.rank[type="gold"] {
+    background: var(--decorative-user-rank-gold, #fde272);
+    color: var(--decorative-user-rank-gold-rank, #a15c07);
+}
+
+.rank[type="silver"] {
+    background: var(--decorative-rank-rank-silver);
+    color: var(--decorative-rank-rank-silver-rank);
+}
+
+.rank[type="bronze"] {
+    background: var(--decorative-rank-rank-bronze);
+    color: var(--decorative-rank-rank-bronze-rank);
+}
+
+.rank[type="base"] {
+    color: var(--text-base-text-primary, #393d48);
+}

@@ -1,0 +1,63 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Live Scrore Publish</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				width: 400px;
+				margin: 0 auto;
+			}
+			h1 {
+				padding: 8px 0;
+				background-color: lightslategray;
+				text-align: center;
+				color: white;
+			}
+			table {
+				width: 100%;
+				border-spacing: 0;
+			}
+			table thead tr th,
+			table tbody tr td {
+				padding: 7px 0;
+				border-bottom: 1px solid lightgray;
+				text-align: center;
+			}
+			table tbody tr.tr-title {
+				background-color: lightgray;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>LiveScore Publish 6.0</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>페이지명</th>
+					<th>파일명</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tr-title">
+					<td colspan="2">축구</td>
+				</tr>
+				<tr>
+					<td>라이브</td>
+					<td><a href="./html/soccers_livescore.html">soccers_livescore.html</a></td>
+				</tr>
+				<tr>
+					<td>H2H</td>
+					<td><a href="./html/soccers_h2h.html">soccers_h2h.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

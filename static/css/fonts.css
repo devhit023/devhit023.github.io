@@ -1,0 +1,88 @@
+@import url("./codes.css");
+
+/* font style - body */
+.body-01-regular {
+    font-size: calc(16 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-regular);
+    line-height: calc(24 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+.body-01-semibold {
+    font-size: calc(16 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: calc(24 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+.body-02-regular {
+    font-size: calc(14 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-regular);
+    line-height: calc(20 / var(--font-size-default) * 1rem);
+    letter-spacing: 0.16px;
+}
+
+.body-02-semibold {
+    font-size: calc(14 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: calc(20 / var(--font-size-default) * 1rem);
+    letter-spacing: 0.16px;
+}
+
+.body-03-regular {
+    font-size: calc(12 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-regular);
+    line-height: calc(18 / var(--font-size-default) * 1rem);
+    letter-spacing: 0.32px;
+}
+
+.body-03-semibold {
+    font-size: calc(12 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: calc(18 / var(--font-size-default) * 1rem);
+    letter-spacing: 0.32px;
+}
+
+/* font style - heading */
+.heading-01-regular {
+    font-size: calc(20 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-regular);
+    line-height: calc(28 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+.heading-01-semibold {
+    font-size: calc(20 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: calc(28 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+.heading-02-regular {
+    font-size: calc(18 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-regular);
+    line-height: calc(26 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+.heading-02-semibold {
+    font-size: calc(18 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: calc(26 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+/* font style - score */
+.score-01-medium {
+    font-size: calc(28 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-medium);
+    line-height: calc(36 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
+
+.score-01-bold {
+    font-size: calc(28 / var(--font-size-default) * 1rem);
+    font-weight: var(--font-weight-bold);
+    line-height: calc(36 / var(--font-size-default) * 1rem);
+    letter-spacing: 0;
+}
