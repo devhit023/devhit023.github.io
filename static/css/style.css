@@ -566,7 +566,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-base-text-primary, #393d48);
   text-align: center;
   border-radius: var(--radius-radius-sm, 5px);
   flex-shrink: 0;
@@ -2175,62 +2174,6 @@
   background-image: url("../images/Icon/uniform.svg");
 }
 
-[data-theme=dark] .main_box .live-tracer_container > .live-tracer_container_left > .container_header > .close_wrap > button {
-  background-image: url("../images/Icon/close-default-dark.svg");
-}
-[data-theme=dark] .main_box .live-tracer_container > .live-tracer_container_left > .container_header > .close_wrap > button:hover {
-  background-image: url("../images/Icon/close-hover-dark.svg");
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_search_container .item-list > li:nth-child(3), [data-theme=dark] .main_box .table[type=score] .table_header > .table_search_container .item-list > li:nth-child(4) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(1) {
-  width: 70px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(2) {
-  width: 140px;
-  color: var(--interactive-button-button-disabled, #7b7d8a);
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(3), [data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(4) {
-  width: 70px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(5) {
-  width: 264px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(6) {
-  width: 68px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(7) {
-  width: 264px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(8), [data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(9), [data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(10), [data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(11), [data-theme=dark] .main_box .table[type=score] .table_header > .table_head .th:nth-child(12) {
-  width: 70px;
-}
-[data-theme=dark] .main_box .table[type=score] .table_body > ul > li .td:nth-child(7) .home-team_content > .count {
-  background-image: url("../images/Icon/card-red-dark.svg");
-}
-[data-theme=dark] .main_box .table[type=date] .table_body > ul > li .td .odds_wrap > .fragment .item.drop::after {
-  background-image: url("../images/Icon/drop-movement-dark.svg");
-}
-[data-theme=dark] .main_box .table[type=date] .table_body > ul > li .td .odds_wrap > .fragment .item.rise::after {
-  background-image: url("../images/Icon/rise-movement-dark.svg");
-}
-[data-theme=dark] .main_box .table[type=result] .table_body > ul > li .td:nth-child(7) .home-team_content > .count {
-  background-image: url("../images/Icon/card-red-dark.svg");
-}
-[data-theme=dark] .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .fragment_1 .formation_wrap .rows .cols .player > .roster_wrap > .event {
-  background-image: url("../images/Icon/card-yellow-formation-dark.svg");
-}
-[data-theme=dark] .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .fragment_1 .formation_wrap .rows .cols .player > .roster_wrap > .substitute {
-  background-image: url("../images/Icon/substitute-dark.svg");
-}
-[data-theme=dark] .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .fragment_1 .formation_wrap .rows .cols .player > .player_wrap {
-  background-image: url("../images/Icon/uniform.svg");
-}
-
 /* livescore-soccer */
 .livescore-soccer .box.league-table {
   height: 510px;
@@ -2500,6 +2443,7 @@
 .livescore-baseball .main_box .table .table_body > ul > li .row_container > .fragment.column .content.widget .count_container > .count_wrap {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding-left: var(--spacing-spacing-layout-lg, 20px);
   gap: var(--spacing-spacing-content-sm, 4px);
 }
@@ -2649,6 +2593,7 @@
 }
 .livescore-baseball .main_box .table .table_body > ul > li .row_container > .fragment.column .content.player .item .fragment.row {
   justify-content: flex-end;
+  align-items: center;
   gap: var(--spacing-spacing-content-sm, 4px);
 }
 .livescore-baseball .main_box .table .table_body > ul > li .row_container > .fragment.column .content.player .item > .fragment {
@@ -2781,7 +2726,6 @@
   display: flex;
   flex-direction: column;
   width: 70px;
-  border-right: 1px solid var(--border-border-default, #d3d4d9);
 }
 .livescore-basketball .main_box .live-tracer_container > .live-tracer_container_left .foul_container > .foul_wrap {
   display: flex;
@@ -2802,6 +2746,12 @@
   height: 6px;
   background: var(--decorative-progress-progress-home, #0ba5ec);
   border-radius: var(--radius-radius-sm, 5px);
+}
+.livescore-basketball .main_box .live-tracer_container > .live-tracer_container_left .foul_container:first-child {
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.livescore-basketball .main_box .live-tracer_container > .live-tracer_container_left .foul_container:last-child {
+  border-left: 1px solid var(--border-border-default, #d3d4d9);
 }
 .livescore-basketball .main_box .live-tracer_container > .live-tracer_container_left .shooting_container {
   flex: 1;
@@ -2835,6 +2785,9 @@
   border-top-right-radius: var(--radius-radius-sm, 5px);
   border-bottom-right-radius: var(--radius-radius-sm, 5px);
   background: var(--decorative-progress-progress-away, #ee46bc);
+}
+.livescore-basketball .main_box .live-tracer_container > .live-tracer_container_right {
+  overflow: hidden;
 }
 .livescore-basketball .main_box .live-tracer_container > .live-tracer_container_right > .tracker-stat_container > .quarter_container {
   display: flex;
@@ -2975,7 +2928,6 @@
   gap: var(--spacing-spacing-content-sm, 4px);
 }
 .livescore-basketball .main_box .table .table_body > ul > li .row_container > .fragment.column .content.widget {
-  flex: none;
   justify-content: flex-start;
   height: 100px;
 }
@@ -3128,6 +3080,7 @@
   height: 49px;
 }
 .livescore-basketball .main_box .table .table_body > ul > li .row_container > .fragment.column .content.player .item .fragment.row {
+  align-items: center;
   justify-content: flex-end;
   gap: var(--spacing-spacing-content-sm, 4px);
 }
@@ -3173,8 +3126,17 @@
 .livescore-basketball .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .fragment_1 .key_wrap .stat_wrap .stat_wrap_body > li::after {
   content: none;
 }
+.livescore-basketball .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .roster {
+  height: 550px;
+}
 .livescore-basketball .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .roster > .roster_body > .container > .table_wrap .table_wrap_body > li > div:nth-child(2):not(.flag) {
   width: 70px;
+}
+.livescore-basketball .main_box .table .table_body > ul > li .lineup_container .lineup_wrap .roster > .roster_body > .container > .table_wrap .table_wrap_body > li > div small {
+  color: var(--text-base-text-secondary, #525461);
+}
+.livescore-basketball .main_box .table[type=score] .table_body > ul > li .row_container > .fragment.column > .content.widget {
+  flex: none;
 }
 .livescore-basketball .main_box .table[type=date] .table_body > ul > li .row_container > .fragment.column:nth-child(1) {
   width: 280px;
@@ -3239,6 +3201,69 @@
 }
 .livescore-basketball .main_box .table[type=date] .live-tracer_container .vote_container > .vote_wrap > .content[type=away] > .bar, .livescore-basketball .main_box .table[type=result] .live-tracer_container .vote_container > .vote_wrap > .content[type=away] > .bar {
   background: var(--decorative-progress-progress-away, #ee46bc);
+}
+
+/* analysis-soccer */
+.analysis-soccer .main_box .table .table_header .table_search_container {
+  height: 120px;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_left > .title {
+  width: 140px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 60px;
+  border-radius: var(--radius-radius-md, 10px);
+  border: 1px solid var(--border-border-window, #b1b3bb);
+  margin-top: var(--spacing-spacing-layout-2xl, 30px);
+  overflow: hidden;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:first-child {
+  height: 30px;
+  color: var(--text-base-text-secondary, #525461);
+  border-bottom: 1px solid var(--border-border-window, #b1b3bb);
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child {
+  height: 29px;
+  display: flex;
+  flex-direction: row;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:first-child {
+  color: var(--text-odds-text-odds-wager, #0075f4);
+  background: var(--background-background-primary, #fff);
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:nth-child(2) {
+  color: var(--background-background-odds-drop, #f3ff40);
+  background: var(--text-odds-text-odds-drop, #d92d20);
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:last-child {
+  color: var(--text-odds-text-odds-drop, #d92d20);
+  background: var(--background-background-odds-drop, #f3ff40);
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:not(:last-child) {
+  border-right: 1px solid var(--border-border-window, #b1b3bb);
 }
 
 /* h2h */
@@ -6098,6 +6123,1374 @@
   width: 70px;
 }
 
+.main.livescore-basketball.h2h section:nth-child(1),
+.main.livescore-basketball.h2h section:nth-child(12) {
+  height: 100px;
+}
+.main.livescore-basketball.h2h section:nth-child(1) > .fragment,
+.main.livescore-basketball.h2h section:nth-child(12) > .fragment {
+  gap: var(--spacing-spacing-layout-lg, 20px);
+  width: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(1) > .fragment > .box,
+.main.livescore-basketball.h2h section:nth-child(12) > .fragment > .box {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(2) {
+  height: 150px;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div .emble_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--spacing-spacing-layout-sm, 10px);
+  height: 100px;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div .team_wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div .team_wrap > span.name:hover {
+  font-size: calc(18 / var(--font-size-default) * 1rem);
+  font-weight: var(--font-weight-regular);
+  line-height: calc(26 / var(--font-size-default) * 1rem);
+  letter-spacing: 0;
+  text-decoration-line: underline;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div .team_wrap > .standing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-spacing-content-md, 8px);
+  height: 20px;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div .team_wrap > .standing > .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div.content > .fragment {
+  flex: 1;
+  color: var(--text-base-text-accent-primary, #2b2e39);
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div.content > .fragment .league_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div.content > .fragment .league_wrap > span {
+  width: 104px;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div.content > .fragment .kickoff_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  align-self: stretch;
+}
+.main.livescore-basketball.h2h section:nth-child(2) > .box > div.bookmark, .main.livescore-basketball.h2h section:nth-child(2) > .box > div.lineup {
+  width: 70px;
+  height: 49px;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(3) {
+  height: 530px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content {
+  display: flex;
+  flex-direction: row;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .odds_item {
+  width: 140px;
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .vote_container {
+  padding: 0px var(--spacing-spacing-layout-sm, 10px);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .vote_container .vote_wrap {
+  display: flex;
+  width: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .vote_container .vote_wrap .vote_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  border-radius: var(--radius-radius-md, 10px);
+  background: var(--background-background-tertiary, #ededef);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .vote_container .vote_wrap .vote_item span {
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .vote_container .vote_wrap .vote_item > .fragment.row {
+  gap: var(--spacing-spacing-content-xs, 2px);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content .vote_container .vote_wrap .vote_item > .fragment.row span {
+  color: var(--decorative-user-user-profit, #06aed4);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content span {
+  text-align: center;
+  color: var(--text-base-text-accent-primary, #2b2e39);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content span.drop {
+  position: relative;
+  color: var(--text-odds-text-odds-drop, #d92d20);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content span.drop::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/Icon/drop-movement-light.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  top: 4px;
+  right: 36px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content span.rise {
+  position: relative;
+  color: var(--text-odds-text-odds-rise, #079455);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .box.content span.rise::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/Icon/rise-movement-light.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  top: 4px;
+  right: 36px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_head .th {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_head .th:nth-child(2) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_head .th:nth-child(3) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_head .th:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_head .th:nth-child(5) {
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_head .th:nth-child(6) {
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(2) .image_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(2) span {
+  flex: 1;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(3) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-xs, 2px);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(5) > span.win {
+  position: relative;
+  color: var(--text-odds-text-odds-drop, #d92d20);
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(5) > span.win:first-child::after {
+  content: "";
+  position: absolute;
+  background: url("../images/Icon/dot-light.svg");
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  width: 4px;
+  height: 4px;
+  left: -6px;
+  top: 11px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(5) > span.win:last-child::after {
+  content: "";
+  position: absolute;
+  background: url("../images/Icon/dot-light.svg");
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  width: 4px;
+  height: 4px;
+  right: -6px;
+  top: 11px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(6) {
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(6) > span {
+  position: relative;
+}
+.main.livescore-basketball.h2h section:nth-child(3) .table_body ul > li .td:nth-child(6) > span > .count {
+  position: absolute;
+  background-image: url(../images/Icon/card-red-dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -24px;
+  top: 1px;
+  color: var(--text-base-text-inverse, #fff);
+}
+.main.livescore-basketball.h2h section:nth-child(4) {
+  height: 930px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content {
+  display: flex;
+  flex-direction: row;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .odds_item {
+  width: 140px;
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .vote_container {
+  padding: 0px var(--spacing-spacing-layout-sm, 10px);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .vote_container .vote_wrap {
+  display: flex;
+  width: 140px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .vote_container .vote_wrap .vote_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  border-radius: var(--radius-radius-md, 10px);
+  background: var(--background-background-tertiary, #ededef);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .vote_container .vote_wrap .vote_item span {
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .vote_container .vote_wrap .vote_item > .fragment.row {
+  gap: var(--spacing-spacing-content-xs, 2px);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content .vote_container .vote_wrap .vote_item > .fragment.row span {
+  color: var(--decorative-user-user-profit, #06aed4);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content span {
+  text-align: center;
+  color: var(--text-base-text-accent-primary, #2b2e39);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content span.drop {
+  position: relative;
+  color: var(--text-odds-text-odds-drop, #d92d20);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content span.drop::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/Icon/drop-movement-light.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  top: 4px;
+  right: 36px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content span.rise {
+  position: relative;
+  color: var(--text-odds-text-odds-rise, #079455);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .box.content span.rise::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/Icon/rise-movement-light.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  top: 4px;
+  right: 36px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_head .th {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_head .th:nth-child(2) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_head .th:nth-child(3) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_head .th:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_head .th:nth-child(5) {
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_head .th:nth-child(6) {
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(2) .image_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(2) span {
+  flex: 1;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(3) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-xs, 2px);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(5) > span.win {
+  position: relative;
+  color: var(--text-odds-text-odds-drop, #d92d20);
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(5) > span.win:first-child::after {
+  content: "";
+  position: absolute;
+  background: url("../images/Icon/dot-light.svg");
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  width: 4px;
+  height: 4px;
+  left: -6px;
+  top: 11px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(5) > span.win:last-child::after {
+  content: "";
+  position: absolute;
+  background: url("../images/Icon/dot-light.svg");
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  width: 4px;
+  height: 4px;
+  right: -6px;
+  top: 11px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(6) {
+  width: 184px;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(6) > span {
+  position: relative;
+}
+.main.livescore-basketball.h2h section:nth-child(4) .table .table_body ul > li .td:nth-child(6) > span > .count {
+  position: absolute;
+  background-image: url(../images/Icon/card-red-dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -24px;
+  top: 1px;
+  color: var(--text-base-text-inverse, #fff);
+}
+.main.livescore-basketball.h2h section:nth-child(5) {
+  height: 290px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_head .th {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_head .th:nth-child(2) {
+  width: 140px;
+  color: var(--interactive-button-button-disabled, #7b7d8a);
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_head .th:nth-child(5) {
+  width: 167px;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_head .th:nth-child(6) {
+  width: 105px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_head .th:nth-child(7) {
+  width: 167px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_head .th:last-child {
+  width: 69px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:nth-child(2) .image_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:nth-child(2) span {
+  flex: 1;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:nth-child(5) {
+  width: 167px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:nth-child(6) {
+  width: 105px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:nth-child(7) {
+  width: 167px;
+}
+.main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td:last-child {
+  width: 69px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) {
+  height: 1650px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container > .content_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 100%;
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container > .content_wrap .content {
+  display: flex;
+  flex-direction: column;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container > .content_wrap .content.hover {
+  display: none;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container > .content_wrap.live {
+  background: var(--background-background-result-win, #fec84b);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container:hover {
+  background: var(--background-background-row-hover, rgba(243, 255, 64, 0.5));
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container:hover .content.default {
+  display: none;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .odds_container:hover .content.hover {
+  display: flex;
+  flex-direction: column;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container {
+  flex: 1;
+  display: flex;
+  padding: 0px var(--spacing-spacing-layout-sm, 10px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-md, 8px);
+  padding: var(--spacing-spacing-layout-md, 15px) var(--spacing-spacing-layout-sm, 10px) var(--spacing-spacing-layout-xs, 5px) var(--spacing-spacing-layout-sm, 10px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 29px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content .bar {
+  width: 100%;
+  height: 6px;
+  border-radius: var(--radius-radius-sm, 5px);
+  -webkit-border-radius: var(--radius-radius-sm, 5px);
+  -moz-border-radius: var(--radius-radius-sm, 5px);
+  -ms-border-radius: var(--radius-radius-sm, 5px);
+  -o-border-radius: var(--radius-radius-sm, 5px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content[type=home] {
+  flex: 8;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content[type=home] > .bar {
+  background: var(--decorative-progress-progress-home, #0ba5ec);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content[type=draw] {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content[type=draw] > .bar {
+  background: var(--decorative-progress-progress-draw, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content[type=away] {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .content_continaer .vote_container > .vote_wrap > .content[type=away] > .bar {
+  background: var(--decorative-progress-progress-away, #ee46bc);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div .emble_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--spacing-spacing-layout-sm, 10px);
+  height: 100px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div .team_wrap {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div .team_wrap > span.name:hover {
+  font-size: calc(18 / var(--font-size-default) * 1rem);
+  font-weight: var(--font-weight-regular);
+  line-height: calc(26 / var(--font-size-default) * 1rem);
+  letter-spacing: 0;
+  text-decoration-line: underline;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.content > .fragment {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.content > .fragment:nth-child(1) {
+  color: var(--text-base-text-accent-primary, #2b2e39);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  align-self: stretch;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.content > .fragment:nth-child(2) {
+  color: var(--text-base-text-tertiary, #7b7d8a);
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.content > .fragment:nth-child(2) > .score_wrap {
+  width: 140px;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  justify-content: center;
+  color: var(--text-base-text-accent-primary, #2b2e39);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.content > .fragment:nth-child(2) > span {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.content > .fragment:nth-child(3) {
+  color: var(--text-base-text-accent-primary, #2b2e39);
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  gap: var(--spacing-spacing-content-md, 8px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.bookmark, .main.livescore-basketball.h2h section:nth-child(6) .matchup_container > .matchup_wrap > div.youtube {
+  width: 70px;
+  height: 49px;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .momentum_container {
+  height: 100px;
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+  height: 150px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+  height: 50px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_header > ul.type {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_header > ul.type > li {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body {
+  flex: 1;
+  position: relative;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap .tracker-stat_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap .tracker-stat_content:not(.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap .tracker-stat_content:last-child) {
+  border-style: solid;
+  border-color: var(--border-border-default, #d3d4d9);
+  border-right-width: 1px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap .content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap .content:not(.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_left-container > .tracker-stat_body .tracker-stat_content_wrap .content:last-child) {
+  border-style: solid;
+  border-color: var(--border-border-default, #d3d4d9);
+  border-bottom-width: 1px;
+  height: 49px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container {
+  display: flex;
+  flex-direction: row;
+  height: 99px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container > .fragment {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container > .foul_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container > .foul_wrap.count_wrap {
+  flex-direction: column;
+  padding-bottom: var(--spacing-spacing-layout-xs, 5px);
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container > .foul_wrap.count_wrap > .count {
+  color: var(--text-base-text-accent-secondary, #d92d20);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container > .foul_wrap.count_wrap > .bar {
+  width: 29px;
+  height: 6px;
+  background: var(--decorative-progress-progress-home, #0ba5ec);
+  border-radius: var(--radius-radius-sm, 5px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container:first-child {
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .foul_container:last-child {
+  border-left: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap {
+  padding: var(--spacing-spacing-layout-md, 15px) var(--spacing-spacing-layout-lg, 20px) var(--spacing-spacing-layout-xs, 5px) var(--spacing-spacing-layout-lg, 20px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap .shooting_wrap_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap .shooting_wrap_top small {
+  color: var(--text-base-text-secondary, #525461);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap .shooting_wrap_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing-spacing-content-md, 8px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap .shooting_wrap_content > .bar {
+  height: 6px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap .shooting_wrap_content > .bar.left {
+  border-top-left-radius: var(--radius-radius-sm, 5px);
+  border-bottom-left-radius: var(--radius-radius-sm, 5px);
+  background: var(--decorative-progress-progress-home, #0ba5ec);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .tracker-stat_right-container .shooting_container .shooting_wrap .shooting_wrap_content > .bar.right {
+  border-top-right-radius: var(--radius-radius-sm, 5px);
+  border-bottom-right-radius: var(--radius-radius-sm, 5px);
+  background: var(--decorative-progress-progress-away, #ee46bc);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  height: 401px;
+  background-image: url("../../livescore_v6.0.1/images/icons/light-mode/default/formation-ground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 400px;
+  overflow: hidden;
+  padding: var(--spacing-spacing-layout-lg) var(--spacing-spacing-layout-2xl);
+  border-style: solid;
+  border-color: var(--border-border-window, #b1b3bb);
+  border-top-width: 1px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--color-primary-gray-700, #2b2e39);
+  width: 44px;
+  height: 56px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player > .roster_wrap {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player > .roster_wrap > .event {
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/Icon/card-yellow-formation-light.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player > .roster_wrap > .substitute {
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/Icon/substitute-light.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player > .badge-rating {
+  position: absolute;
+  right: -18px;
+  top: 14px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player > .player_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 30px;
+  background-image: url("../images/Icon/uniform.svg");
+  background-repeat: no-repeat;
+  background-size: 35px 30px;
+  margin-bottom: 4px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player *.headshot > .player_wrap {
+  width: 35px;
+  height: 30px;
+  background: var(--color-primary-gray-25, #f5f5f8);
+  border-radius: var(--radius-radius-sm, 5px);
+  height: 36px;
+  position: relative;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .formation_container .rows .cols .player > .name_wrap {
+  background: var(--color-primary-gray-25, #f5f5f8);
+  border-radius: var(--radius-radius-sm, 5px);
+  padding: 0px var(--spacing-spacing-layout-xs, 5px) 0px var(--spacing-spacing-layout-xs, 5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  position: relative;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--spacing-spacing-layout-sm, 10px);
+  background: var(--background-background-primary, #fff);
+  height: 50px;
+  width: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_header .roster_header_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 9px;
+  padding-right: var(--spacing-spacing-layout-lg);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_header .roster_header_wrap.reverse {
+  justify-content: end;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_header .roster_header_wrap .roster_header_item {
+  width: 140px;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-spacing-layout-lg);
+  overflow: auto;
+  width: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-layout-sm, 10px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_header {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: var(--text-base-text-secondary, #525461);
+  background: var(--background-background-tertiary, #ededef);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_header > .th {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--text-base-text-accent-primary, #2b2e39);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li > div {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li > div.player {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--spacing-spacing-content-lg, 12px);
+  align-self: stretch;
+  padding-left: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li > div.player > .name {
+  width: 44px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li > div.player > .event {
+  position: relative;
+  display: flex;
+  width: 40px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li > div.player > .event > img:nth-child(2) {
+  position: absolute;
+  top: -1px;
+  right: 1px;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li > div.player > .substitute {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  align-self: stretch;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li:nth-child(2n) {
+  background: var(--background-background-quaternary, #f5f5f8);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .roster_container > .roster_body > .container > .table_wrap .table_wrap_body > li:nth-child(2n-1) {
+  background: var(--background-background-primary, #fff);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container {
+  display: flex;
+  overflow: hidden;
+  margin-top: var(--spacing-spacing-layout-lg, 20px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-layout-sm, 10px);
+  width: 100%;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_header {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: var(--text-base-text-secondary, #525461);
+  background: var(--background-background-tertiary, #ededef);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_header > .th {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_body > li {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--text-base-text-accent-primary, #2b2e39);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_body > li > div {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_body > li > div.player {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--spacing-spacing-content-lg, 12px);
+  align-self: stretch;
+  padding-left: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_body > li:nth-child(2n) {
+  background: var(--background-background-quaternary, #f5f5f8);
+}
+.main.livescore-basketball.h2h section:nth-child(6) .match-info_container > .container .table_wrap .table_wrap_body > li:nth-child(2n-1) {
+  background: var(--background-background-primary, #fff);
+}
+.main.livescore-basketball.h2h section:nth-child(7),
+.main.livescore-basketball.h2h section:nth-child(8) {
+  height: 330px;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .image_wrap,
+.main.livescore-basketball.h2h section:nth-child(8) .image_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .table_wrap[type=player] > .table_head > .th:first-child,
+.main.livescore-basketball.h2h section:nth-child(8) .table_wrap[type=player] > .table_head > .th:first-child {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .table_wrap[type=player] > .table_head > .th:last-child,
+.main.livescore-basketball.h2h section:nth-child(8) .table_wrap[type=player] > .table_head > .th:last-child {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .table_wrap[type=player] > .table_body .td:first-child,
+.main.livescore-basketball.h2h section:nth-child(8) .table_wrap[type=player] > .table_body .td:first-child {
+  width: 69px;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .table_wrap[type=player] > .table_body .td:nth-child(2),
+.main.livescore-basketball.h2h section:nth-child(8) .table_wrap[type=player] > .table_body .td:nth-child(2) {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .table_wrap[type=player] > .table_body .td:last-child,
+.main.livescore-basketball.h2h section:nth-child(8) .table_wrap[type=player] > .table_body .td:last-child {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(7) .table_wrap[type=player] > .table_body .td.position,
+.main.livescore-basketball.h2h section:nth-child(8) .table_wrap[type=player] > .table_body .td.position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+}
+.main.livescore-basketball.h2h section:nth-child(9) {
+  height: 330px;
+}
+.main.livescore-basketball.h2h section:nth-child(9) .image_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main.livescore-basketball.h2h section:nth-child(10) {
+  height: 1780px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_search_container .menu-list > li {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-lg, 12px);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_search_container .menu-list > li > .content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  color: var(--text-base-text-secondary, #525461);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_search_container .dropdown_wrap[type=option] .dropdown-menu {
+  left: 0;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_search_container:nth-child(2) {
+  padding-left: 9px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_search_container:nth-child(2) .menu-list {
+  display: flex;
+  flex-direction: row;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_search_container:nth-child(2) .menu-list > li {
+  width: 140px;
+  justify-content: center;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .league_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .league_wrap .league_wrap_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-spacing-content-lg, 12px);
+  background: var(--background-background-quaternary, #f5f5f8);
+  color: var(--text-base-text-secondary, #525461);
+  padding-left: var(--spacing-spacing-layout-lg, 20px);
+  height: 40px;
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .league_wrap:not(:first-child) .league_wrap_header {
+  border-top: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th {
+  width: 69px;
+  color: var(--text-base-text-secondary, #525461);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(2) {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(3) {
+  width: 105px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(4) {
+  width: 10px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(5), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(6), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(7), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(8), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th:nth-child(9) {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted] {
+  position: relative;
+  cursor: pointer;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted][status=enabled] {
+  color: var(--interactive-button-button-primary-enabled);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted][status=disabled] {
+  color: var(--interactive-button-button-disabled);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted]:active {
+  color: var(--interactive-button-button-primary-press);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted]:hover {
+  color: var(--interactive-button-button-primary-hover);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted=true]::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--background-background-tooltip, #2b2e39);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_head .th[sorted=true]::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 16px;
+  height: 8px;
+  background-image: url("../images/Icon/sort-light.svg");
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td {
+  width: 69px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(1) {
+  position: relative;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: url("../images/Icon/rise-movement-light.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(2) {
+  width: 35px;
+  background: initial;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 220px;
+  padding-left: var(--spacing-spacing-content-sm, 4px);
+  padding-right: 12px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(3) > .player {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-lg, 12px);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(3) > .score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-base-text-inverse, #fff);
+  border-radius: var(--radius-radius-sm, 5px);
+  background: var(--text-odds-text-odds-rise, #079455);
+  width: 36px;
+  height: 20px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(4) {
+  width: 105px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-spacing-content-sm, 4px);
+  margin-right: var(--spacing-spacing-layout-sm);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(5), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(6), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(7), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(8), .main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td:nth-child(9) {
+  width: 70px;
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li > .td[sorted=true] {
+  background: var(--background-background-quaternary, #f5f5f8);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body ul > li:not(:last-child) {
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(10) .table_wrap > .table_body.no-background ul > li {
+  background: var(--background-background-primary, #fff);
+}
+.main.livescore-basketball.h2h section:nth-child(11) {
+  height: 150px;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .fact_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 49px;
+  box-sizing: content-box;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .fact_item > .fact_content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: var(--spacing-spacing-layout-lg, 20px);
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .fact_item > .fact_form {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-spacing-content-lg, 12px);
+  align-items: center;
+  width: 418px;
+  height: 100%;
+  padding: 0px var(--spacing-spacing-layout-sm, 10px);
+  background: var(--background-background-quaternary, #f5f5f8);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .fact_item:not(:last-child) {
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child {
+  flex: none;
+  width: 420px;
+  box-sizing: content-box;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content {
+  flex: 1;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content > .fragment > span {
+  flex: 1;
+  text-align: center;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content > .fragment > span.drop {
+  position: relative;
+  color: var(--text-odds-text-odds-drop, #d92d20);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content > .fragment > span.drop::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Icon/drop-movement-light.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content > .fragment > span.rise {
+  position: relative;
+  color: var(--text-odds-text-odds-rise, #079455);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content > .fragment > span.rise::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Icon/rise-movement-light.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap .content:not(:last-child) {
+  border-right: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap[change=false] > .content > .fragment[type=false] {
+  display: flex;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap[change=false] > .content > .fragment[type=true] {
+  display: none;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap[change=true] > .content > .fragment[type=true] {
+  display: flex;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap[change=true] > .content > .fragment[type=false] {
+  display: none;
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap:not(:last-child) {
+  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+}
+.main.livescore-basketball.h2h section:nth-child(11) .box:last-child .odds_wrap:hover {
+  background: var(--background-background-row-hover, rgba(243, 255, 64, 0.5));
+}
+.main.livescore-basketball.h2h .table .table_head .th {
+  width: 70px;
+}
+.main.livescore-basketball.h2h .table .table_body ul > li .td {
+  width: 70px;
+}
+
 /* chat_container */
 .chat_container {
   display: flex;
@@ -6500,6 +7893,9 @@ span.base-text_secondary {
 }
 span.base-text_tertiary {
   color: var(--text-base-text-tertiary, #7b7d8a);
+}
+span.base-text_accent-quaternary {
+  color: var(--text-base-text-accent-quaternary, #7f56d9);
 }
 span.chat-text_error {
   color: var(--text-chat-text-chat-error, #f04438);
