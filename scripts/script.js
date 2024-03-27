@@ -31,14 +31,24 @@ $(document).ready(function () {
     ".main_box .table_search_container .item-list .dropdown_wrap > .dropdown_button"
   ).hover(
     function () {
-      $(this).children("span").attr("class", "heading-01-semibold");
+      if ($(this).children("span").attr("class", "heading-01-regular")) {
+        $(this).children("span").attr("class", "heading-01-semibold");
+      }
+      if ($(this).children("span").attr("class", "body-01-regular")) {
+        $(this).children("span").attr("class", "body-01-semibold");
+      }
     },
     function () {
       if (
         $(this).parent().attr("change") != "true" ||
         $(this).parent().attr("state") != "enabled"
       ) {
-        $(this).children("span").attr("class", "heading-01-regular");
+        if ($(this).children("span").attr("class", "heading-01-semibold")) {
+          $(this).children("span").attr("class", "heading-01-regular");
+        }
+        if ($(this).children("span").attr("class", "body-01-semibold")) {
+          $(this).children("span").attr("class", "body-01-regular");
+        }
       }
     }
   );
@@ -46,14 +56,24 @@ $(document).ready(function () {
     ".main_box .table_search_container .item-list .dropdown_wrap > .dropdown_button"
   ).focus(
     function () {
-      $(this).children("span").attr("class", "heading-01-semibold");
+      if ($(this).children("span").attr("class", "heading-01-regular")) {
+        $(this).children("span").attr("class", "heading-01-semibold");
+      }
+      if ($(this).children("span").attr("class", "body-01-regular")) {
+        $(this).children("span").attr("class", "body-01-semibold");
+      }
     },
     function () {
       if (
         $(this).parent().attr("change") != "true" ||
         $(this).parent().attr("state") != "enabled"
       ) {
-        $(this).children("span").attr("class", "heading-01-regular");
+        if ($(this).children("span").attr("class", "heading-01-semibold")) {
+          $(this).children("span").attr("class", "heading-01-regular");
+        }
+        if ($(this).children("span").attr("class", "body-01-semibold")) {
+          $(this).children("span").attr("class", "body-01-regular");
+        }
       }
     }
   );
@@ -62,10 +82,20 @@ $(document).ready(function () {
     ".main_box .table_search_container .item-list .dropdown_wrap .dropdown_button"
   ).click(function () {
     if ($(this).parent().attr("change") == "true") {
-      $(this).children("span").attr("class", "heading-01-semibold");
+      if ($(this).children("span").attr("class", "heading-01-regular")) {
+        $(this).children("span").attr("class", "heading-01-semibold");
+      }
+      if ($(this).children("span").attr("class", "body-01-regular")) {
+        $(this).children("span").attr("class", "body-01-semibold");
+      }
     } else {
       if ($(this).parent().attr("state") != "enabled") {
-        $(this).children("span").attr("class", "heading-01-regular");
+        if ($(this).children("span").attr("class", "heading-01-semibold")) {
+          $(this).children("span").attr("class", "heading-01-regular");
+        }
+        if ($(this).children("span").attr("class", "body-01-semibold")) {
+          $(this).children("span").attr("class", "body-01-regular");
+        }
       }
     }
   });
@@ -114,6 +144,14 @@ $(document).ready(function () {
     $(".main_box > .table[type='score']").addClass("hide");
     $(".main_box > .table[type='date']").addClass("hide");
     $(".main_box > .table[type='result']").removeClass("hide");
+  });
+  $(".main_box .menu-list > #moneyway").click(function () {
+    $(".main_box > .table[type='moneyway']").removeClass("hide");
+    $(".main_box > .table[type='dropping-odds']").addClass("hide");
+  });
+  $(".main_box .menu-list > #dropping-odds").click(function () {
+    $(".main_box > .table[type='moneyway']").addClass("hide");
+    $(".main_box > .table[type='dropping-odds']").removeClass("hide");
   });
 
   // main - td
@@ -221,6 +259,17 @@ $(document).ready(function () {
       $(
         ".match-chat_container > .chat_container[type='match'] > .chat_body > ul[page='match']"
       ).addClass("hide");
+    }
+  });
+
+  // expand-button
+  $(".table_body > .league_container .expand_button").click(function () {
+    if ($(this).attr("status") == "change") {
+      $(this).attr("status", "");
+      $(this).parent().parent().parent().children("ul").addClass("hide");
+    } else {
+      $(this).attr("status", "change");
+      $(this).parent().parent().parent().children("ul").removeClass("hide");
     }
   });
 
