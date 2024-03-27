@@ -111,10 +111,12 @@ $(document).ready(function () {
   });
 
   $(".chat_container .chat .user_wrap").click(function () {
-    if ($(this).attr("change") == "true") {
-      $(this).attr("change", "false");
+    console.log($(this).attr("change"));
+    if ($(this).attr("change") == true) {
+      $(this).attr("change", false);
     } else {
-      $(this).attr("change", "true");
+      console.log("???????", $(this));
+      $(this).attr("change", true);
     }
   });
 
@@ -196,7 +198,11 @@ $(document).ready(function () {
           .each(function (index, item) {
             $(item).addClass("expand");
           });
-        $(".lineup_container").removeClass("hide");
+        $(this)
+          .parent()
+          .parent()
+          .children(".lineup_container")
+          .removeClass("hide");
       } else {
         $(this)
           .children(".match_wrap")
@@ -208,7 +214,11 @@ $(document).ready(function () {
           .each(function (index, item) {
             $(item).removeClass("expand");
           });
-        $(".lineup_container").addClass("hide");
+        $(this)
+          .parent()
+          .parent()
+          .children(".lineup_container")
+          .addClass("hide");
       }
     }
   });
@@ -230,6 +240,24 @@ $(document).ready(function () {
   });
   $("*[change='true']").click(function () {
     $(this).attr("change", "false");
+  });
+
+  // live-chat
+  $(
+    ".live-chat .chat_container[type='live'] > .chat_header > ul.type > li"
+  ).click(function () {
+    if ($(this).text().trim() == "스포츠") {
+      $(
+        ".live-chat .chat_container[type='live'] > .chat_header > ul.type > li[state='active']"
+      ).attr("state", "disabled");
+      $(this).attr("state", "active");
+    }
+    if ($(this).text().trim() == "미니게임") {
+      $(
+        ".live-chat .chat_container[type='live'] > .chat_header > ul.type > li[state='active']"
+      ).attr("state", "disabled");
+      $(this).attr("state", "active");
+    }
   });
 
   // match-chat

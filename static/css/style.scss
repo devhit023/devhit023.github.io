@@ -82,7 +82,6 @@
       calc(-2 / 16 * 1rem) rgba(25, 28, 38, 0.06),
     calc(0 / 16 * 1rem) calc(4 / 16 * 1rem) calc(8 / 16 * 1rem)
       calc(-2 / 16 * 1rem) rgba(25, 28, 38, 0.1);
-  overflow: hidden;
 
   &.login {
     height: 190px;
@@ -402,60 +401,64 @@
 
   .league-table_body {
     position: relative;
-    overflow: auto;
 
-    .table .table_head {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      color: var(--interactive-button-button-default, #393d48);
-      padding-right: 0 var(--spacing-spacing-layout-md);
-      border-style: solid;
-      border-color: var(--border-border-default);
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      height: 40px;
-      padding-right: var(--spacing-spacing-layout-md);
+    .table {
+      .table_head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--interactive-button-button-default, #393d48);
+        padding-right: 0 var(--spacing-spacing-layout-md);
+        border-style: solid;
+        border-color: var(--border-border-default);
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        height: 40px;
+        padding-right: var(--spacing-spacing-layout-md);
 
-      .th {
-        .dropdown_wrap {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 130px;
-          margin: 0 5px;
-        }
+        .th {
+          .dropdown_wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            margin: 0 5px;
+          }
 
-        .dropdown_button {
-          justify-content: flex-end;
-          color: var(--interactive-button-button-default, #393d48);
-          width: 100%;
+          .dropdown_button {
+            justify-content: flex-end;
+            color: var(--interactive-button-button-default, #393d48);
+            width: 100%;
 
-          > .dropdown-icon_wrap {
-            width: 39px;
+            > .dropdown-icon_wrap {
+              width: 39px;
+            }
+          }
+
+          .dropdown-menu_list {
+            top: 30px;
+            left: -5px;
+            width: 140px;
           }
         }
 
-        .dropdown-menu_list {
+        .dropdown_wrap > .dropdown-menu {
           top: 30px;
-          left: -5px;
-          width: 140px;
+        }
+
+        .th {
+          &:first-child {
+            flex: 1;
+          }
+
+          &:not(:first-child) {
+            text-align: center;
+            width: 35px;
+          }
         }
       }
-
-      .dropdown_wrap > .dropdown-menu {
-        top: 30px;
-      }
-
-      .th {
-        &:first-child {
-          flex: 1;
-        }
-
-        &:not(:first-child) {
-          text-align: center;
-          width: 35px;
-        }
+      .table_body {
+        height: 400px;
       }
     }
   }
@@ -2510,6 +2513,10 @@
                     }
                   }
                   &:first-child {
+                    .stat_wrap_header {
+                      border-top-left-radius: var(--radius-radius-md, 10px);
+                      border-top-right-radius: var(--radius-radius-md, 10px);
+                    }
                     .stat_wrap_body > li::after {
                       background: var(--decorative-badge-badge-red, #d92d20);
                     }
@@ -2519,11 +2526,20 @@
                       border-top: 1px solid var(--border-border-window, #b1b3bb);
                     }
                     > .stat_wrap_body {
-                      > li::after {
-                        background: var(
-                          --decorative-badge-badge-green,
-                          #079455
-                        );
+                      > li {
+                        &::after {
+                          background: var(
+                            --decorative-badge-badge-green,
+                            #079455
+                          );
+                        }
+                        &:last-child {
+                          border-bottom-left-radius: var(
+                            --radius-radius-md,
+                            10px
+                          );
+                          overflow: hidden;
+                        }
                       }
                     }
                   }
