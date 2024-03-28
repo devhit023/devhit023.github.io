@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="../static/css/header.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
   </head>
-  <body>
+  <body scroll>
     <!-- Header -->
     <header id="header">
       <div class="header_container">
@@ -58,22 +58,22 @@
               <li class="menu-item">
                 <a href="#0" class="link heading-01-semibold">스포츠분석</a>
                 <ul class="submenu-list">
-                  <li class="submenu-item">
+                  <li id="moneyway" class="submenu-item">
                     <span class="button heading-02-semibold">거래량흐름</span>
                   </li>
-                  <li class="submenu-item">
+                  <li id="preview" class="submenu-item">
                     <span class="button heading-02-semibold">매치프리뷰</span>
                   </li>
-                  <li class="submenu-item">
+                  <li id="missing-player" class="submenu-item">
                     <span class="button heading-02-semibold">결장자이슈</span>
                   </li>
-                  <li class="submenu-item">
+                  <li id="fact-check" class="submenu-item">
                     <span class="button heading-02-semibold">탑팩트체크</span>
                   </li>
-                  <li class="submenu-item">
+                  <li id="consensus-pick" class="submenu-item">
                     <span class="button heading-02-semibold">컨센서스픽</span>
                   </li>
-                  <li class="submenu-item">
+                  <li id="prediction-tips" class="submenu-item">
                     <span class="button heading-02-semibold">프리딕션팁</span>
                   </li>
                 </ul>
@@ -309,7 +309,7 @@
                   >
                 </div>
               </div>
-              <div class="chat_body">
+              <div class="chat_body" scroll>
                 <ul>
                   <li class="chat" type="default">
                     <div class="user_wrap" change="false">
@@ -1027,7 +1027,7 @@
                       <span class="body-02-semibold">승점</span>
                     </div>
                   </div>
-                  <div class="table_body">
+                  <div class="table_body" scroll>
                     <ul>
                       <li>
                         <div class="td">
@@ -12089,10 +12089,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
   <script>
     // 스크롤바 초기화
-    new PerfectScrollbar(document.querySelector("body"));
-    new PerfectScrollbar(document.querySelector(".chat_body"));
-    new PerfectScrollbar(document.querySelector(".league-table_body"));
-    new PerfectScrollbar(document.querySelector(".roster_body"));
+    const scrollElements = document.querySelectorAll("*[scroll]");
+
+    for (let i = 0; i < scrollElements.length; i++) {
+      new PerfectScrollbar(scrollElements[i]);
+    }
   </script>
   <script src="../scripts/header.js"></script>
   <script src="../scripts/dropdown.js"></script>

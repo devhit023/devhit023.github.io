@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="../static/css/header.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
   </head>
-  <body>
+  <body scroll>
     <!-- Header -->
     <header id="header">
       <div class="header_container">
@@ -309,7 +309,7 @@
                   >
                 </div>
               </div>
-              <div class="chat_body">
+              <div class="chat_body" scroll>
                 <ul>
                   <li class="chat" type="default">
                     <div class="user_wrap" change="false">
@@ -2465,10 +2465,16 @@
                       <div class="chat_container" type="match">
                         <div class="chat_header">
                           <ul class="type">
-                            <li state="active" class="body-01-semibold button">
+                            <li
+                              state="active"
+                              id="match"
+                              class="body-01-semibold button"
+                            >
                               매치채팅
                             </li>
-                            <li class="body-01-semibold button">타임라인</li>
+                            <li id="timeline" class="body-01-semibold button">
+                              타임라인
+                            </li>
                           </ul>
                           <div class="join">
                             <img
@@ -2477,7 +2483,7 @@
                           </div>
                         </div>
                         <div class="chat_body">
-                          <ul page="match">
+                          <ul page="match" scroll>
                             <li class="chat" type="default">
                               <div class="user_wrap" change="false">
                                 <div value="20" class="badge-level">
@@ -2780,7 +2786,7 @@
                               </div>
                             </li>
                           </ul>
-                          <ul page="timeline">
+                          <ul page="timeline" class="hide" scroll>
                             <li class="chat" type="subscribe">
                               <div class="content_wrap">
                                 <div class="content_left">
@@ -3343,10 +3349,16 @@
                       <div class="chat_container" type="match">
                         <div class="chat_header">
                           <ul class="type">
-                            <li state="active" class="body-01-semibold button">
+                            <li
+                              state="active"
+                              id="match"
+                              class="body-01-semibold button"
+                            >
                               매치채팅
                             </li>
-                            <li class="body-01-semibold button">타임라인</li>
+                            <li id="timeline" class="body-01-semibold button">
+                              타임라인
+                            </li>
                           </ul>
                           <div class="join">
                             <img
@@ -3355,7 +3367,7 @@
                           </div>
                         </div>
                         <div class="chat_body">
-                          <ul page="match">
+                          <ul page="match" scroll>
                             <li class="chat" type="default">
                               <div class="user_wrap" change="false">
                                 <div value="20" class="badge-level">
@@ -3658,7 +3670,7 @@
                               </div>
                             </li>
                           </ul>
-                          <ul page="timeline">
+                          <ul page="timeline" class="hide" scroll>
                             <li class="chat" type="subscribe">
                               <div class="content_wrap">
                                 <div class="content_left">
@@ -4954,7 +4966,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -5739,7 +5751,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -5786,6 +5798,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -6776,7 +6817,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -7561,7 +7602,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -7608,6 +7649,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -8598,7 +8668,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -9383,7 +9453,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -9430,6 +9500,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -10420,7 +10519,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -11205,7 +11304,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -11252,6 +11351,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -12242,7 +12370,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -13027,7 +13155,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -13074,6 +13202,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -14064,7 +14221,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -14849,7 +15006,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -14896,6 +15053,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -15265,10 +15451,16 @@
                       <div class="chat_container" type="match">
                         <div class="chat_header">
                           <ul class="type">
-                            <li state="active" class="body-01-semibold button">
+                            <li
+                              state="active"
+                              id="match"
+                              class="body-01-semibold button"
+                            >
                               매치채팅
                             </li>
-                            <li class="body-01-semibold button">타임라인</li>
+                            <li id="timeline" class="body-01-semibold button">
+                              타임라인
+                            </li>
                           </ul>
                           <div class="join">
                             <img
@@ -15277,7 +15469,7 @@
                           </div>
                         </div>
                         <div class="chat_body">
-                          <ul page="match">
+                          <ul page="match" scroll>
                             <li class="chat" type="default">
                               <div class="user_wrap" change="false">
                                 <div value="20" class="badge-level">
@@ -15580,7 +15772,7 @@
                               </div>
                             </li>
                           </ul>
-                          <ul page="timeline">
+                          <ul page="timeline" class="hide" scroll>
                             <li class="chat" type="subscribe">
                               <div class="content_wrap">
                                 <div class="content_left">
@@ -16109,10 +16301,16 @@
                       <div class="chat_container" type="match">
                         <div class="chat_header">
                           <ul class="type">
-                            <li state="active" class="body-01-semibold button">
+                            <li
+                              state="active"
+                              id="match"
+                              class="body-01-semibold button"
+                            >
                               매치채팅
                             </li>
-                            <li class="body-01-semibold button">타임라인</li>
+                            <li id="timeline" class="body-01-semibold button">
+                              타임라인
+                            </li>
                           </ul>
                           <div class="join">
                             <img
@@ -16121,7 +16319,7 @@
                           </div>
                         </div>
                         <div class="chat_body">
-                          <ul page="match">
+                          <ul page="match" scroll>
                             <li class="chat" type="default">
                               <div class="user_wrap" change="false">
                                 <div value="20" class="badge-level">
@@ -16424,7 +16622,7 @@
                               </div>
                             </li>
                           </ul>
-                          <ul page="timeline">
+                          <ul page="timeline" class="hide" scroll>
                             <li class="chat" type="subscribe">
                               <div class="content_wrap">
                                 <div class="content_left">
@@ -17831,7 +18029,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -18616,7 +18814,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -18663,6 +18861,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -19764,7 +19991,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -20549,7 +20776,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -20596,6 +20823,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -21697,7 +21953,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -22482,7 +22738,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -22529,6 +22785,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -23630,7 +23915,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -24415,7 +24700,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -24462,6 +24747,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -25563,7 +25877,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -26348,7 +26662,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -26395,6 +26709,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -27496,7 +27839,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -28281,7 +28624,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -28328,6 +28671,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -28679,10 +29051,16 @@
                       <div class="chat_container" type="match">
                         <div class="chat_header">
                           <ul class="type">
-                            <li state="active" class="body-01-semibold button">
+                            <li
+                              state="active"
+                              id="match"
+                              class="body-01-semibold button"
+                            >
                               매치채팅
                             </li>
-                            <li class="body-01-semibold button">타임라인</li>
+                            <li id="timeline" class="body-01-semibold button">
+                              타임라인
+                            </li>
                           </ul>
                           <div class="join">
                             <img
@@ -28691,7 +29069,7 @@
                           </div>
                         </div>
                         <div class="chat_body">
-                          <ul page="match">
+                          <ul page="match" scroll>
                             <li class="chat" type="default">
                               <div class="user_wrap" change="false">
                                 <div value="20" class="badge-level">
@@ -28994,7 +29372,7 @@
                               </div>
                             </li>
                           </ul>
-                          <ul page="timeline">
+                          <ul page="timeline" class="hide" scroll>
                             <li class="chat" type="subscribe">
                               <div class="content_wrap">
                                 <div class="content_left">
@@ -29504,10 +29882,16 @@
                       <div class="chat_container" type="match">
                         <div class="chat_header">
                           <ul class="type">
-                            <li state="active" class="body-01-semibold button">
+                            <li
+                              state="active"
+                              id="match"
+                              class="body-01-semibold button"
+                            >
                               매치채팅
                             </li>
-                            <li class="body-01-semibold button">타임라인</li>
+                            <li id="timeline" class="body-01-semibold button">
+                              타임라인
+                            </li>
                           </ul>
                           <div class="join">
                             <img
@@ -29516,7 +29900,7 @@
                           </div>
                         </div>
                         <div class="chat_body">
-                          <ul page="match">
+                          <ul page="match" scroll>
                             <li class="chat" type="default">
                               <div class="user_wrap" change="false">
                                 <div value="20" class="badge-level">
@@ -29819,7 +30203,7 @@
                               </div>
                             </li>
                           </ul>
-                          <ul page="timeline">
+                          <ul page="timeline" class="hide" scroll>
                             <li class="chat" type="subscribe">
                               <div class="content_wrap">
                                 <div class="content_left">
@@ -31166,7 +31550,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -31951,7 +32335,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -31998,6 +32382,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -33039,7 +33452,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -33824,7 +34237,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -33871,6 +34284,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -34912,7 +35354,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -35697,7 +36139,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -35744,6 +36186,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -36785,7 +37256,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -37570,7 +38041,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -37617,6 +38088,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -38658,7 +39158,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -39443,7 +39943,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -39490,6 +39990,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -40531,7 +41060,7 @@
                               >
                             </div>
                           </div>
-                          <div class="roster_body">
+                          <div class="roster_body" scroll>
                             <div class="container">
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
@@ -41316,7 +41845,7 @@
                                 </li>
                               </ul>
                             </div>
-                            <div class="fragment row">
+                            <div class="fragment row" scroll>
                               <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
@@ -41363,6 +41892,35 @@
                                       <span
                                         class="body-01-regular text_accent-primary"
                                         >Venue</span
+                                      >
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header"></div>
+                                <ul class="table_wrap_body">
+                                  <li></li>
+                                </ul>
+                              </div>
+                              <div class="table_wrap">
+                                <div class="table_wrap_header">
+                                  <div class="th">
+                                    <span class="body-01-semibold">관중</span>
+                                  </div>
+                                </div>
+                                <ul class="table_wrap_body">
+                                  <li>
+                                    <div></div>
+                                    <div class="flag">
+                                      <img
+                                        src="../static/images/Icon/attendance-light.svg"
+                                      />
+                                    </div>
+                                    <div class="player">
+                                      <span
+                                        class="body-01-regular text_accent-primary"
+                                        >0</span
                                       >
                                     </div>
                                   </li>
@@ -41446,10 +42004,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
   <script>
     // 스크롤바 초기화
-    new PerfectScrollbar(document.querySelector("body"));
-    new PerfectScrollbar(document.querySelector(".chat_body"));
-    new PerfectScrollbar(document.querySelector(".league-table_body"));
-    new PerfectScrollbar(document.querySelector(".roster_body"));
+    const scrollElements = document.querySelectorAll("*[scroll]");
+
+    for (let i = 0; i < scrollElements.length; i++) {
+      new PerfectScrollbar(scrollElements[i]);
+    }
   </script>
   <script src="../scripts/header.js"></script>
   <script src="../scripts/dropdown.js"></script>

@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="../static/css/header.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
   </head>
-  <body>
+  <body scroll>
     <!-- Header -->
     <header id="header">
       <div class="header_container">
@@ -3614,7 +3614,7 @@
                     >
                   </div>
                 </div>
-                <div class="roster_body">
+                <div class="roster_body" scroll>
                   <div class="container">
                     <div class="table_wrap">
                       <div class="table_wrap_header">
@@ -5753,7 +5753,7 @@
                     >
                   </div>
                 </div>
-                <div class="roster_body">
+                <div class="roster_body" scroll>
                   <div class="container">
                     <div class="table_wrap">
                       <div class="table_wrap_header">
@@ -12442,10 +12442,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
   <script>
     // 스크롤바 초기화
-    new PerfectScrollbar(document.querySelector("body"));
-    new PerfectScrollbar(document.querySelector(".chat_body"));
-    new PerfectScrollbar(document.querySelector(".league-table_body"));
-    new PerfectScrollbar(document.querySelector(".roster_body"));
+    const scrollElements = document.querySelectorAll("*[scroll]");
+
+    for (let i = 0; i < scrollElements.length; i++) {
+      new PerfectScrollbar(scrollElements[i]);
+    }
   </script>
   <script src="../scripts/header.js"></script>
   <script src="../scripts/dropdown.js"></script>

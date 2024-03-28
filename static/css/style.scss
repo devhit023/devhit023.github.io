@@ -459,6 +459,7 @@
       }
       .table_body {
         height: 400px;
+        position: relative;
       }
     }
   }
@@ -707,7 +708,6 @@
               width: 20px;
               height: 20px;
               position: relative;
-              overflow: hidden;
 
               &.gold {
                 color: var(--decorative-user-user-shop, #a15c07);
@@ -1241,8 +1241,21 @@
                   background-repeat: no-repeat;
                   background-position: center;
                   background-size: 24px 24px;
+                  border-radius: var(--radius-radius-md, 10px);
 
                   &:hover {
+                    background-color: var(
+                      --interactive-button-button-close-hover,
+                      #d92d20
+                    );
+                    background-image: url("../images/Icon/close-hover-light.svg");
+                  }
+
+                  &:active {
+                    background-color: var(
+                      --interactive-button-button-close-press,
+                      #f97066
+                    );
                     background-image: url("../images/Icon/close-hover-light.svg");
                   }
                 }
@@ -1987,7 +2000,6 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  overflow: hidden;
                   &.drop {
                     color: var(--text-odds-text-odds-drop, #d92d20);
                     &::after {
@@ -2279,9 +2291,9 @@
             ::after {
               content: "";
               position: absolute;
-              bottom: -1px;
+              bottom: -2px;
               left: 0;
-              height: 3px;
+              height: 4px;
               width: 100%;
               background-color: var(--background-background-primary);
             }
@@ -2341,7 +2353,6 @@
                 background-image: url("../../livescore_v6.0.1/images/icons/light-mode/default/formation-ground.png");
                 background-repeat: no-repeat;
                 background-size: 850px 402px;
-                overflow: hidden;
                 -webkit-border-radius: var(--radius-radius-md, 10px);
                 -moz-border-radius: var(--radius-radius-md, 10px);
                 -ms-border-radius: var(--radius-radius-md, 10px);
@@ -2433,7 +2444,6 @@
                 width: 420px;
                 border-radius: var(--radius-radius-md, 10px);
                 border: 1px solid var(--border-border-window, #b1b3bb);
-                overflow: hidden;
                 .stat_wrap {
                   .stat_wrap_header {
                     display: flex;
@@ -2555,6 +2565,7 @@
               flex-shrink: 0;
               border-radius: var(--radius-radius-md, 10px);
               border: 1px solid var(--border-border-window, #b1b3bb);
+              box-sizing: content-box;
               overflow: hidden;
               > .roster_header {
                 display: flex;
@@ -2586,8 +2597,8 @@
                 display: flex;
                 flex-direction: column;
                 gap: var(--spacing-spacing-layout-lg);
-                overflow: auto;
                 width: 100%;
+                height: 580px;
                 > .container {
                   > .table_wrap {
                     .table_wrap_body {
@@ -2663,10 +2674,11 @@
                   }
                 }
                 > .fragment {
+                  position: relative;
                   width: 850px;
                   & > .table_wrap:nth-child(2n) {
                     flex: none;
-                    width: var(--spacing-spacing-layout-sm, 10px);
+                    min-width: var(--spacing-spacing-layout-sm, 10px);
                   }
                 }
               }
@@ -2679,7 +2691,11 @@
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+                min-width: 420px;
                 .table_wrap_header {
+                  position: -webkit-sticky;
+                  position: sticky;
+                  top: 0;
                   height: 40px;
                   display: flex;
                   flex-direction: row;
@@ -2701,7 +2717,7 @@
                     justify-content: space-between;
                     color: var(--text-base-text-accent-primary, #2b2e39);
                     & > div {
-                      width: 70px;
+                      width: 69px;
                       display: flex;
                       justify-content: center;
                       align-items: center;
@@ -3645,7 +3661,6 @@
         }
       }
       > .live-tracer_container_right {
-        overflow: hidden;
         > .tracker-stat_container {
           > .quarter_container {
             display: flex;
@@ -4208,7 +4223,6 @@
               border-radius: var(--radius-radius-md, 10px);
               border: 1px solid var(--border-border-window, #b1b3bb);
               margin-top: var(--spacing-spacing-layout-2xl, 30px);
-              overflow: hidden;
               > .note_wrap {
                 display: flex;
                 justify-content: center;
@@ -6728,7 +6742,6 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% 400px;
-      overflow: hidden;
       padding: var(--spacing-spacing-layout-lg)
         var(--spacing-spacing-layout-2xl);
       border-style: solid;
@@ -6819,7 +6832,6 @@
       flex-direction: column;
       align-items: center;
       flex-shrink: 0;
-      overflow: hidden;
       box-sizing: content-box;
       > .roster_header {
         display: flex;
@@ -6932,7 +6944,6 @@
     }
     .match-info_container {
       display: flex;
-      overflow: hidden;
       margin-top: var(--spacing-spacing-layout-lg, 20px);
       > .container {
         display: flex;
@@ -8257,7 +8268,6 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% 400px;
-      overflow: hidden;
       padding: var(--spacing-spacing-layout-lg)
         var(--spacing-spacing-layout-2xl);
       border-style: solid;
@@ -8348,7 +8358,6 @@
       flex-direction: column;
       align-items: center;
       flex-shrink: 0;
-      overflow: hidden;
       box-sizing: content-box;
       > .roster_header {
         display: flex;
@@ -8443,7 +8452,6 @@
     }
     .match-info_container {
       display: flex;
-      overflow: hidden;
       margin-top: var(--spacing-spacing-layout-lg, 20px);
       > .container {
         display: flex;
@@ -9683,7 +9691,6 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% 400px;
-      overflow: hidden;
       padding: var(--spacing-spacing-layout-lg)
         var(--spacing-spacing-layout-2xl);
       border-style: solid;
@@ -9774,7 +9781,6 @@
       flex-direction: column;
       align-items: center;
       flex-shrink: 0;
-      overflow: hidden;
       box-sizing: content-box;
       > .roster_header {
         display: flex;
@@ -9888,7 +9894,6 @@
     }
     .match-info_container {
       display: flex;
-      overflow: hidden;
       margin-top: var(--spacing-spacing-layout-lg, 20px);
       > .container {
         display: flex;
@@ -10662,7 +10667,6 @@
       0px 2px 4px -2px rgba(25, 28, 38, 0.06),
       0px 4px 8px -2px rgba(25, 28, 38, 0.1)
     );
-    overflow: hidden;
     z-index: 999;
   }
 
@@ -10676,15 +10680,15 @@
   }
 
   .chat_footer > .emoticon:hover {
-    background: url("../images/Icon/emoticon-hover-dark.svg") no-repeat;
+    background-image: url("../images/Icon/emoticon-hover-dark.svg");
   }
 
   .chat_footer > .emoticon:active {
-    background: url("../images/Icon/emoticon-press-dark.svg") no-repeat;
+    background-image: url("../images/Icon/emoticon-press-dark.svg");
   }
 
   .chat_footer > .emoticon[change="true"] {
-    background: url("../images/Icon/emoticon-enabled-dark.svg") no-repeat;
+    background-image: url("../images/Icon/emoticon-enabled-dark.svg");
   }
 }
 
