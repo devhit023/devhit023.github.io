@@ -131,11 +131,11 @@ html[data-theme="dark"] .match[type="alarm"][change="true"] {
 }
 
 
-.match[type="alarm"][change="true"][state="press"] {
+.match[type="alarm"][change="true"]:active {
     background-image: url("../images/Icon/alarm-on-press-light.svg");
 }
 
-html[data-theme="dark"] .match[type="alarm"][change="true"][state="press"] {
+html[data-theme="dark"] .match[type="alarm"][change="true"]:active {
     background-image: url("../images/Icon/alarm-on-press-dark.svg");
 }
 
@@ -147,11 +147,11 @@ html[data-theme="dark"] .match[type="alarm"][change="false"] {
     background-image: url("../images/Icon/alarm-off-default-dark.svg");
 }
 
-.match[type="alarm"][change="false"][state="press"] {
+.match[type="alarm"][change="false"]:active {
     background-image: url("../images/Icon/alarm-off-press-light.svg");
 }
 
-html[data-theme="dark"] .match[type="alarm"][change="false"][state="press"] {
+html[data-theme="dark"] .match[type="alarm"][change="false"]:active {
     background-image: url("../images/Icon/alarm-off-press-dark.svg");
 }
 
@@ -197,11 +197,11 @@ html[data-theme="dark"] .match[type="bookmark"][change="false"] {
     background-image: url("../images/Icon/bookmark-off-dark.svg");
 }
 
-.match[type="bookmark"][change="false"][state="press"] {
+.match[type="bookmark"][change="false"]:active {
     background-image: url("../images/Icon/bookmark-add-light.svg");
 }
 
-html[data-theme="dark"] .match[type="bookmark"][change="false"][state="press"] {
+html[data-theme="dark"] .match[type="bookmark"][change="false"]:active {
     background-image: url("../images/Icon/bookmark-add-dark.svg");
 }
 
@@ -213,11 +213,11 @@ html[data-theme="dark"] .match[type="bookmark"][change="true"] {
     background-image: url("../images/Icon/bookmark-on-dark.svg");
 }
 
-.match[type="bookmark"][change="true"][state="press"] {
+.match[type="bookmark"][change="true"]:active {
     background-image: url("../images/Icon/bookmark-remove-light.svg");
 }
 
-html[data-theme="dark"] .match[type="bookmark"][change="true"][state="press"] {
+html[data-theme="dark"] .match[type="bookmark"][change="true"]:active {
     background-image: url("../images/Icon/bookmark-remove-dark.svg");
 }
 
@@ -407,13 +407,5 @@ html[data-theme="dark"] .match[type="lineup"][change="false"] {
 }
 
 html[data-theme="dark"] .match[type="lineup"][change="true"] {
-    background-image: url("../images/Icon/lineup-on-dark.svg");
-}
-
-.match[type="lineup"][status="true"] {
-    background-image: url("../images/Icon/lineup-on-light.svg");
-}
-
-html[data-theme="dark"] .match[type="lineup"][status="true"] {
     background-image: url("../images/Icon/lineup-on-dark.svg");
 }

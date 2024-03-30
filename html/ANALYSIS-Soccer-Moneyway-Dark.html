@@ -262,8 +262,8 @@
             <div class="container">
               <div class="mode_content">
                 <div class="toggle_wrap">
-                  <input type="checkbox" id="lightmode" checked />
-                  <label for="lightmode"></label>
+                  <input type="checkbox" id="darkmode" />
+                  <label for="darkmode"></label>
                 </div>
                 <span class="body-01-regular">라이트모드</span>
               </div>
@@ -1707,49 +1707,49 @@
               <li class="box sport">
                 <img src="../static/images/Icon/hockey.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">하키</span>
                 </div>
               </li>
               <li class="box sport">
                 <img src="../static/images/Icon/volleyball.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">배구</span>
                 </div>
               </li>
               <li class="box sport">
                 <img src="../static/images/Icon/tennis.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">테니스</span>
                 </div>
               </li>
               <li class="box sport">
                 <img src="../static/images/Icon/football.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">미식축구</span>
                 </div>
               </li>
               <li class="box sport">
                 <img src="../static/images/Icon/sc2-dark.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">스타2</span>
                 </div>
               </li>
               <li class="box sport">
                 <img src="../static/images/Icon/lol-dark.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">롤</span>
                 </div>
               </li>
               <li class="box sport">
                 <img src="../static/images/Icon/dota2-dark.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">도타2</span>
                 </div>
               </li>
               <li class="box sport dot">
                 <img src="../static/images/Icon/dice-dark.png" />
                 <div class="content">
-                  <span class="body-02-semibold">라이브</span>
+                  <span class="body-02-semibold">다이스</span>
                 </div>
               </li>
             </ul>
@@ -1931,7 +1931,7 @@
                 </div>
               </div>
               <div class="box_body">
-                <div class="prediction-tip_box" state="rock">
+                <div class="prediction-tip_box" status="rock">
                   <div class="container">
                     <div class="kickoff_content">
                       <span class="body-01-regular">ENG PR</span>
@@ -1957,7 +1957,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="prediction-tip_box" state="rock">
+                <div class="prediction-tip_box" status="rock">
                   <div class="container">
                     <div class="kickoff_content">
                       <span class="body-01-regular">ENG PR</span>
@@ -2001,15 +2001,19 @@
                       <span class="heading-01-semibold">베팅 거래량</span>
                     </div>
                     <ul class="menu-list">
-                      <li
-                        id="moneyway"
-                        state="active"
-                        class="button body-01-semibold"
-                      >
-                        선호
+                      <li id="moneyway">
+                        <div
+                          active-background="true"
+                          state="active"
+                          class="button"
+                        >
+                          <span class="body-01-semibold">선호</span>
+                        </div>
                       </li>
-                      <li id="dropping-odds" class="button body-01-semibold">
-                        급락
+                      <li id="dropping-odds">
+                        <div active-background="true" class="button">
+                          <span class="body-01-semibold">급락</span>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -3397,15 +3401,19 @@
                       <span class="heading-01-semibold">베팅 거래량</span>
                     </div>
                     <ul class="menu-list">
-                      <li id="moneyway" class="button body-01-semibold">
-                        선호
+                      <li id="moneyway">
+                        <div active-background="true" class="button">
+                          <span class="body-01-semibold">선호</span>
+                        </div>
                       </li>
-                      <li
-                        id="dropping-odds"
-                        state="active"
-                        class="button body-01-semibold"
-                      >
-                        급락
+                      <li id="dropping-odds">
+                        <div
+                          active-background="true"
+                          state="active"
+                          class="button"
+                        >
+                          <span class="body-01-semibold">급락</span>
+                        </div>
                       </li>
                     </ul>
                   </div>

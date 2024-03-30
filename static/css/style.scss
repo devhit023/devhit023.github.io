@@ -168,13 +168,6 @@
                   0px 2px 2px 0px rgba(25, 28, 38, 0.06),
                   0px 2px 4px 0px rgba(25, 28, 38, 0.1)
                 );
-
-                &:hover {
-                  background: var(
-                    --decorative-user-user-notification-hover,
-                    #c01048
-                  );
-                }
               }
 
               &[type="default"] {
@@ -184,10 +177,6 @@
                 border-color: var(--border-border-default, #d3d4d9);
                 border-width: 1px;
                 box-shadow: none;
-
-                &:hover {
-                  background: var(--background-background-tertiary, #ededef);
-                }
               }
 
               &[type="gold"] {
@@ -199,8 +188,23 @@
                   0px 2px 2px 0px rgba(25, 28, 38, 0.06),
                   0px 2px 4px 0px rgba(25, 28, 38, 0.1)
                 );
+              }
+            }
 
-                &:hover {
+            &:hover {
+              > .notification {
+                &[type="error"] {
+                  background: var(
+                    --decorative-user-user-notification-hover,
+                    #c01048
+                  );
+                }
+
+                &[type="default"] {
+                  background: var(--background-background-tertiary, #ededef);
+                }
+
+                &[type="gold"] {
                   background: var(--decorative-user-user-gold-hover, #fac515);
                 }
               }
@@ -549,7 +553,17 @@
   width: 70px;
 }
 
-.league-table .league-table_body .table .table_body .td > {
+.league-table .league-table_body .table .table_body .td {
+  .tooltip_wrap {
+    > .rank_wrap + .tooltip {
+      left: 0;
+      padding: 0px var(--spacing-spacing-layout-md, 15px);
+      &::after {
+        left: 9.5px;
+      }
+    }
+  }
+
   .rank_wrap {
     display: inline-flex;
     justify-content: center;
@@ -763,22 +777,28 @@
         background: var(--interactive-button-button-primary-enabled, #0059c2);
         border-radius: var(--radius-radius-md, 10px);
         opacity: 0.75;
-        width: 100%;
-        height: 100%;
+        width: 90px;
+        height: 80px;
       }
 
       &[state="enabled"] > .content {
         visibility: visible;
       }
 
-      &:hover > .content {
-        visibility: visible;
-        background: var(--interactive-button-button-primary-hover, #0075f4);
+      &:hover {
+        border-width: 0;
+        > .content {
+          visibility: visible;
+          background: var(--interactive-button-button-primary-hover, #0075f4);
+        }
       }
 
-      &:active > .content {
-        visibility: visible;
-        background: var(--interactive-button-button-primary-press, #0051a8);
+      &:active {
+        border-width: 0;
+        > .content {
+          visibility: visible;
+          background: var(--interactive-button-button-primary-press, #0051a8);
+        }
       }
 
       &.dot::after {
@@ -985,7 +1005,6 @@
         color: var(--text-base-text-primary, #393d48);
         width: 180px;
         height: 160px;
-
         > .container {
           display: flex;
           flex-direction: column;
@@ -1013,31 +1032,60 @@
           }
         }
 
-        &[state="rock"] {
+        &::before {
+          content: "";
+          display: block;
+          border-radius: 10px;
+          -webkit-backdrop-filter: var(--blur-tips-filter, blur(4px));
+          backdrop-filter: var(--blur-tips-filter, blur(4px));
+          -webkit-filter: var(--blur-tips-filter, blur(4px));
+          filter: var(--blur-tips-filter, blur(4px));
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity linear 0.5s;
+          -webki-transition: opacity linear 0.5s;
+          -moz-transition: opacity linear 0.5s;
+          -ms-transition: opacity linear 0.5s;
+          -o-transition: opacity linear 0.5s;
+          -webkit-transition: opacity linear 0.5s;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          background-image: url("../images/Icon/lock-light.svg");
+          background-size: 48px 48px;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0;
+          transition: opacity linear 0.5s;
+          -webki-transition: opacity linear 0.5s;
+          -moz-transition: opacity linear 0.5s;
+          -ms-transition: opacity linear 0.5s;
+          -o-transition: opacity linear 0.5s;
+          -webkit-transition: opacity linear 0.5s;
+        }
+
+        &[status="rock"] {
+          cursor: pointer;
           &::before {
-            content: "";
-            display: block;
-            border-radius: 10px;
-            -webkit-backdrop-filter: var(--blur-tips-filter, blur(4px));
-            backdrop-filter: var(--blur-tips-filter, blur(4px));
-            -webkit-filter: var(--blur-tips-filter, blur(4px));
-            filter: var(--blur-tips-filter, blur(4px));
-            position: absolute;
-            width: 100%;
-            height: 100%;
+            opacity: 1;
           }
 
           &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            background-image: url("../images/Icon/lock-light.svg");
-            background-size: 48px 48px;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
+            opacity: 1;
+          }
+
+          &:hover {
+            &::after {
+              background-image: url("../images/Icon/unlock-light.svg");
+            }
           }
         }
       }
@@ -1048,9 +1096,15 @@
   &.prediction-tips > {
     .box_body {
       .prediction-tip_box {
-        &[state="rock"] {
+        &[status="rock"] {
           &::after {
             background-image: url("../images/Icon/lock-dark.svg");
+          }
+
+          &:hover {
+            &::after {
+              background-image: url("../images/Icon/unlock-light.svg");
+            }
           }
         }
       }
@@ -1095,6 +1149,13 @@
     align-items: center;
     width: 140px;
     height: 50px;
+    > .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 40px;
+    }
   }
 
   .table_search_container_middle {
@@ -1499,6 +1560,13 @@
           border-style: solid;
           border-color: var(--border-border-window, #b1b3bb);
           border-bottom-width: 1px;
+          cursor: pointer;
+          &:hover {
+            background: var(
+              --background-background-row-hover,
+              rgba(243, 255, 64, 0.5)
+            );
+          }
           > .odds_wrap {
             flex: 1;
             display: flex;
@@ -1514,9 +1582,34 @@
               border-right-width: 1px;
             }
             > .content {
+              position: relative;
               flex: 1;
               display: inline-flex;
               align-items: center;
+              &.drop {
+                color: var(--text-odds-text-odds-drop, #d92d20);
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: -18px;
+                  background-image: url("../images/Icon/drop-movement-light.svg");
+                  background-repeat: no-repeat;
+                  width: 18px;
+                  height: 18px;
+                }
+              }
+              &.rise {
+                color: var(--text-odds-text-odds-rise, #079455);
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: -18px;
+                  background-image: url("../images/Icon/rise-movement-light.svg");
+                  background-repeat: no-repeat;
+                  width: 18px;
+                  height: 18px;
+                }
+              }
             }
           }
         }
@@ -1795,6 +1888,16 @@
       .table_body > {
         ul > li {
           .td {
+            > .league_wrap {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              &:lang(ko) {
+                flex-direction: column;
+              }
+            }
             &:nth-child(1) {
               width: 70px;
 
@@ -1808,6 +1911,7 @@
               color: var(--text-base-text-inverse);
               background-color: #f90000;
               padding: 0;
+              cursor: pointer;
               .image_wrap {
                 width: 34px;
                 > img {
@@ -4276,6 +4380,8 @@
               > .matchup_container {
                 display: flex;
                 flex-direction: row;
+                border-top-left-radius: var(--radius-radius-md, 10px);
+                border-bottom-left-radius: var(--radius-radius-md, 10px);
                 > .bookmark,
                 .lineup {
                   width: 70px;
@@ -4451,6 +4557,7 @@
                     &:first-child {
                       color: var(--text-odds-text-odds-wager, #0075f4);
                       background: var(--background-background-primary, #fff);
+                      border-bottom-left-radius: var(--radius-radius-md, 10px);
                     }
                     &:nth-child(2) {
                       color: var(--background-background-odds-drop, #f3ff40);
@@ -4462,6 +4569,7 @@
                         --background-background-odds-drop,
                         #f3ff40
                       );
+                      border-bottom-right-radius: var(--radius-radius-md, 10px);
                     }
                   }
                 }
@@ -4538,6 +4646,7 @@
                     color: var(--text-base-text-inverse, #fff);
                     &:first-child {
                       background: var(--text-odds-text-odds-drop, #d92d20);
+                      border-bottom-left-radius: var(--radius-radius-md, 10px);
                     }
                     &:nth-child(2) {
                       background: var(--text-odds-text-odds-drop-30, #f79009);
@@ -4547,6 +4656,7 @@
                     }
                     &:last-child {
                       background: var(--text-odds-text-odds-rise-70, #6941c6);
+                      border-bottom-right-radius: var(--radius-radius-md, 10px);
                     }
                   }
                 }
@@ -4742,6 +4852,7 @@
                   border-style: solid;
                   border-color: var(--border-border-window, #b1b3bb);
                   border-bottom-width: 1px;
+                  cursor: pointer;
                   > .odds_wrap {
                     flex: 1;
                     display: flex;
@@ -4785,6 +4896,13 @@
                         }
                       }
                     }
+                  }
+                  &:hover {
+                    background: var(
+                      --background-background-row-hover,
+                      rgba(243, 255, 64, 0.5)
+                    );
+                    border-top-right-radius: var(--radius-radius-md, 10px);
                   }
                 }
                 > .vote_container {
@@ -5449,7 +5567,7 @@
                 border-bottom: 1px solid var(--border-border-window, #b1b3bb);
               }
             }
-            &[state="rock"] {
+            &[status="rock"] {
               &::before {
                 content: "";
                 display: block;
@@ -5646,7 +5764,7 @@
       .table_body {
         > ul {
           > li {
-            &[state="rock"] {
+            &[status="rock"] {
               &::after {
                 background-image: url("../images/Icon/lock-dark.svg");
               }
@@ -10667,7 +10785,7 @@
       0px 2px 4px -2px rgba(25, 28, 38, 0.06),
       0px 4px 8px -2px rgba(25, 28, 38, 0.1)
     );
-    z-index: 999;
+    z-index: 9999;
   }
 
   .chat_footer > .emoticon > .emoticon_container {

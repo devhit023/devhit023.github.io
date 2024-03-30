@@ -20,7 +20,7 @@
 .radio_wrap input[type="radio"]:not(:checked)+label::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 0;
     width: 18px;
     height: 18px;
@@ -33,11 +33,11 @@
     background-image: url("../images/Icon/radiobutton-disabled-dark.svg");
 }
 
-.radio_wrap:hover input[type="radio"]:not(:checked)+label::before {
+.radio_wrap input[type="radio"]:hover:not(:checked)+label::before {
     background-image: url("../images/Icon/radiobutton-hover-light.svg");
 }
 
-[data-theme="dark"] .radio_wrap:hover input[type="radio"]:not(:checked)+label::before {
+[data-theme="dark"] .radio_wrap input[type="radio"]:hover:not(:checked)+label::before {
     background-image: url("../images/Icon/radiobutton-hover-dark.svg");
 }
 
