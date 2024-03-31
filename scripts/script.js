@@ -466,8 +466,10 @@ $(document).ready(function () {
   });
 
   // vote_container
-  $(".vote_container").click(function () {
-    $(this).parent().children(".vote_container.hide").removeClass("hide");
-    $(this).addClass("hide");
+  $(".vote_container").click(function (e) {
+    if ($(this).parent().children(".vote_container.hide").length() > 0) {
+      $(this).parent().children(".vote_container.hide").removeClass("hide");
+      $(this).addClass("hide");
+    }
   });
 });
