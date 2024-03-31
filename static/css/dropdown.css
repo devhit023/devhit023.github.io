@@ -15,7 +15,8 @@
     padding-left: var(--spacing-spacing-layout-md);
     cursor: pointer;
 }
-.dropdown_wrap>.dropdown_button > *:not(.dropdown-icon_wrap) {
+
+.dropdown_wrap>.dropdown_button>*:not(.dropdown-icon_wrap) {
     width: 100%;
 }
 
@@ -110,6 +111,7 @@
 
 .dropdown_wrap[change="true"] .dropdown-menu {
     display: flex;
+    overflow-x: hidden;
 }
 
 .dropdown-menu .dropdown-menu_list>.dropdown-menu_item {

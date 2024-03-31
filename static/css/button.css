@@ -244,11 +244,21 @@ html[data-theme="dark"] .match[type="information"] {
     background-color: var(--background-background-live-score, #f3ff40);
     border-radius: var(--radius-radius-lg, 20px);
     background-image: url("../images/Icon/information-on-light.svg");
+    -webkit-border-radius: var(--radius-radius-lg, 20px);
+    -moz-border-radius: var(--radius-radius-lg, 20px);
+    -ms-border-radius: var(--radius-radius-lg, 20px);
+    -o-border-radius: var(--radius-radius-lg, 20px);
 }
 
-html[data-theme="dark"] .match_wrap:hover .match[type="information"] {
+.match[type="information"]:hover {
+    background-image: url("../images/Icon/information-on-light.svg");
+}
+
+html[data-theme="dark"] .match_wrap:hover .match[type="information"],
+html[data-theme="dark"] .match[type="information"]:hover {
     background-image: url("../images/Icon/information-on-dark.svg");
 }
+
 
 /* button - match[type="youtube"] */
 .match[type="youtube"] {

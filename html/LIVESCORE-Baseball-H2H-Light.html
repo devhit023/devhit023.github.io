@@ -344,8 +344,8 @@
                       <span class="body-01-regular">0.00</span>
                     </div>
                   </li>
-                  <li>
-                    <div class="td stat">
+                  <li class="border-bottom">
+                    <div class="td stat border-bottom-left">
                       <span class="body-01-regular"> VS </span>
                       <span class="body-01-semibold"> 콜로라도 </span>
                     </div>
@@ -361,7 +361,7 @@
                     <div class="td wl">
                       <span class="body-01-regular">0승 0패</span>
                     </div>
-                    <div class="td whip">
+                    <div class="td whip border-bottom-right">
                       <span class="body-01-regular">0.00</span>
                     </div>
                   </li>
@@ -565,8 +565,8 @@
                       <span class="body-01-regular">0.00</span>
                     </div>
                   </li>
-                  <li>
-                    <div class="td stat">
+                  <li class="border-bottom">
+                    <div class="td stat border-bottom-left">
                       <span class="body-01-regular"> VS </span>
                       <span class="body-01-semibold"> 콜로라도 </span>
                     </div>
@@ -582,7 +582,7 @@
                     <div class="td wl">
                       <span class="body-01-regular">0승 0패</span>
                     </div>
-                    <div class="td whip">
+                    <div class="td whip border-bottom-right">
                       <span class="body-01-regular">0.00</span>
                     </div>
                   </li>
@@ -656,10 +656,20 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">League</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >League</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >리그</span
+                  >
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">날짜</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >날짜</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >시작</span
+                  >
                 </div>
                 <div class="th">
                   <span class="body-01-semibold">홈팀</span>
@@ -687,20 +697,28 @@
                 <ul>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -719,13 +737,18 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">22-12-02</span>
@@ -749,20 +772,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -781,20 +812,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -813,20 +852,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -845,20 +892,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -877,20 +932,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -909,20 +972,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -941,20 +1012,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -973,20 +1052,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1038,7 +1125,7 @@
             </div>
           </div>
           <div class="box content" style="height: 50px">
-            <div class="fragment row">
+            <div class="fragment row odds_container" status="default">
               <div class="fragment column odds_item">
                 <span class="body-01-regular">1.55</span>
                 <span class="body-01-semibold drop">1.50</span>
@@ -1052,32 +1139,76 @@
                 <span class="body-01-semibold rise">1.50</span>
               </div>
             </div>
+            <div class="fragment row odds_container hide" status="press">
+              <div class="fragment column odds_item">
+                <span class="body-01-regular">1.55</span>
+                <span class="body-01-semibold drop">1.50</span>
+              </div>
+              <div class="fragment column center odds_item">
+                <span class="body-01-regular">1.55</span>
+              </div>
+              <div class="fragment column odds_item">
+                <span class="body-01-regular">1.55</span>
+                <span class="body-01-semibold rise">1.50</span>
+              </div>
+            </div>
             <div class="fragment row vote_container">
               <div class="vote_wrap">
-                <div class="vote_item">
-                  <span class="body-01-semibold">홈</span>
-                  <div class="fragment row">
-                    <span class="body-03-semibold">+100</span>
-                    <span class="body-03-semibold">P</span>
+                <button type="vote">
+                  <div class="default_content">
+                    <span class="body-01-semibold">홈</span>
+                    <div class="content">
+                      <span class="body-03-semibold">+100</span>
+                      <span class="body-03-semibold">P</span>
+                    </div>
                   </div>
-                </div>
+                  <div class="active_content">
+                    <span class="body-01-semibold">건승</span>
+                  </div>
+                </button>
               </div>
               <div class="vote_wrap">
-                <div class="vote_item">
-                  <span class="body-01-semibold">무</span>
-                  <div class="fragment row">
-                    <span class="body-03-semibold">+100</span>
-                    <span class="body-03-semibold">P</span>
+                <button type="vote">
+                  <div class="default_content">
+                    <span class="body-01-semibold">무</span>
+                    <div class="content">
+                      <span class="body-03-semibold">+100</span>
+                      <span class="body-03-semibold">P</span>
+                    </div>
                   </div>
-                </div>
+                  <div class="active_content">
+                    <span class="body-01-semibold">건승</span>
+                  </div>
+                </button>
               </div>
               <div class="vote_wrap">
-                <div class="vote_item">
-                  <span class="body-01-semibold">원정</span>
-                  <div class="fragment row">
-                    <span class="body-03-semibold">+100</span>
-                    <span class="body-03-semibold">P</span>
+                <button type="vote">
+                  <div class="default_content">
+                    <span class="body-01-semibold">원정</span>
+                    <div class="content">
+                      <span class="body-03-semibold">+100</span>
+                      <span class="body-03-semibold">P</span>
+                    </div>
                   </div>
+                  <div class="active_content">
+                    <span class="body-01-semibold">건승</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="fragment row vote_container hide" type="bar">
+              <div class="vote_wrap">
+                <div class="content" type="home">
+                  <span class="body-01-semibold">80%</span>
+                  <div class="bar"></div>
+                </div>
+                <div class="content" type="draw">
+                  <span class="body-01-semibold">10%</span>
+                  <div class="bar"></div>
+                </div>
+                <div class="content" type="away">
+                  <span class="body-01-semibold">10%</span>
+                  <div class="bar"></div>
                 </div>
               </div>
             </div>
@@ -1145,10 +1276,20 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">League</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >League</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >리그</span
+                  >
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">날짜</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >날짜</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >시작</span
+                  >
                 </div>
                 <div class="th">
                   <span class="body-01-semibold">홈팀</span>
@@ -1176,20 +1317,28 @@
                 <ul>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1208,13 +1357,18 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">22-12-02</span>
@@ -1240,13 +1394,18 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">22-12-02</span>
@@ -1272,20 +1431,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1304,20 +1471,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1336,20 +1511,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1368,20 +1551,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1400,20 +1591,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1432,20 +1631,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1464,20 +1671,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1496,20 +1711,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1528,20 +1751,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1560,20 +1791,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1592,20 +1831,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1624,20 +1871,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1656,20 +1911,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1688,20 +1951,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1720,20 +1991,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1752,20 +2031,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1784,20 +2071,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1909,10 +2204,20 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">League</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >League</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >리그</span
+                  >
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">날짜</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >날짜</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >시작</span
+                  >
                 </div>
                 <div class="th">
                   <span class="body-01-semibold">홈팀</span>
@@ -1940,20 +2245,28 @@
                 <ul>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -1972,13 +2285,18 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">22-12-02</span>
@@ -2004,13 +2322,18 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">22-12-02</span>
@@ -2036,20 +2359,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2068,20 +2399,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2100,20 +2439,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2132,20 +2479,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2164,20 +2519,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2196,20 +2559,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2228,20 +2599,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2260,20 +2639,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2292,20 +2679,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2324,20 +2719,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2356,20 +2759,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2388,20 +2799,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2420,20 +2839,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2452,20 +2879,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2484,20 +2919,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2516,20 +2959,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2548,20 +2999,28 @@
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
-                      <span class="body-01-regular">22-12-02</span>
+                      <span class="body-01-regular" type="date">22-12-02</span>
+                      <span class="body-01-regular hide" type="time"
+                        >22:00</span
+                      >
                     </div>
                     <div class="td">
-                      <span class="body-01-regular text_odds-drop"
-                        >LA 다저스</span
+                      <span class="body-01-semibold text_odds-drop"
+                        >맨체스터 시티</span
                       >
                     </div>
                     <div class="td">
@@ -2631,7 +3090,12 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">League</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >League</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >리그</span
+                  >
                 </div>
                 <div class="th">
                   <span class="body-01-semibold">날짜</span>
@@ -2659,13 +3123,18 @@
                 <ul>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2683,26 +3152,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2720,26 +3191,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2757,26 +3230,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2794,26 +3269,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="border-bottom">
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2831,15 +3308,12 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -2863,7 +3337,12 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="body-01-semibold">League</span>
+                  <span class="button body-01-semibold" state="disabled"
+                    >League</span
+                  >
+                  <span class="button body-01-semibold hide" state="enabled"
+                    >리그</span
+                  >
                 </div>
                 <div class="th">
                   <span class="body-01-semibold">날짜</span>
@@ -2891,13 +3370,18 @@
                 <ul>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2915,26 +3399,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2952,26 +3438,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -2989,26 +3477,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -3026,26 +3516,28 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="border-bottom">
                     <div class="td">
-                      <img src="../static/images/Icon/bookmark-off-light.svg" />
+                      <i type="bookmark" change="false" class="match"></i>
                     </div>
                     <div class="td">
-                      <div class="image_wrap">
-                        <img src="../static/images/temp/England_S1 1.png" />
+                      <div class="league_wrap" lang="en">
+                        <div class="image_wrap">
+                          <img src="../static/images/temp/England_S1 1.png" />
+                        </div>
+                        <span class="body-01-semibold">MLB</span>
                       </div>
-                      <span class="body-01-semibold">ENG PR</span>
+                      <div class="league_wrap hide" lang="ko">
+                        <span class="body-01-semibold">메이저리그</span>
+                      </div>
                     </div>
                     <div class="td">
                       <span class="body-01-regular">12-02</span>
@@ -3063,15 +3555,12 @@
                       <span class="body-01-regular">콜로라도</span>
                     </div>
                     <div class="td">
-                      <img
-                        name="information-off"
-                        src="../static/images/Icon/information-off-light.svg"
-                      />
-                      <img
-                        class="hide"
-                        name="information-on"
-                        src="../static/images/Icon/information-on-light.svg"
-                      />
+                      <div class="tooltip_wrap">
+                        <i type="information" change="false" class="match"></i>
+                        <div class="tooltip" position="bottom right">
+                          <span class="body-01-regular">Information</span>
+                        </div>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -4745,7 +5234,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="fragment row" style="flex: 1">
+                  <div class="fragment row" scroll>
                     <div class="table_wrap">
                       <div class="table_wrap_header">
                         <div class="th">
@@ -4765,9 +5254,45 @@
                       </ul>
                     </div>
                     <div class="table_wrap">
-                      <div class="table_wrap_header"></div>
+                      <div class="table_wrap_header">
+                        <div class="th">
+                          <span class="body-01-semibold">경기장</span>
+                        </div>
+                      </div>
                       <ul class="table_wrap_body">
-                        <li></li>
+                        <li>
+                          <div></div>
+                          <div class="flag">
+                            <img src="../static/images/Icon/venue-light.svg" />
+                          </div>
+                          <div class="player">
+                            <span class="body-01-regular text_accent-primary"
+                              >Venue</span
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="table_wrap">
+                      <div class="table_wrap_header">
+                        <div class="th">
+                          <span class="body-01-semibold">관중</span>
+                        </div>
+                      </div>
+                      <ul class="table_wrap_body">
+                        <li>
+                          <div></div>
+                          <div class="flag">
+                            <img
+                              src="../static/images/Icon/attendance-light.svg"
+                            />
+                          </div>
+                          <div class="player">
+                            <span class="body-01-regular text_accent-primary"
+                              >0</span
+                            >
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -6440,7 +6965,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="fragment row" style="flex: 1">
+                  <div class="fragment row" scroll>
                     <div class="table_wrap">
                       <div class="table_wrap_header">
                         <div class="th">
@@ -6460,9 +6985,45 @@
                       </ul>
                     </div>
                     <div class="table_wrap">
-                      <div class="table_wrap_header"></div>
+                      <div class="table_wrap_header">
+                        <div class="th">
+                          <span class="body-01-semibold">경기장</span>
+                        </div>
+                      </div>
                       <ul class="table_wrap_body">
-                        <li></li>
+                        <li>
+                          <div></div>
+                          <div class="flag">
+                            <img src="../static/images/Icon/venue-light.svg" />
+                          </div>
+                          <div class="player">
+                            <span class="body-01-regular text_accent-primary"
+                              >Venue</span
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="table_wrap">
+                      <div class="table_wrap_header">
+                        <div class="th">
+                          <span class="body-01-semibold">관중</span>
+                        </div>
+                      </div>
+                      <ul class="table_wrap_body">
+                        <li>
+                          <div></div>
+                          <div class="flag">
+                            <img
+                              src="../static/images/Icon/attendance-light.svg"
+                            />
+                          </div>
+                          <div class="player">
+                            <span class="body-01-regular text_accent-primary"
+                              >0</span
+                            >
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -6609,7 +7170,7 @@
                           </div>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -6750,7 +7311,7 @@
                           <span class="body-01-regular">0</span>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -6913,7 +7474,7 @@
                           </div>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -7054,7 +7615,7 @@
                           <span class="body-01-regular">0</span>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -7254,7 +7815,7 @@
                           />
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-left">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -7402,7 +7963,7 @@
                           <span class="body-01-regular">0</span>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-right">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -7600,7 +8161,7 @@
                           />
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-left">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -7748,7 +8309,7 @@
                           <span class="body-01-regular">0</span>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-right">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -8003,7 +8564,7 @@
                           </div>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-left">
                         <div class="td">
                           <span class="body-01-regular">00-00</span>
                         </div>
@@ -8169,7 +8730,7 @@
                           <span class="body-01-regular">0</span>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-right">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -8422,7 +8983,7 @@
                           </div>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-left">
                         <div class="td">
                           <span class="body-01-regular">00-00</span>
                         </div>
@@ -8588,7 +9149,7 @@
                           <span class="body-01-regular">0</span>
                         </div>
                       </li>
-                      <li>
+                      <li class="border-bottom-right">
                         <div class="td">
                           <span class="body-01-regular">0</span>
                         </div>
@@ -10724,7 +11285,7 @@
                             <span class="body-01-regular">0.0</span>
                           </div>
                         </li>
-                        <li>
+                        <li class="border-bottom">
                           <div class="td">
                             <span class="body-02-regular">1</span>
                           </div>
@@ -13068,7 +13629,7 @@
                             <span class="body-01-regular">0.0</span>
                           </div>
                         </li>
-                        <li>
+                        <li class="border-bottom">
                           <div class="td">
                             <span class="body-02-regular">1</span>
                           </div>

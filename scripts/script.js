@@ -9,6 +9,35 @@ $(document).ready(function () {
     }
   });
 
+  // sport-navigation_container
+  $(".sport-navigation_container ul > li.sport").click(function () {
+    if ($(this).attr("id") == "soccer") {
+      if ($("#lightmode:checked").length > 0) {
+        window.location.href = "/html/LIVESCORE-Soccer-Dark.html";
+      } else {
+        window.location.href = "/html/LIVESCORE-Soccer-Light.html";
+      }
+    } else if ($(this).attr("id") == "soccer") {
+      if ($("#lightmode:checked").length > 0) {
+        window.location.href = "/html/LIVESCORE-Soccer-Dark.html";
+      } else {
+        window.location.href = "/html/LIVESCORE-Soccer-Light.html";
+      }
+    } else if ($(this).attr("id") == "baseball") {
+      if ($("#lightmode:checked").length > 0) {
+        window.location.href = "/html/LIVESCORE-Baseball-Dark.html";
+      } else {
+        window.location.href = "/html/LIVESCORE-Baseball-Light.html";
+      }
+    } else if ($(this).attr("id") == "bascketball") {
+      if ($("#lightmode:checked").length > 0) {
+        window.location.href = "/html/LIVESCORE-Basketball-Dark.html";
+      } else {
+        window.location.href = "/html/LIVESCORE-Basketball-Light.html";
+      }
+    }
+  });
+
   // analysis
   $(".header .submenu-list > #consensus-pick").click(function () {
     const url = $(location).attr("href");
@@ -348,6 +377,7 @@ $(document).ready(function () {
 
   // match
   $(".match[change]").click(function () {
+    console.log($(this), $(this).attr("change"));
     if ($(this).attr("change") == "true") {
       $(this).attr("change", false);
     } else {
@@ -373,12 +403,31 @@ $(document).ready(function () {
     $(this).parent().children(".odds_container.hide").removeClass("hide");
     $(this).addClass("hide");
   });
+  $(".analysis-soccer .table[type='result'] .odds_container").hover(
+    function () {
+      $(this)
+        .parent()
+        .children(".odds_container[status='hover']")
+        .removeClass("hide");
+      $(this)
+        .parent()
+        .children(".odds_container:not([status='hover'])")
+        .addClass("hide");
+    },
+    function () {
+      $(this)
+        .parent()
+        .children(".odds_container[status='hover']")
+        .addClass("hide");
+      $(this)
+        .parent()
+        .children(".odds_container:not([status='hover'])")
+        .removeClass("hide");
+    }
+  );
 
   // prediction-tip_box
-  $(".prediction-tip_box[status='rock']").click(function () {
-    $(this).attr("status", "");
-  });
-  $(".prediction-tip_box[status='rock']").click(function () {
+  $("[status='rock']").click(function () {
     $(this).attr("status", "");
   });
 
@@ -393,11 +442,32 @@ $(document).ready(function () {
       $(this).parent().children(".button").removeClass("hide");
       $(this).addClass("hide");
     }
+    // date
+    if ($(this).text() == "날짜") {
+      $(this).parent().children(".button").removeClass("hide");
+      $(this).addClass("hide");
+    }
+    if ($(this).text() == "시작") {
+      $(this).parent().children(".button").removeClass("hide");
+      $(this).addClass("hide");
+    }
   });
 
   // league_wrap
   $(".league_wrap[lang]").click(function () {
-    $(this).parent().children(".league_wrap").removeClass("hide");
+    $(this).parent().children(".league_wrap.hide").removeClass("hide");
+    $(this).addClass("hide");
+  });
+
+  // date_wrap
+  $("span[type='date']").click(function () {
+    $(this).parent().children("span").removeClass("hide");
+    $(this).addClass("hide");
+  });
+
+  // vote_container
+  $(".vote_container").click(function () {
+    $(this).parent().children(".vote_container.hide").removeClass("hide");
     $(this).addClass("hide");
   });
 });

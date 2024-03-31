@@ -1680,25 +1680,25 @@
         <div class="column_body">
           <div class="sport-navigation_container">
             <ul class="sport-list">
-              <li class="box sport dot">
+              <li id="live" class="box sport dot">
                 <img src="../static/images/Icon/live-light.svg" />
                 <div class="content">
                   <span class="body-02-semibold">라이브</span>
                 </div>
               </li>
-              <li class="box sport">
+              <li id="soccer" class="box sport">
                 <img src="../static/images/Icon/soccer.png" />
                 <div class="content">
                   <span class="body-02-semibold">축구</span>
                 </div>
               </li>
-              <li class="box sport">
+              <li id="baseball" class="box sport">
                 <img src="../static/images/Icon/baseball.png" />
                 <div class="content">
                   <span class="body-02-semibold">야구</span>
                 </div>
               </li>
-              <li class="box sport">
+              <li id="bascketball" class="box sport">
                 <img src="../static/images/Icon/basketball.png" />
                 <div class="content">
                   <span class="body-02-semibold">농구</span>
@@ -2001,14 +2001,20 @@
                       <span class="heading-01-semibold">프리덱션 팁</span>
                     </div>
                     <ul class="menu-list">
-                      <li
-                        id="date"
-                        state="active"
-                        class="button body-01-semibold"
-                      >
-                        일정
+                      <li id="date">
+                        <div
+                          active-background="true"
+                          state="active"
+                          class="button"
+                        >
+                          <span class="body-01-semibold">일정</span>
+                        </div>
                       </li>
-                      <li id="result" class="button body-01-semibold">결과</li>
+                      <li id="result">
+                        <div active-background="true" class="button">
+                          <span class="body-01-semibold">결과</span>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div class="table_search_container_right">
@@ -3066,7 +3072,7 @@
                 </ul>
               </div>
             </div>
-            <div class="table" type="result">
+            <div class="table hide" type="result">
               <div class="table_header">
                 <div class="table_search_container">
                   <div class="table_search_container_left">
@@ -3074,13 +3080,19 @@
                       <span class="heading-01-semibold">프리덱션 팁</span>
                     </div>
                     <ul class="menu-list">
-                      <li id="date" class="button body-01-semibold">일정</li>
-                      <li
-                        id="result"
-                        state="active"
-                        class="button body-01-semibold"
-                      >
-                        결과
+                      <li id="date">
+                        <div active-background="true" class="button">
+                          <span class="body-01-semibold">일정</span>
+                        </div>
+                      </li>
+                      <li id="result">
+                        <div
+                          active-background="true"
+                          state="active"
+                          class="button"
+                        >
+                          <span class="body-01-semibold">결과</span>
+                        </div>
                       </li>
                     </ul>
                   </div>

@@ -1,37 +1,4 @@
 /* scrollbar */
-/* Works on Firefox */
-/* * {
-    scrollbar-width: 8px;
-    scrollbar-color: var(--interactive-scrollbar-scrollbar-default, #b1b3bb) transparent;
-} */
-
-/* Works on Chrome, Edge, and Safari */
-/* *::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-}
-
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: var(--interactive-scrollbar-scrollbar-default, #b1b3bb);
-    border-radius: var(--radius-radius-md, 10px);
-    background-clip: padding-box;
-    border: var(--spacing-spacing-content-sm, 4px) solid transparent;
-    -webkit-border-radius: var(--radius-radius-md, 10px);
-    -moz-border-radius: var(--radius-radius-md, 10px);
-    -ms-border-radius: var(--radius-radius-md, 10px);
-    -o-border-radius: var(--radius-radius-md, 10px);
-} */
-
-/* *::-webkit-scrollbar-thumb:active {
-    background: var(--interactive-scrollbar-scrollbar-track, #7b7d8a);
-    border-radius: var(--radius-radius-md, 10px);
-    background-clip: padding-box;
-    border: var(--spacing-spacing-content-sm, 4px) solid transparent;
-} */
 .ps__rail-y {
     background-color: transparent !important;
     z-index: 9999;
@@ -44,6 +11,7 @@
     opacity: 0.5;
     width: 8px !important;
     right: var(--spacing-spacing-content-sm) !important;
+    margin: 4px 0;
     -webkit-border-radius: var(--radius-radius-md, 10px);
     -moz-border-radius: var(--radius-radius-md, 10px);
     -ms-border-radius: var(--radius-radius-md, 10px);
