@@ -52,7 +52,7 @@
 .radio_wrap input[type="radio"]:checked+label::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 0;
     width: 18px;
     height: 18px;

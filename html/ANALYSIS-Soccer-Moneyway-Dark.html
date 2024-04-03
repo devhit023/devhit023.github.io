@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="../static/css/header.css" />
     <link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
   </head>
-  <body scroll>
+  <body>
     <!-- Header -->
     <header id="header">
       <div class="header_container">
@@ -58,22 +58,46 @@
               <li class="menu-item">
                 <a href="#0" class="link heading-01-semibold">스포츠분석</a>
                 <ul class="submenu-list">
-                  <li id="moneyway" class="submenu-item">
+                  <li
+                    id="moneyway"
+                    class="submenu-item"
+                    onclick="hrefAnalysis(event)"
+                  >
                     <span class="button heading-02-semibold">거래량흐름</span>
                   </li>
-                  <li id="preview" class="submenu-item">
+                  <li
+                    id="preview"
+                    class="submenu-item"
+                    onclick="hrefAnalysis(event)"
+                  >
                     <span class="button heading-02-semibold">매치프리뷰</span>
                   </li>
-                  <li id="missing-player" class="submenu-item">
+                  <li
+                    id="missing-player"
+                    class="submenu-item"
+                    onclick="hrefAnalysis(event)"
+                  >
                     <span class="button heading-02-semibold">결장자이슈</span>
                   </li>
-                  <li id="fact-check" class="submenu-item">
+                  <li
+                    id="fact-check"
+                    class="submenu-item"
+                    onclick="hrefAnalysis(event)"
+                  >
                     <span class="button heading-02-semibold">탑팩트체크</span>
                   </li>
-                  <li id="consensus-pick" class="submenu-item">
+                  <li
+                    id="consensus-pick"
+                    class="submenu-item"
+                    onclick="hrefAnalysis(event)"
+                  >
                     <span class="button heading-02-semibold">컨센서스픽</span>
                   </li>
-                  <li id="prediction-tips" class="submenu-item">
+                  <li
+                    id="prediction-tips"
+                    class="submenu-item"
+                    onclick="hrefAnalysis(event)"
+                  >
                     <span class="button heading-02-semibold">프리딕션팁</span>
                   </li>
                 </ul>
@@ -125,7 +149,9 @@
           </div>
         </div>
       </div>
-      <div class="submenu_container"></div>
+      <div class="submenu_container">
+        <ul class="submenu-list"></ul>
+      </div>
     </header>
     <!-- Main-->
     <main id="main">
@@ -246,15 +272,15 @@
             <div class="container hide" auth="true">
               <div class="sub_item" type="level">
                 <img src="../static/images/Icon/level.svg" />
-                <span class="body-02-semibold">레벨업</span>
+                <span class="body-01-semibold">레벨업</span>
               </div>
               <div class="sub_item" type="shop">
                 <img src="../static/images/Icon/gold.svg" />
-                <span class="body-02-semibold">골드샵</span>
+                <span class="body-01-semibold">골드샵</span>
               </div>
               <div class="sub_item" type="dice">
                 <img src="../static/images/Icon/dice.svg" />
-                <span class="body-02-semibold">다이스</span>
+                <span class="body-01-semibold">다이스</span>
               </div>
             </div>
           </div>
@@ -948,7 +974,7 @@
                   <input
                     id="input_chat"
                     type="text"
-                    placeholder="메시지를 입력하세요."
+                    placeholder="메세지를 입력하세요"
                     class="input body-01-regular"
                   />
                 </div>
@@ -1040,10 +1066,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1073,10 +1096,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1106,10 +1126,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1139,10 +1156,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1172,10 +1186,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1205,10 +1216,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1238,10 +1246,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1271,10 +1276,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1304,10 +1306,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1337,10 +1336,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
-                            <img
-                              src="../static/images/Icon/rise-movement-dark.svg"
-                            />
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1440,7 +1436,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1464,7 +1460,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1488,7 +1484,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1512,7 +1508,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1536,7 +1532,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1560,7 +1556,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1584,7 +1580,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1608,7 +1604,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1632,7 +1628,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1656,7 +1652,7 @@
                             <img src="../static/images/temp/emble.png" />
                           </div>
                           <div class="name_wrap">
-                            <span>Name</span>
+                            <span class="body-02-regular">Name</span>
                           </div>
                         </div>
                         <div class="td">
@@ -1866,53 +1862,33 @@
               <div class="box_body">
                 <ul>
                   <li>
-                    <span class="body-01-regular" style="width: 34px">1</span>
-                    <span class="body-01-regular" style="width: 223px"
-                      >맨체스터 유나이티드</span
-                    >
-                    <span class="body-01-semibold" style="width: 69px"
-                      >80%</span
-                    >
+                    <span class="body-01-regular">1</span>
+                    <span class="body-01-regular">맨체스터 유나이티드</span>
+                    <span class="body-01-semibold">80%</span>
                     <span class="body-01-regular">1.47</span>
                   </li>
                   <li>
-                    <span class="body-01-regular" style="width: 34px">2</span>
-                    <span class="body-01-regular" style="width: 223px"
-                      >맨체스터 유나이티드</span
-                    >
-                    <span class="body-01-semibold" style="width: 69px"
-                      >80%</span
-                    >
+                    <span class="body-01-regular">2</span>
+                    <span class="body-01-regular">맨체스터 유나이티드</span>
+                    <span class="body-01-semibold">80%</span>
                     <span class="body-01-regular">1.47</span>
                   </li>
                   <li>
-                    <span class="body-01-regular" style="width: 34px">3</span>
-                    <span class="body-01-regular" style="width: 223px"
-                      >맨체스터 유나이티드</span
-                    >
-                    <span class="body-01-semibold" style="width: 69px"
-                      >80%</span
-                    >
+                    <span class="body-01-regular">3</span>
+                    <span class="body-01-regular">맨체스터 유나이티드</span>
+                    <span class="body-01-semibold">80%</span>
                     <span class="body-01-regular">1.47</span>
                   </li>
                   <li>
-                    <span class="body-01-regular" style="width: 34px">4</span>
-                    <span class="body-01-regular" style="width: 223px"
-                      >맨체스터 유나이티드</span
-                    >
-                    <span class="body-01-semibold" style="width: 69px"
-                      >80%</span
-                    >
+                    <span class="body-01-regular">4</span>
+                    <span class="body-01-regular">맨체스터 유나이티드</span>
+                    <span class="body-01-semibold">80%</span>
                     <span class="body-01-regular">1.47</span>
                   </li>
                   <li>
-                    <span class="body-01-regular" style="width: 34px">5</span>
-                    <span class="body-01-regular" style="width: 223px"
-                      >맨체스터 유나이티드</span
-                    >
-                    <span class="body-01-semibold" style="width: 69px"
-                      >80%</span
-                    >
+                    <span class="body-01-regular">5</span>
+                    <span class="body-01-regular">맨체스터 유나이티드</span>
+                    <span class="body-01-semibold">80%</span>
                     <span class="body-01-regular">1.47</span>
                   </li>
                 </ul>
@@ -1987,10 +1963,14 @@
             </div>
           </div>
           <div class="box billboard">
-            <span class="heading-01-semibold">닉네임</span>&nbsp;
-            <span class="heading-01-regular">님</span>&nbsp;
-            <span class="heading-01-semibold">맨체스터 시티 승리</span>&nbsp;
-            <span class="heading-01-regular">경기 예측 적중!</span>
+            <div class="fragment row">
+              <span class="heading-01-semibold">닉네임</span>
+              <span class="heading-01-regular">님</span>
+            </div>
+            <div class="fragment row">
+              <span class="heading-01-semibold">맨체스터 시티 승리</span>
+              <span class="heading-01-regular">경기 예측 적중!</span>
+            </div>
           </div>
           <div class="box main_box" type="moneyway">
             <div class="table" type="moneyway">

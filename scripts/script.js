@@ -38,56 +38,6 @@ $(document).ready(function () {
     }
   });
 
-  // analysis
-  $(".header .submenu-list > #consensus-pick").click(function () {
-    const url = $(location).attr("href");
-    if ($("#lightmode:checked").length > 0) {
-      window.location.href = "/html/ANALYSIS-Soccer-ConsensusPick-Dark.html";
-    } else {
-      window.location.href = "/html/ANALYSIS-Soccer-ConsensusPick-Light.html";
-    }
-  });
-  $(".header .submenu-list > #prediction-tips").click(function () {
-    const url = $(location).attr("href");
-    if ($("#lightmode:checked").length > 0) {
-      window.location.href = "/html/ANALYSIS-Soccer-PredictionTips-Dark.html";
-    } else {
-      window.location.href = "/html/ANALYSIS-Soccer-PredictionTips-Light.html";
-    }
-  });
-  $(".header .submenu-list > #moneyway").click(function () {
-    const url = $(location).attr("href");
-    if ($("#lightmode:checked").length > 0) {
-      window.location.href = "/html/ANALYSIS-Soccer-Moneyway-Dark.html";
-    } else {
-      window.location.href = "/html/ANALYSIS-Soccer-Moneyway-Light.html";
-    }
-  });
-  $(".header .submenu-list > #preview").click(function () {
-    const url = $(location).attr("href");
-    if ($("#lightmode:checked").length > 0) {
-      window.location.href = "/html/ANALYSIS-Soccer-Preview-Dark.html";
-    } else {
-      window.location.href = "/html/ANALYSIS-Soccer-Preview-Light.html";
-    }
-  });
-  $(".header .submenu-list > #missing-player").click(function () {
-    const url = $(location).attr("href");
-    if ($("#lightmode:checked").length > 0) {
-      window.location.href = "/html/ANALYSIS-Soccer-MissingPlayer-Dark.html";
-    } else {
-      window.location.href = "/html/ANALYSIS-Soccer-MissingPlayer-Light.html";
-    }
-  });
-  $(".header .submenu-list > #fact-check").click(function () {
-    const url = $(location).attr("href");
-    if ($("#lightmode:checked").length > 0) {
-      window.location.href = "/html/ANALYSIS-Soccer-FactCheck-Dark.html";
-    } else {
-      window.location.href = "/html/ANALYSIS-Soccer-FactCheck-Light.html";
-    }
-  });
-
   // input
   $("input").focus(function () {
     $(this).parent().attr("state", "focus");
@@ -472,4 +422,14 @@ $(document).ready(function () {
       $(this).addClass("hide");
     }
   });
+
+  // input
+  $(".input").focus(
+    function (e) {
+      $(this).parent().addClass("focus");
+    },
+    function (e) {
+      $(this).parent().removeClass("focus");
+    }
+  );
 });

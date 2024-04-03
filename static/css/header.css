@@ -23,7 +23,7 @@ header#header {
     justify-content: flex-start;
     flex-shrink: 0;
     gap: 20px;
-    height: 80px;
+    height: 79px;
     margin: auto;
 }
 
@@ -97,20 +97,18 @@ header .menu-area>.menu-list .menu-item[primary="true"] {
 }
 
 /* submenu-list */
-header .menu-area>.menu-list .menu-item>.submenu-list {
+header .submenu-list {
     display: none;
-    position: absolute;
-    z-index: 2;
     height: 60px;
-    gap: 80px;
+    gap: 60px;
     top: 100%;
 }
 
-header .menu-area>.menu-list .menu-item>.submenu-list[change="true"] {
+header .submenu-list[change="true"] {
     display: flex;
 }
 
-header .menu-area>.menu-list .menu-item>.submenu-list>.submenu-item {
+header .submenu-list>.submenu-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,15 +116,15 @@ header .menu-area>.menu-list .menu-item>.submenu-list>.submenu-item {
     height: 60px;
 }
 
-header .menu-area>.menu-list .menu-item>.submenu-list>.submenu-item>.button {
+header .submenu-list>.submenu-item>.button {
     color: var(--interactive-button-button-disabled, #7b7d8a);
 }
 
-header .menu-area>.menu-list .menu-item>.submenu-list>.submenu-item>.button:hover {
+header .submenu-list>.submenu-item>.button:hover {
     color: var(--interactive-button-button-primary-hover, #0075f4);
 }
 
-header .menu-area>.menu-list .menu-item>.submenu-list>.submenu-item>.button:active {
+header .submenu-list>.submenu-item>.button:active {
     color: var(--interactive-button-button-primary-press, #0051a8);
 }
 

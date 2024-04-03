@@ -17,7 +17,7 @@ html {
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "IBM Plex Sans", "IBM Plex Sans KR", "Roboto", sans-serif;
+    font-family: "IBM Plex Sans KR", "IBM Plex Sans", "Roboto", sans-serif;
     font-size: calc(16 / var(--font-size-default) * 1rem);
     font-weight: var(--font-weight-regular);
     line-height: inherit;
@@ -117,7 +117,7 @@ input {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "IBM Plex Sans", "IBM Plex Sans KR", "Roboto", sans-serif;
+    font-family: "IBM Plex Sans KR", "IBM Plex Sans", "Roboto", sans-serif;
 }
 
 ol,
