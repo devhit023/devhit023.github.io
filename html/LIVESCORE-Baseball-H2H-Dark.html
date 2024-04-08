@@ -69,7 +69,7 @@
             <div class="bookmark">
               <i type="bookmark" change="false" class="match"></i>
             </div>
-            <div class="home" style="flex: 1">
+            <div class="home">
               <div class="emble_wrap">
                 <img
                   src="../static/images/temp/image 1.png"
@@ -91,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="content" style="width: 422px">
+            <div class="content">
               <div class="fragment row">
                 <div class="league_wrap">
                   <img
@@ -111,15 +111,12 @@
               <div class="fragment row">
                 <span class="body-01-semibold">VS</span>
               </div>
-              <div
-                class="fragment row"
-                style="gap: var(--spacing-spacing-content-md, 8px)"
-              >
+              <div class="fragment row information">
                 <span class="body-01-regular">1차전 결과</span>
                 <span class="body-01-regular">2-1</span>
               </div>
             </div>
-            <div class="away" style="flex: 1">
+            <div class="away">
               <div class="emble_wrap">
                 <img
                   src="../static/images/temp/emble.png"
@@ -654,6 +651,7 @@
                         >홈/원정</span
                       >
                     </li>
+                    <li></li>
                     <li>
                       <div
                         class="dropdown_wrap"
@@ -1192,7 +1190,7 @@
                 <span class="body-01-semibold rise">1.50</span>
               </div>
             </div>
-            <div class="fragment row vote_container">
+            <div class="fragment row vote_container" type="tracker">
               <div class="vote_wrap">
                 <button type="vote">
                   <div class="default_content">
@@ -1276,6 +1274,7 @@
                         >홈/원정</span
                       >
                     </li>
+                    <li></li>
                     <li>
                       <div
                         class="dropdown_wrap"
@@ -2204,6 +2203,7 @@
                         >홈/원정</span
                       >
                     </li>
+                    <li></li>
                     <li>
                       <div
                         class="dropdown_wrap"
@@ -3130,7 +3130,7 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="button body-01-semibold" state="disabled"
+                  <span class="button body-01-semibold" state="enabled"
                     >League</span
                   >
                   <span class="button body-01-semibold hide" state="enabled"
@@ -3157,7 +3157,7 @@
                   <span class="body-01-semibold">정보</span>
                 </div>
               </div>
-              <div class="table_body">
+              <div class="table_body no-background">
                 <ul>
                   <li>
                     <div class="td">
@@ -3375,7 +3375,7 @@
                   <span class="body-01-semibold">선택</span>
                 </div>
                 <div class="th">
-                  <span class="button body-01-semibold" state="disabled"
+                  <span class="button body-01-semibold" state="enabled"
                     >League</span
                   >
                   <span class="button body-01-semibold hide" state="enabled"
@@ -3402,7 +3402,7 @@
                   <span class="body-01-semibold">정보</span>
                 </div>
               </div>
-              <div class="table_body">
+              <div class="table_body no-background">
                 <ul>
                   <li>
                     <div class="td">
@@ -3610,10 +3610,10 @@
               <div class="table_search_container">
                 <div class="table_search_container_left">
                   <ul class="menu-list">
-                    <li state="active" class="button heading-01-semibold">
+                    <li state="active" class="button body-01-semibold">
                       경기통계
                     </li>
-                    <li class="button heading-01-semibold">LA 다저스</li>
+                    <li class="body-01-semibold">LA 다저스</li>
                   </ul>
                 </div>
               </div>
@@ -3630,7 +3630,7 @@
                   </div>
                   <div class="content_wrap">
                     <div class="content default">
-                      <span class="body-01-semibold">1.50</span>
+                      <span class="body-01-regular">1.50</span>
                     </div>
                     <div class="content hover">
                       <span class="body-01-regular">1.50</span>
@@ -3639,7 +3639,7 @@
                   </div>
                   <div class="content_wrap">
                     <div class="content default">
-                      <span class="body-01-semibold">1.50</span>
+                      <span class="body-01-regular">1.50</span>
                     </div>
                     <div class="content hover">
                       <span class="body-01-regular">1.50</span>
@@ -3647,18 +3647,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="vote_container">
+                <div class="vote_container" type="analysis">
                   <div class="vote_wrap">
                     <div class="content" type="home">
-                      <span class="body-01-semibold">80%</span>
+                      <span class="body-01-semibold"
+                        >80<small class="body-03-regular">%</small></span
+                      >
                       <div class="bar"></div>
                     </div>
                     <div class="content" type="draw">
-                      <span class="body-01-semibold">10%</span>
+                      <span class="body-01-semibold"
+                        >10<small class="body-03-regular">%</small></span
+                      >
                       <div class="bar"></div>
                     </div>
                     <div class="content" type="away">
-                      <span class="body-01-semibold">10%</span>
+                      <span class="body-01-semibold"
+                        >10<small class="body-03-regular">%</small></span
+                      >
                       <div class="bar"></div>
                     </div>
                   </div>
@@ -3669,7 +3675,7 @@
                   <div class="bookmark">
                     <i type="bookmark" change="false" class="match"></i>
                   </div>
-                  <div class="home" style="flex: 1">
+                  <div class="home">
                     <div class="emble_wrap">
                       <img
                         src="../static/images/temp/image 1.png"
@@ -3677,21 +3683,23 @@
                         height="72"
                       />
                     </div>
-                    <div class="team_wrap">
-                      <span class="heading-02-semibold text_accent-secondary"
-                        >[2]</span
-                      >
-                      <span class="name heading-02-regular">LA 다저스</span>
-                    </div>
-                    <div class="pitcer_wrap">
-                      <span
-                        type="text"
-                        class="button body-02-semibold text_secondary"
-                        >커쇼 C.</span
-                      >
-                      <span class="body-02-regular">(좌투)</span>
-                      <span class="body-02-regular">11승</span>
-                      <span class="body-02-regular">5패</span>
+                    <div class="team_container">
+                      <div class="team_wrap">
+                        <span class="heading-02-semibold text_accent-secondary"
+                          >[2]</span
+                        >
+                        <span class="name heading-02-regular">LA 다저스</span>
+                      </div>
+                      <div class="pitcher_wrap">
+                        <span
+                          type="text"
+                          class="button body-02-semibold text_secondary"
+                          >커쇼 C.</span
+                        >
+                        <span class="body-02-regular">(좌투)</span>
+                        <span class="body-02-regular">11승</span>
+                        <span class="body-02-regular">5패</span>
+                      </div>
                     </div>
                   </div>
                   <div class="content" style="width: 280px">
@@ -3724,7 +3732,7 @@
                       <span class="body-02-regular text_secondary">5패</span>
                     </div>
                   </div>
-                  <div class="away" style="flex: 1">
+                  <div class="away">
                     <div class="emble_wrap">
                       <img
                         src="../static/images/temp/image 1 (1).png"
@@ -3732,21 +3740,23 @@
                         height="72"
                       />
                     </div>
-                    <div class="team_wrap">
-                      <span class="name heading-02-regular">콜로라도</span>
-                      <span class="heading-02-semibold text_accent-secondary"
-                        >[2]</span
-                      >
-                    </div>
-                    <div class="pitcer_wrap">
-                      <span
-                        type="text"
-                        class="button body-02-semibold text_secondary"
-                        >콜 C.</span
-                      >
-                      <span class="body-02-regular">(우투)</span>
-                      <span class="body-02-regular">11승</span>
-                      <span class="body-02-regular">5패</span>
+                    <div class="team_container">
+                      <div class="team_wrap">
+                        <span class="name heading-02-regular">콜로라도</span>
+                        <span class="heading-02-semibold text_accent-secondary"
+                          >[2]</span
+                        >
+                      </div>
+                      <div class="pitcher_wrap">
+                        <span
+                          type="text"
+                          class="button body-02-semibold text_secondary"
+                          >콜 C.</span
+                        >
+                        <span class="body-02-regular">(우투)</span>
+                        <span class="body-02-regular">11승</span>
+                        <span class="body-02-regular">5패</span>
+                      </div>
                     </div>
                   </div>
                   <div class="youtube">
@@ -3913,7 +3923,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -3927,7 +3937,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -3948,7 +3958,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -3962,7 +3972,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -4009,7 +4019,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -4023,7 +4033,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -4044,7 +4054,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -4058,7 +4068,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -5248,7 +5258,7 @@
               </div>
               <div class="match-info_container">
                 <div class="container">
-                  <div class="table_wrap" style="flex: 1">
+                  <div class="table_wrap">
                     <div class="table_wrap_header">
                       <div class="th">
                         <span class="body-01-semibold">감독</span>
@@ -5337,10 +5347,10 @@
               <div class="table_search_container">
                 <div class="table_search_container_left">
                   <ul class="menu-list">
-                    <li state="active" class="button heading-01-semibold">
+                    <li state="active" class="button body-01-semibold">
                       경기통계
                     </li>
-                    <li class="button heading-01-semibold">LA 다저스</li>
+                    <li class="body-01-semibold">LA 다저스</li>
                   </ul>
                 </div>
               </div>
@@ -5357,7 +5367,7 @@
                   </div>
                   <div class="content_wrap">
                     <div class="content default">
-                      <span class="body-01-semibold">1.50</span>
+                      <span class="body-01-regular">1.50</span>
                     </div>
                     <div class="content hover">
                       <span class="body-01-regular">1.50</span>
@@ -5366,7 +5376,7 @@
                   </div>
                   <div class="content_wrap">
                     <div class="content default">
-                      <span class="body-01-semibold">1.50</span>
+                      <span class="body-01-regular">1.50</span>
                     </div>
                     <div class="content hover">
                       <span class="body-01-regular">1.50</span>
@@ -5374,18 +5384,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="vote_container">
+                <div class="vote_container" type="analysis">
                   <div class="vote_wrap">
                     <div class="content" type="home">
-                      <span class="body-01-semibold">80%</span>
+                      <span class="body-01-semibold"
+                        >80<small class="body-03-regular">%</small></span
+                      >
                       <div class="bar"></div>
                     </div>
                     <div class="content" type="draw">
-                      <span class="body-01-semibold">10%</span>
+                      <span class="body-01-semibold"
+                        >10<small class="body-03-regular">%</small></span
+                      >
                       <div class="bar"></div>
                     </div>
                     <div class="content" type="away">
-                      <span class="body-01-semibold">10%</span>
+                      <span class="body-01-semibold"
+                        >10<small class="body-03-regular">%</small></span
+                      >
                       <div class="bar"></div>
                     </div>
                   </div>
@@ -5396,7 +5412,7 @@
                   <div class="bookmark">
                     <i type="bookmark" change="false" class="match"></i>
                   </div>
-                  <div class="home" style="flex: 1">
+                  <div class="home">
                     <div class="emble_wrap">
                       <img
                         src="../static/images/temp/image 1.png"
@@ -5404,21 +5420,23 @@
                         height="72"
                       />
                     </div>
-                    <div class="team_wrap">
-                      <span class="heading-02-semibold text_accent-secondary"
-                        >[2]</span
-                      >
-                      <span class="name heading-02-regular">LA 다저스</span>
-                    </div>
-                    <div class="pitcer_wrap">
-                      <span
-                        type="text"
-                        class="button body-02-semibold text_secondary"
-                        >커쇼 C.</span
-                      >
-                      <span class="body-02-regular">(좌투)</span>
-                      <span class="body-02-regular">11승</span>
-                      <span class="body-02-regular">5패</span>
+                    <div class="team_container">
+                      <div class="team_wrap">
+                        <span class="heading-02-semibold text_accent-secondary"
+                          >[2]</span
+                        >
+                        <span class="name heading-02-regular">LA 다저스</span>
+                      </div>
+                      <div class="pitcher_wrap">
+                        <span
+                          type="text"
+                          class="button body-02-semibold text_secondary"
+                          >커쇼 C.</span
+                        >
+                        <span class="body-02-regular">(좌투)</span>
+                        <span class="body-02-regular">11승</span>
+                        <span class="body-02-regular">5패</span>
+                      </div>
                     </div>
                   </div>
                   <div class="content" style="width: 280px">
@@ -5451,7 +5469,7 @@
                       <span class="body-02-regular text_secondary">5패</span>
                     </div>
                   </div>
-                  <div class="away" style="flex: 1">
+                  <div class="away">
                     <div class="emble_wrap">
                       <img
                         src="../static/images/temp/image 1 (1).png"
@@ -5459,21 +5477,23 @@
                         height="72"
                       />
                     </div>
-                    <div class="team_wrap">
-                      <span class="name heading-02-regular">콜로라도</span>
-                      <span class="heading-02-semibold text_accent-secondary"
-                        >[2]</span
-                      >
-                    </div>
-                    <div class="pitcer_wrap">
-                      <span
-                        type="text"
-                        class="button body-02-semibold text_secondary"
-                        >콜 C.</span
-                      >
-                      <span class="body-02-regular">(우투)</span>
-                      <span class="body-02-regular">11승</span>
-                      <span class="body-02-regular">5패</span>
+                    <div class="team_container">
+                      <div class="team_wrap">
+                        <span class="name heading-02-regular">콜로라도</span>
+                        <span class="heading-02-semibold text_accent-secondary"
+                          >[2]</span
+                        >
+                      </div>
+                      <div class="pitcher_wrap">
+                        <span
+                          type="text"
+                          class="button body-02-semibold text_secondary"
+                          >콜 C.</span
+                        >
+                        <span class="body-02-regular">(우투)</span>
+                        <span class="body-02-regular">11승</span>
+                        <span class="body-02-regular">5패</span>
+                      </div>
                     </div>
                   </div>
                   <div class="youtube">
@@ -5640,7 +5660,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -5654,7 +5674,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -5675,7 +5695,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -5689,7 +5709,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -5736,7 +5756,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -5750,7 +5770,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -5771,7 +5791,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">2.00</span>
                           <span class="body-01-regular">ERA</span>
@@ -5785,7 +5805,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="item">
+                      <div class="item end">
                         <div class="fragment row">
                           <span class="body-01-semibold">0.95</span>
                           <span class="body-01-regular">WHIP</span>
@@ -6975,7 +6995,7 @@
               </div>
               <div class="match-info_container">
                 <div class="container">
-                  <div class="table_wrap" style="flex: 1">
+                  <div class="table_wrap">
                     <div class="table_wrap_header">
                       <div class="th">
                         <span class="body-01-semibold">감독</span>
@@ -7250,10 +7270,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7270,10 +7290,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7290,10 +7310,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7310,10 +7330,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7330,10 +7350,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7350,10 +7370,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7554,10 +7574,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7574,10 +7594,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7594,10 +7614,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7614,10 +7634,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7634,10 +7654,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -7654,10 +7674,10 @@
                           <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
-                          <span class="body-01-regular">0</span>
+                          <span class="body-01-regular">0.000</span>
                         </div>
                         <div class="td" sorted="true">
-                          <span class="body-01-regular">0.000</span>
+                          <span class="body-01-regular">0</span>
                         </div>
                         <div class="td">
                           <span class="body-01-regular">0</span>
@@ -9174,16 +9194,10 @@
               <div class="table_search_container">
                 <div class="table_search_container_left">
                   <ul class="menu-list">
-                    <li
-                      id="date"
-                      state="active"
-                      class="button body-01-semibold"
-                    >
+                    <li state="active" class="button body-01-semibold">
                       시즌순위
-                      <div class="content">
-                        <span class="body-01-semibold">메이저리그</span>
-                      </div>
                     </li>
+                    <li class="body-01-semibold">메이저리그</li>
                   </ul>
                 </div>
                 <div class="table_search_container_right">
@@ -9305,7 +9319,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -9320,7 +9334,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9387,7 +9405,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9454,7 +9476,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9521,7 +9547,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9588,7 +9618,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9655,7 +9689,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9722,7 +9760,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9789,7 +9831,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9856,7 +9902,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9923,7 +9973,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -9990,7 +10044,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10057,7 +10115,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10124,7 +10186,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10191,7 +10257,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10258,7 +10328,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10349,7 +10423,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -10364,7 +10438,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10431,7 +10509,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10498,7 +10580,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10565,7 +10651,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10632,7 +10722,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10699,7 +10793,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10766,7 +10864,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10833,7 +10935,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10900,7 +11006,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -10967,7 +11077,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11034,7 +11148,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11101,7 +11219,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11168,7 +11290,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11235,7 +11361,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11302,7 +11432,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11375,16 +11509,10 @@
               <div class="table_search_container">
                 <div class="table_search_container_left">
                   <ul class="menu-list">
-                    <li
-                      id="date"
-                      state="active"
-                      class="button body-01-semibold"
-                    >
+                    <li state="active" class="button body-01-semibold">
                       시즌순위
-                      <div class="content">
-                        <span class="body-01-semibold">메이저리그</span>
-                      </div>
                     </li>
+                    <li class="body-01-semibold">메이저리그</li>
                   </ul>
                 </div>
                 <div class="table_search_container_right">
@@ -11507,7 +11635,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -11522,7 +11650,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11589,7 +11721,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11656,7 +11792,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11723,7 +11863,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11790,7 +11934,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11882,7 +12030,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -11897,7 +12045,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -11964,7 +12116,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12031,7 +12187,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12098,7 +12258,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12165,7 +12329,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12257,7 +12425,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -12272,7 +12440,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12339,7 +12511,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12406,7 +12582,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12473,7 +12653,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12540,7 +12724,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12632,7 +12820,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -12647,7 +12835,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12714,7 +12906,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12781,7 +12977,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12848,7 +13048,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -12915,7 +13119,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13007,7 +13215,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -13022,7 +13230,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13089,7 +13301,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13156,7 +13372,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13223,7 +13443,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13290,7 +13514,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13382,7 +13610,7 @@
                       <div class="th" sorted="false" status="disabled">
                         <span class="body-01-semibold">패</span>
                       </div>
-                      <div class="th" sorted="false" status="disabled">
+                      <div class="th" sorted="true" status="enabled">
                         <span class="body-01-semibold">승률</span>
                       </div>
                       <div class="th">
@@ -13397,7 +13625,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13464,7 +13696,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13531,7 +13767,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13598,7 +13838,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
@@ -13665,7 +13909,11 @@
                           </div>
                           <div class="td">
                             <div class="emble_wrap">
-                              <img src="../static/images/temp/image 1.png" />
+                              <img
+                                src="../static/images/temp/image 1.png"
+                                width="24"
+                                height="24"
+                              />
                             </div>
                           </div>
                           <div class="td">
