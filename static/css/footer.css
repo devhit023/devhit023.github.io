@@ -7,7 +7,7 @@
 .footer {
     display: inline-flex;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--spacing-spacing-layout-md, 15px);
     position: relative;
     align-items: center;
     height: 160px;
@@ -15,16 +15,17 @@
     width: 100vw;
     border-top: 1px solid var(--border-border-default);
     background: var(--background-background-header);
-    padding: 25px 0px 0px 0px;
+    padding-top: var(--spacing-spacing-layout-xl, 25px);
 }
 
 .footer .more-menu-area .menu-list {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: var(--spacing-spacing-layout-4xl, 40px);
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    height: var(--spacing-spacing-layout-lg, 20px);
 }
 
 .footer .copy {

@@ -416,10 +416,19 @@ $(document).ready(function () {
   });
 
   // vote_container
-  $(".vote_container").click(function (e) {
-    if ($(this).parent().children(".vote_container.hide").length() > 0) {
-      $(this).parent().children(".vote_container.hide").removeClass("hide");
-      $(this).addClass("hide");
+  // $(".vote_container").click(function (e) {
+  //   if ($(this).parent().children(".vote_container.hide").length() > 0) {
+  //     $(this).parent().children(".vote_container.hide").removeClass("hide");
+  //     $(this).addClass("hide");
+  //   }
+  // });
+  $("button[type='vote']").click(function (e) {
+    if ($(this).children(".default_content.hide").length > 0) {
+      $(this).children(".default_content.hide").removeClass("hide");
+      $(this).children(".active_content").addClass("hide");
+    } else if ($(this).children(".active_content.hide").length > 0) {
+      $(this).children(".active_content.hide").removeClass("hide");
+      $(this).children(".default_content").addClass("hide");
     }
   });
 

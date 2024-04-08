@@ -15,7 +15,7 @@
     z-index: 999;
     opacity: 0;
     background: var(--background-background-tooltip, #2b2e39);
-    color: var(--text-base-text-tooltip, #525461);
+    color: var(--text-text-tooltip, #525461);
     text-align: center;
     height: 25px;
     padding: 0 var(--spacing-spacing-layout-xl);

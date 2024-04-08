@@ -79,7 +79,7 @@ header .menu-area>.menu-list .menu-item {
     justify-content: center;
     width: 120px;
     height: 100%;
-    color: var(--text-base-text-primary);
+    color: var(--text-text-primary, #E0E2E6);
     cursor: pointer;
 }
 
@@ -99,7 +99,7 @@ header .menu-area>.menu-list .menu-item[primary="true"] {
 /* submenu-list */
 header .submenu-list {
     display: none;
-    height: 60px;
+    height: 61px;
     gap: 60px;
     top: 100%;
 }

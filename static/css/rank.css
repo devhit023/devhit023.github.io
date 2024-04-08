@@ -5,7 +5,7 @@
     align-items: center;
     width: 20px;
     height: 20px;
-    color: var(--text-base-text-inverse);
+    color: var(--text-text-inverse, #F5F5F8);
     border-radius: var(--radius-radius-sm, 5px);
 }
 
@@ -193,5 +193,5 @@
 }
 
 .rank[type="base"] {
-    color: var(--text-base-text-primary, #393d48);
+    color: var(--text-text-primary, #393d48);
 }

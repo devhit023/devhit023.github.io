@@ -22,7 +22,7 @@ html {
     font-weight: var(--font-weight-regular);
     line-height: inherit;
     letter-spacing: 0;
-    color: var(--text-base-text-accent-primary, #2B2E39);
+    color: var(--text-text-accent-primary, #2B2E39);
 }
 
 body {

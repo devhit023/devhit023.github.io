@@ -164,6 +164,7 @@
                   id="input_id"
                   type="text"
                   placeholder="아이디"
+                  autocomplete="off"
                   class="input body-01-regular"
                 />
               </div>
@@ -172,6 +173,7 @@
                   id="input_pw"
                   type="text"
                   placeholder="비밀번호"
+                  autocomplete="off"
                   class="input body-01-regular"
                 />
               </div>
@@ -2046,20 +2048,16 @@
                           type="calendar"
                         >
                           <div class="dropdown_button button">
-                            <div class="date_wrap">
-                              <button id="prev" onclick="minusToDay()"></button>
-                              <div class="date_content">
-                                <div class="date_text">
-                                  <span
-                                    id="search-date"
-                                    class="body-01-semibold"
-                                    >10-02</span
-                                  >
-                                  <span class="body-01-regular">일</span>
-                                </div>
+                            <button id="prev" onclick="minusToDay()"></button>
+                            <div class="date_content">
+                              <div class="date_text">
+                                <span id="search-date" class="body-01-semibold"
+                                  >10-02</span
+                                >
+                                <span class="body-01-regular">일</span>
                               </div>
-                              <button id="next" onclick="plusToDay()"></button>
                             </div>
+                            <button id="next" onclick="plusToDay()"></button>
                           </div>
                           <div class="dropdown-menu">
                             <div class="month_wrap">
@@ -4387,20 +4385,16 @@
                           type="calendar"
                         >
                           <div class="dropdown_button button">
-                            <div class="date_wrap">
-                              <button id="prev" onclick="minusToDay()"></button>
-                              <div class="date_content">
-                                <div class="date_text">
-                                  <span
-                                    id="search-date"
-                                    class="body-01-semibold"
-                                    >10-02</span
-                                  >
-                                  <span class="body-01-regular">일</span>
-                                </div>
+                            <button id="prev" onclick="minusToDay()"></button>
+                            <div class="date_content">
+                              <div class="date_text">
+                                <span id="search-date" class="body-01-semibold"
+                                  >10-02</span
+                                >
+                                <span class="body-01-regular">일</span>
                               </div>
-                              <button id="next" onclick="plusToDay()"></button>
                             </div>
+                            <button id="next" onclick="plusToDay()"></button>
                           </div>
                           <div class="dropdown-menu">
                             <div class="month_wrap">
@@ -4488,7 +4482,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -4622,7 +4616,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -4756,7 +4750,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -4890,560 +4884,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="league_container">
-                  <div class="league_content">
-                    <div class="fragment row">
-                      <span class="body-01-semibold">프리미어리그</span>
-                      <span class="body-01-semibold">:</span>
-                      <span class="body-01-semibold">잉글랜드</span>
-                    </div>
-                    <div class="fragment row">
-                      <div class="count_box">
-                        <span class="body-01-regular">(0)</span>
-                      </div>
-                      <div class="expand_button"></div>
-                    </div>
-                  </div>
-                  <ul class="hide">
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -5594,7 +5035,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -5728,7 +5169,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -5862,7 +5303,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -5996,560 +5437,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="league_container">
-                  <div class="league_content">
-                    <div class="fragment row">
-                      <span class="body-01-semibold">프리미어리그</span>
-                      <span class="body-01-semibold">:</span>
-                      <span class="body-01-semibold">잉글랜드</span>
-                    </div>
-                    <div class="fragment row">
-                      <div class="count_box">
-                        <span class="body-01-regular">(0)</span>
-                      </div>
-                      <div class="expand_button"></div>
-                    </div>
-                  </div>
-                  <ul class="hide">
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
-                                >4-0</span
-                              >
-                            </div>
-                          </div>
-                          <div class="away">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                              <span class="count heading-02-semibold">[3]</span>
-                            </div>
-                          </div>
-                          <div class="youtube">
-                            <i type="youtube" class="match"></i>
-                          </div>
-                        </div>
-                        <div class="fragment column">
-                          <div class="odds_container">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="odds_container hide" status="hover">
-                            <div class="odds_wrap win">
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                            </div>
-                            <div class="odds_wrap">
-                              <div class="content">
-                                <span class="body-01-semibold win">1.50</span>
-                              </div>
-                              <div class="content">
-                                <span class="body-01-semibold">1.50</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vote_container">
-                            <div class="vote_wrap">
-                              <div class="content" type="home">
-                                <span class="body-01-semibold">80,000€</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="draw">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                              <div class="content" type="away">
-                                <span class="body-01-semibold">10%</span>
-                                <div class="bar"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="betting-volume_container">
-                        <div class="matchup_container">
-                          <div class="bookmark">
-                            <i type="bookmark" change="false" class="match"></i>
-                          </div>
-                          <div class="home">
-                            <div class="emble_wrap">
-                              <img
-                                src="../static/images/temp/emble.png"
-                                width="48"
-                                height="48"
-                              />
-                            </div>
-                            <div class="team_wrap">
-                              <span class="count heading-02-semibold">[3]</span>
-                              <span
-                                type="text"
-                                class="button name heading-02-regular"
-                                >맨체스터 시티</span
-                              >
-                            </div>
-                          </div>
-                          <div class="content">
-                            <div class="fragment row">
-                              <div class="league_wrap">
-                                <div class="image_wrap">
-                                  <img
-                                    src="../static/images/temp/England_S1 1.png"
-                                    width="24"
-                                    height="18"
-                                  />
-                                </div>
-                                <span class="league body-01-semibold"
-                                  >ENG PR</span
-                                >
-                              </div>
-                              <div class="kickoff_wrap">
-                                <span class="body-01-regular">22:00</span>
-                              </div>
-                            </div>
-                            <div class="fragment row information">
-                              <span class="body-01-regular">종료</span>
-                              <div class="fragment row center score">
-                                <span class="score-01-bold win">6</span
-                                ><span class="score-01-bold">-</span>
-                                <span class="score-01-bold">3</span>
-                              </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -6700,7 +5588,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -6834,7 +5722,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -6968,7 +5856,7 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>
@@ -7102,7 +5990,1113 @@
                                 ><span class="score-01-bold">-</span>
                                 <span class="score-01-bold">3</span>
                               </div>
-                              <span class="body-01-regular base-text_tertiary"
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="league_container">
+                  <div class="league_content">
+                    <div class="fragment row">
+                      <span class="body-01-semibold">프리미어리그</span>
+                      <span class="body-01-semibold">:</span>
+                      <span class="body-01-semibold">잉글랜드</span>
+                    </div>
+                    <div class="fragment row">
+                      <div class="count_box">
+                        <span class="body-01-regular">(0)</span>
+                      </div>
+                      <div class="expand_button"></div>
+                    </div>
+                  </div>
+                  <ul class="hide">
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="league_container">
+                  <div class="league_content">
+                    <div class="fragment row">
+                      <span class="body-01-semibold">프리미어리그</span>
+                      <span class="body-01-semibold">:</span>
+                      <span class="body-01-semibold">잉글랜드</span>
+                    </div>
+                    <div class="fragment row">
+                      <div class="count_box">
+                        <span class="body-01-regular">(0)</span>
+                      </div>
+                      <div class="expand_button"></div>
+                    </div>
+                  </div>
+                  <ul class="hide">
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
+                                >4-0</span
+                              >
+                            </div>
+                          </div>
+                          <div class="away">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                              <span class="count heading-02-semibold">[3]</span>
+                            </div>
+                          </div>
+                          <div class="youtube">
+                            <i type="youtube" class="match"></i>
+                          </div>
+                        </div>
+                        <div class="fragment column">
+                          <div class="odds_container">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="odds_container hide" status="hover">
+                            <div class="odds_wrap win">
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                            </div>
+                            <div class="odds_wrap">
+                              <div class="content">
+                                <span class="body-01-semibold win">1.50</span>
+                              </div>
+                              <div class="content">
+                                <span class="body-01-semibold">1.50</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="vote_container">
+                            <div class="vote_wrap">
+                              <div class="content" type="home">
+                                <span class="body-01-semibold">80,000€</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="draw">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                              <div class="content" type="away">
+                                <span class="body-01-semibold">10%</span>
+                                <div class="bar"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="betting-volume_container">
+                        <div class="matchup_container">
+                          <div class="bookmark">
+                            <i type="bookmark" change="false" class="match"></i>
+                          </div>
+                          <div class="home">
+                            <div class="emble_wrap">
+                              <img
+                                src="../static/images/temp/emble.png"
+                                width="48"
+                                height="48"
+                              />
+                            </div>
+                            <div class="team_wrap">
+                              <span class="count heading-02-semibold">[3]</span>
+                              <span
+                                type="text"
+                                class="button name heading-02-regular"
+                                >맨체스터 시티</span
+                              >
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="fragment row">
+                              <div class="league_wrap">
+                                <div class="image_wrap">
+                                  <img
+                                    src="../static/images/temp/England_S1 1.png"
+                                    width="24"
+                                    height="18"
+                                  />
+                                </div>
+                                <span class="league body-01-semibold"
+                                  >ENG PR</span
+                                >
+                              </div>
+                              <div class="kickoff_wrap">
+                                <span class="body-01-regular">22:00</span>
+                              </div>
+                            </div>
+                            <div class="fragment row information">
+                              <span class="body-01-regular">종료</span>
+                              <div class="fragment row center score">
+                                <span class="score-01-bold win">6</span
+                                ><span class="score-01-bold">-</span>
+                                <span class="score-01-bold">3</span>
+                              </div>
+                              <span class="body-01-regular text_tertiary"
                                 >4-0</span
                               >
                             </div>

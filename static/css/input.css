@@ -20,31 +20,33 @@
     position: relative;
     background: inherit;
     height: 100%;
+    width: 100%;
     padding: 0px var(--spacing-spacing-content-xl, 16px);
     outline: none;
+    color: var(--text-text-primary, #E0E2E6);
 }
 
 .input_wrap .input::-webkit-input-placeholder {
-    color: var(--text-base-text-quaternary, #b1b3bb);
+    color: var(--text-text-quaternary, #b1b3bb);
 }
 
 .input_wrap .input::-moz-placeholder {
-    color: var(--text-base-text-quaternary, #b1b3bb);
+    color: var(--text-text-quaternary, #b1b3bb);
 }
 
 .input_wrap .input:-ms-input-placeholder {
-    color: var(--text-base-text-quaternary, #b1b3bb);
+    color: var(--text-text-quaternary, #b1b3bb);
 }
 
 .input_wrap .input::-ms-input-placeholder {
-    color: var(--text-base-text-quaternary, #b1b3bb);
+    color: var(--text-text-quaternary, #b1b3bb);
 }
 
 .input_wrap .input::placeholder {
-    color: var(--text-base-text-quaternary, #b1b3bb);
+    color: var(--text-text-quaternary, #b1b3bb);
 }
 
-.input_wrap.focus {
+.input_wrap[state="focus"] {
     background: var(--background-background-primary, #ffffff);
     border-color: var(--border-border-focus, #0059c2);
     border-width: 1px;
@@ -52,27 +54,27 @@
 }
 
 
-.input_wrap.focus .input::-webkit-input-placeholder {
+.input_wrap[state="focus"] .input::-webkit-input-placeholder {
     color: var(--text-text-primary, #393D48);
     opacity: 1;
 }
 
-.input_wrap.focus .input::-moz-placeholder {
+.input_wrap[state="focus"] .input::-moz-placeholder {
     color: var(--text-text-primary, #393D48);
     opacity: 1;
 }
 
-.input_wrap.focus .input:-ms-input-placeholder {
+.input_wrap[state="focus"] .input:-ms-input-placeholder {
     color: var(--text-text-primary, #393D48);
     opacity: 1;
 }
 
-.input_wrap.focus .input::-ms-input-placeholder {
+.input_wrap[state="focus"] .input::-ms-input-placeholder {
     color: var(--text-text-primary, #393D48);
     opacity: 1;
 }
 
-.input_wrap.focus .input::placeholder {
+.input_wrap[state="focus"] .input::placeholder {
     color: var(--text-text-primary, #393D48);
     opacity: 1;
 }
