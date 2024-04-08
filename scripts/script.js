@@ -250,10 +250,10 @@ $(document).ready(function () {
   // lm-tracker
   $(".dropdown_list > li").click(function () {
     if ($(this).children("i[type='lm-layout-top']").length > 0) {
-      $(".live-tracer_container[position='top']").removeClass("hide");
+      $(".live-tracker_container[position='top']").removeClass("hide");
     }
     if ($(this).children("i[type='lm-layout-bottom']").length > 0) {
-      $(".live-tracer_container[position='bottom']").removeClass("hide");
+      $(".live-tracker_container[position='bottom']").removeClass("hide");
     }
   });
 
