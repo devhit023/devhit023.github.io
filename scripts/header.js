@@ -8,11 +8,20 @@ $(document).ready(function () {
         $(".submenu_container .submenu-list").replaceWith(copy);
         $(".submenu_container .submenu-list").attr("change", "true");
         if ($(this).children("a").text() == "스포츠분석") {
-          $(".submenu_container").css("padding", "0px 640px 0px 440px");
+          $(".submenu_container .submenu-list").css(
+            "padding",
+            "0px 640px 0px 440px"
+          );
         } else if ($(this).children("a").text() == "커뮤니티") {
-          $(".submenu_container").css("padding", "0px 440px 0px 640px");
+          $(".submenu_container .submenu-list").css(
+            "padding",
+            "0px 440px 0px 640px"
+          );
         } else if ($(this).children("a").text() == "고객센터") {
-          $(".submenu_container").css("padding", "0px 465px 0px 1065px");
+          $(".submenu_container .submenu-list").css(
+            "padding",
+            "0px 465px 0px 1065px"
+          );
         }
       }
     }

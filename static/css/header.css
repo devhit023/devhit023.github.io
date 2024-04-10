@@ -106,6 +106,7 @@ header .submenu-list {
 
 header .submenu-list[change="true"] {
     display: flex;
+    width: 1920px;
 }
 
 header .submenu-list>.submenu-item {
@@ -146,4 +147,5 @@ header .submenu_container {
 
 header .submenu_container[change="true"] {
     display: flex;
+    justify-content: center;
 }
