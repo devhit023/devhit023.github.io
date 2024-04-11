@@ -1,14 +1,13 @@
 header#header {
     position: relative;
-    min-width: 1920px;
-    width: 100vw;
+    min-width: 1700px;
+    width: 100%;
 }
 
 /* header_container */
 .header_container {
     display: inline-flex;
-    min-width: 1920px;
-    width: 100vw;
+    width: 100%;
     background: var(--background-background-header, #ffffff);
     border-bottom: 1px solid var(--border-border-default);
 }

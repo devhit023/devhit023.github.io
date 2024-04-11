@@ -1,7 +1,7 @@
 #footer {
     position: relative;
-    min-width: 1920px;
-    width: 100vw;
+    min-width: 1700px;
+    width: 100%;
 }
 
 .footer {
@@ -11,8 +11,7 @@
     position: relative;
     align-items: center;
     height: 160px;
-    min-width: 1920px;
-    width: 100vw;
+    width: 100%;
     border-top: 1px solid var(--border-border-default);
     background: var(--background-background-header);
     padding-top: var(--spacing-spacing-layout-xl, 25px);

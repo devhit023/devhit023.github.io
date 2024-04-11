@@ -31,9 +31,9 @@ $(document).ready(function () {
       }
     } else if ($(this).attr("id") == "bascketball") {
       if ($("#lightmode:checked").length > 0) {
-        window.location.href = "/html/LIVESCORE-Basketball-Dark.html";
+        window.location.href = "/html/LIVESCORE-BasketBall-Dark.html";
       } else {
-        window.location.href = "/html/LIVESCORE-Basketball-Light.html";
+        window.location.href = "/html/LIVESCORE-BasketBall-Light.html";
       }
     }
   });

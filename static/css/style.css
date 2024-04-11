@@ -19,10 +19,8 @@
 
 /* main */
 #main {
-  display: inline-flex;
-  min-width: 1920px;
-  width: 100vw;
-  position: relative;
+  min-width: 1700px;
+  width: 100%;
   background: var(--background-background-page, #f5f5f8);
 }
 
@@ -328,6 +326,9 @@
 .league-table .league-table_header > ul.type > li {
   width: 35px;
 }
+.league-table .league-table_header > ul.type > li:last-child {
+  width: 34px;
+}
 .league-table .league-table_body {
   position: relative;
 }
@@ -524,6 +525,9 @@
 }
 .top-player-table .top-player-table_header > ul.type > li {
   width: 35px;
+}
+.top-player-table .top-player-table_header > ul.type > li:last-child {
+  width: 34px;
 }
 .top-player-table .top-player-table_body .table .table_head {
   display: flex;
@@ -10028,7 +10032,7 @@
 .chat_container .chat_header {
   display: flex;
   flex-direction: row;
-  height: 49px;
+  height: 48px;
 }
 .chat_container .chat_header > ul.type {
   display: flex;

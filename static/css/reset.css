@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-box-sizing: border-box;
@@ -12,17 +13,13 @@
 }
 
 html {
-    overflow-anchor: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
     font-family: "IBM Plex Sans KR", "IBM Plex Sans", "Roboto", sans-serif;
     font-size: calc(16 / var(--font-size-default) * 1rem);
     font-weight: var(--font-weight-regular);
     line-height: inherit;
     letter-spacing: 0;
     color: var(--text-text-accent-primary, #2B2E39);
+    overflow-anchor: none;
 }
 
 body {
