@@ -322,7 +322,7 @@ html[data-theme="dark"] .dropdown_wrap[type="calendar"] .dropdown-menu>.month_wr
 }
 
 .dropdown_wrap[type="calendar"] .dropdown-menu_list>.dropdown-menu_item {
-    padding: 0px clac(var(--spacing-spacing-layout-xl, 25px) - 1px);
+    padding: 0px calc(var(--spacing-spacing-layout-xl, 25px) - 1px);
     gap: var(--spacing-spacing-content-sm, 4px);
 }
 
