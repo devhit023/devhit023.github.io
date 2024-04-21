@@ -179,7 +179,7 @@
 
 .rank[type="gold"] {
     background: var(--decorative-rank-rank-gold, #fde272);
-    color: var(--decorative-rank-rank-gold-rank, #a15c07);
+    color: var(--text-text-rank-gold, #854A0E);
 }
 
 .rank[type="silver"] {

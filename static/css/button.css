@@ -275,19 +275,19 @@ html[data-theme="dark"] .match[type="youtube"] {
 
 /* button - match[type="lm-tracker"] */
 .match[type="lm-tracker"][change="false"] {
-    background-image: url("../images/Icon/lm-tracker-off-light.svg");
+    background-image: url("../images/Icon/livetracker-off-light.svg");
 }
 
 html[data-theme="dark"] .match[type="lm-tracker"][change="false"] {
-    background-image: url("../images/Icon/lm-tracker-off-dark.svg");
+    background-image: url("../images/Icon/livetracker-off-dark.svg");
 }
 
 .match[type="lm-tracker"][change="true"] {
-    background-image: url("../images/Icon/lm-tracker-on-light.svg");
+    background-image: url("../images/Icon/livetracker-on-light.svg");
 }
 
 html[data-theme="dark"] .match[type="lm-tracker"][change="true"] {
-    background-image: url("../images/Icon/lm-tracker-on-dark.svg");
+    background-image: url("../images/Icon/livetracker-on-dark.svg");
 }
 
 .match[type="lm-tracker"]+.dropdown_list {
@@ -333,20 +333,20 @@ html[data-theme="dark"] .match[type="lm-tracker"][change="true"] {
 
 .match[type="lm-layout-top"] {
     display: inline-block;
-    background-image: url("../images/Icon/lm-layout-top-light.svg");
+    background-image: url("../images/Icon/layout-top-light.svg");
 }
 
 html[data-theme="dark"] .match[type="lm-layout-top"] {
-    background-image: url("../images/Icon/lm-layout-top-dark.svg");
+    background-image: url("../images/Icon/layout-top-dark.svg");
 }
 
 .match[type="lm-layout-bottom"] {
     display: inline-block;
-    background-image: url("../images/Icon/lm-layout-bottom-light.svg");
+    background-image: url("../images/Icon/layout-bottom-light.svg");
 }
 
 html[data-theme="dark"] .match[type="lm-layout-bottom"] {
-    background-image: url("../images/Icon/lm-layout-top-dark.svg");
+    background-image: url("../images/Icon/layout-top-dark.svg");
 }
 
 /* button - match[type="lm-chat"] */
@@ -355,7 +355,7 @@ html[data-theme="dark"] .match[type="lm-layout-bottom"] {
 }
 
 html[data-theme="dark"] .match[type="lm-chat"][change="false"] {
-    background-image: url("../images/Icon/lm-layout-top-dark.svg");
+    background-image: url("../images/Icon/layout-top-dark.svg");
 }
 
 .match[type="lm-chat"][change="true"] {
@@ -363,7 +363,7 @@ html[data-theme="dark"] .match[type="lm-chat"][change="false"] {
 }
 
 html[data-theme="dark"] .match[type="lm-chat"][change="true"] {
-    background-image: url("../images/Icon/lm-layout-top-dark.svg");
+    background-image: url("../images/Icon/layout-top-dark.svg");
 }
 
 .match[type="lm-chat"]+.dropdown_list {
