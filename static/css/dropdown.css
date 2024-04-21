@@ -131,6 +131,31 @@
     gap: var(--spacing-spacing-content-sm, 4px);
 }
 
+.dropdown-menu .dropdown-menu_list>.dropdown-menu_item>.checkbox_wrap input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+    background-image: url("../images/Icon/checkbox-disabled-light.svg");
+    cursor: pointer;
+
+    &:hover {
+        background-image: url("../images/Icon/checkbox-hover-light.svg");
+    }
+
+    &:active {
+        background-image: url("../images/Icon/checkbox-press-light.svg");
+    }
+
+    &:checked {
+        background-image: url("../images/Icon/checkbox-enabled-light.svg");
+    }
+}
+
 .dropdown-menu .dropdown-menu_list>.dropdown-menu_item>span {
     text-overflow: ellipsis;
     white-space: nowrap;

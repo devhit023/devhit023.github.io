@@ -293,7 +293,7 @@
                   <input type="checkbox" id="lightmode" checked />
                   <label for="lightmode"></label>
                 </div>
-                <span class="body-01-regular">다크모드</span>
+                <span class="body-01-regular">라이트모드</span>
               </div>
               <div class="scale_content">
                 <div class="radio_wrap">
@@ -4028,8 +4028,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -4053,8 +4053,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >골든스테이트 워리어즈</span
                                 >
@@ -4072,7 +4072,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -4117,7 +4117,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">199</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >199</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >210</span
                             >
@@ -4127,7 +4129,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -4141,7 +4143,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -4200,7 +4202,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -4259,7 +4261,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -4391,50 +4393,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -5843,12 +5852,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -5869,12 +5872,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -5938,8 +5935,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -5963,8 +5960,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >골든스테이트 워리어즈</span
                                 >
@@ -5982,7 +5979,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -6027,7 +6024,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">199</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >199</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >210</span
                             >
@@ -6037,7 +6036,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -6051,7 +6050,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -6110,7 +6109,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -6169,7 +6168,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -6301,50 +6300,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -7753,12 +7759,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -7779,12 +7779,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -7848,8 +7842,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -7873,8 +7867,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >골든스테이트 워리어즈</span
                                 >
@@ -7892,7 +7886,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -7937,7 +7931,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">199</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >199</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >210</span
                             >
@@ -7947,7 +7943,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -7961,7 +7957,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -8020,7 +8016,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -8079,7 +8075,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -8211,50 +8207,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -9663,12 +9666,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -9689,12 +9686,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -9758,8 +9749,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -9783,8 +9774,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >골든스테이트 워리어즈</span
                                 >
@@ -9802,7 +9793,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -9847,7 +9838,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">199</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >199</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >210</span
                             >
@@ -9857,7 +9850,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -9871,7 +9864,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -9930,7 +9923,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -9989,7 +9982,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -10121,50 +10114,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -11573,12 +11573,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -11599,12 +11593,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -11668,8 +11656,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -11693,8 +11681,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >골든스테이트 워리어즈</span
                                 >
@@ -11712,7 +11700,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -11757,7 +11745,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">199</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >199</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >210</span
                             >
@@ -11767,7 +11757,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -11781,7 +11771,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -11840,7 +11830,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -11899,7 +11889,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -12031,50 +12021,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -13483,12 +13480,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -13509,12 +13500,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -13578,8 +13563,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -13603,8 +13588,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >골든스테이트 워리어즈</span
                                 >
@@ -13622,7 +13607,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -13667,7 +13652,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">199</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >199</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >210</span
                             >
@@ -13677,7 +13664,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -13691,7 +13678,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -13750,7 +13737,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -13809,7 +13796,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -13941,50 +13928,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -15393,12 +15387,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -15419,12 +15407,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -15529,8 +15511,8 @@
                       </li>
                       <li>
                         <div class="dropdown_wrap" change="false">
-                          <div class="dropdown_button button" state="enabled">
-                            <span class="heading-01-semibold">승무패</span>
+                          <div class="dropdown_button button" state="disabled">
+                            <span class="heading-01-regular">배당없음</span>
                             <div class="dropdown-icon_wrap">
                               <img
                                 id="expand_image"
@@ -15545,7 +15527,7 @@
                           <div class="dropdown-menu">
                             <ul class="dropdown-menu_list">
                               <li class="dropdown-menu_item active">
-                                <span class="body-01-semibold">승무패</span>
+                                <span class="body-01-semibold">배당없음</span>
                               </li>
                               <li class="dropdown-menu_item">
                                 <span class="body-01-regular">승무패</span>
@@ -17433,7 +17415,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -17498,7 +17480,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -17557,7 +17539,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -17699,7 +17681,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -17736,7 +17718,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -17792,50 +17774,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -19244,12 +19233,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -19270,12 +19253,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -19377,7 +19354,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -19442,7 +19419,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -19501,7 +19478,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -19643,7 +19620,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -19680,7 +19657,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -19736,50 +19713,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -21188,12 +21172,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -21214,12 +21192,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -21321,7 +21293,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -21386,7 +21358,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -21445,7 +21417,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -21587,7 +21559,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -21624,7 +21596,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -21680,50 +21652,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -23132,12 +23111,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -23158,12 +23131,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -23265,7 +23232,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -23330,7 +23297,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -23389,7 +23356,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -23531,7 +23498,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -23568,7 +23535,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -23624,50 +23591,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -25076,12 +25050,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -25102,12 +25070,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -25209,7 +25171,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -25274,7 +25236,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -25333,7 +25295,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -25475,7 +25437,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -25512,7 +25474,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -25568,50 +25530,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -27020,12 +26989,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -27046,12 +27009,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -27153,7 +27110,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -27218,7 +27175,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -27277,7 +27234,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -27419,7 +27376,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -27456,7 +27413,7 @@
                               </div>
                               <div class="item">
                                 <div class="fragment column">
-                                  <div class="fragment row">
+                                  <div class="fragment row margin-b-1">
                                     <span class="body-01-semibold"> 30승 </span>
                                     <span class="body-01-regular"> 50패 </span>
                                   </div>
@@ -27512,50 +27469,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -28964,12 +28928,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -28990,12 +28948,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -30873,8 +30825,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -30887,7 +30839,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="content home win">
+                        <div class="content home" status="active">
                           <div class="fragment row">
                             <div class="image_wrap">
                               <img
@@ -30896,9 +30848,9 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
-                                <span class="body-01-regular"
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
+                                <span class="body-01-semibold"
                                   >골든스테이트 워리어즈</span
                                 >
                                 <span
@@ -30918,7 +30870,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -30954,7 +30906,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">11</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >11</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >7.5</span
                             >
@@ -30964,7 +30918,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -30978,7 +30932,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -31037,7 +30991,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -31096,7 +31050,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -31228,50 +31182,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -32680,12 +32641,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -32706,12 +32661,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -32775,8 +32724,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -32789,7 +32738,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="content home win">
+                        <div class="content home" status="active">
                           <div class="fragment row">
                             <div class="image_wrap">
                               <img
@@ -32798,9 +32747,9 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
-                                <span class="body-01-regular"
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
+                                <span class="body-01-semibold"
                                   >골든스테이트 워리어즈</span
                                 >
                                 <span
@@ -32820,7 +32769,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -32856,7 +32805,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">11</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >11</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >7.5</span
                             >
@@ -32866,7 +32817,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -32880,7 +32831,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -32939,7 +32890,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -32998,7 +32949,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -33130,50 +33081,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -34582,12 +34540,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -34608,12 +34560,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -34677,8 +34623,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -34691,7 +34637,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="content home win">
+                        <div class="content home" status="active">
                           <div class="fragment row">
                             <div class="image_wrap">
                               <img
@@ -34700,9 +34646,9 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
-                                <span class="body-01-regular"
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
+                                <span class="body-01-semibold"
                                   >골든스테이트 워리어즈</span
                                 >
                                 <span
@@ -34722,7 +34668,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -34758,7 +34704,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">11</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >11</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >7.5</span
                             >
@@ -34768,7 +34716,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -34782,7 +34730,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -34841,7 +34789,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -34900,7 +34848,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -35032,50 +34980,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -36484,12 +36439,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -36510,12 +36459,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -36579,8 +36522,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -36593,7 +36536,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="content home win">
+                        <div class="content home" status="active">
                           <div class="fragment row">
                             <div class="image_wrap">
                               <img
@@ -36602,9 +36545,9 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
-                                <span class="body-01-regular"
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
+                                <span class="body-01-semibold"
                                   >골든스테이트 워리어즈</span
                                 >
                                 <span
@@ -36624,7 +36567,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -36660,7 +36603,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">11</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >11</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >7.5</span
                             >
@@ -36670,7 +36615,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -36684,7 +36629,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -36743,7 +36688,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -36802,7 +36747,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -36934,50 +36879,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -38386,12 +38338,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -38412,12 +38358,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -38481,8 +38421,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -38495,7 +38435,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="content home win">
+                        <div class="content home" status="active">
                           <div class="fragment row">
                             <div class="image_wrap">
                               <img
@@ -38504,9 +38444,9 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
-                                <span class="body-01-regular"
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
+                                <span class="body-01-semibold"
                                   >골든스테이트 워리어즈</span
                                 >
                                 <span
@@ -38526,7 +38466,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -38562,7 +38502,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">11</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >11</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >7.5</span
                             >
@@ -38572,7 +38514,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -38586,7 +38528,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -38645,7 +38587,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -38704,7 +38646,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -38836,50 +38778,57 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
-                          <li>
-                            <div class="tooltip_wrap">
+                        <div class="fragment column">
+                          <ul class="content icon">
+                            <li>
+                              <div class="tooltip_wrap">
+                                <div class="match_wrap">
+                                  <i type="information" class="match"></i>
+                                </div>
+                                <div class="tooltip" position="bottom right">
+                                  <span class="body-01-regular"
+                                    >Information</span
+                                  >
+                                </div>
+                              </div>
+                            </li>
+                            <li>
                               <div class="match_wrap">
-                                <i type="information" class="match"></i>
+                                <i type="youtube" class="match"></i>
                               </div>
-                              <div class="tooltip" position="bottom right">
-                                <span class="body-01-regular">Information</span>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lm-tracker"
+                                  change="false"
+                                  class="match"
+                                ></i>
+                                <ul class="dropdown_list">
+                                  <li>
+                                    <i type="lm-layout-top" class="match"></i>
+                                  </li>
+                                  <li>
+                                    <i
+                                      type="lm-layout-bottom"
+                                      class="match"
+                                    ></i>
+                                  </li>
+                                </ul>
                               </div>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i type="youtube" class="match"></i>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lm-tracker"
-                                change="false"
-                                class="match"
-                              ></i>
-                              <ul class="dropdown_list">
-                                <li>
-                                  <i type="lm-layout-top" class="match"></i>
-                                </li>
-                                <li>
-                                  <i type="lm-layout-bottom" class="match"></i>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="td no-border no-padding">
-                            <div class="match_wrap">
-                              <i
-                                type="lineup"
-                                change="false"
-                                status="true"
-                                class="match"
-                              ></i>
-                            </div>
-                          </li>
-                        </ul>
+                            </li>
+                            <li>
+                              <div class="match_wrap">
+                                <i
+                                  type="lineup"
+                                  change="false"
+                                  status="true"
+                                  class="match"
+                                ></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="lineup_container hide">
@@ -40288,12 +40237,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -40314,12 +40257,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">
@@ -40383,8 +40320,8 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
                                 <span class="body-01-regular"
                                   >워싱턴 위저즈</span
                                 >
@@ -40397,7 +40334,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="content home win">
+                        <div class="content home" status="active">
                           <div class="fragment row">
                             <div class="image_wrap">
                               <img
@@ -40406,9 +40343,9 @@
                                 height="48"
                               />
                             </div>
-                            <div class="fragment column team_container">
-                              <div class="fragment row">
-                                <span class="body-01-regular"
+                            <div class="fragment column team_wrap">
+                              <div class="fragment row team_content margin-b-1">
+                                <span class="body-01-semibold"
                                   >골든스테이트 워리어즈</span
                                 >
                                 <span
@@ -40428,7 +40365,7 @@
                         <div class="fragment row">
                           <div class="content h2h">
                             <div class="fragment column">
-                              <span class="body-01-regular center"
+                              <span class="body-01-regular center margin-b-1"
                                 >09월 30일</span
                               >
                               <div class="fragment row center result">
@@ -40464,7 +40401,9 @@
                         </div>
                         <div class="content">
                           <div class="fragment column">
-                            <span class="body-01-regular center">11</span>
+                            <span class="body-01-regular center margin-b-1"
+                              >11</span
+                            >
                             <span class="body-01-regular center text_tertiary"
                               >7.5</span
                             >
@@ -40474,7 +40413,7 @@
                       <div class="fragment column">
                         <div class="content pitcher">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >포르징기스 K.</span
                               >
@@ -40488,7 +40427,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -40547,7 +40486,7 @@
                         </div>
                         <div class="content widget">
                           <div class="count_container">
-                            <div class="count_wrap">
+                            <div class="count_wrap margin-b-1">
                               <span class="body-01-semibold type">F</span>
                               <div class="fragment row">
                                 <img
@@ -40606,7 +40545,7 @@
                         </div>
                         <div class="content hiter">
                           <div class="fragment column">
-                            <div class="fragment row">
+                            <div class="fragment row margin-b-1">
                               <span class="body-01-semibold text_accent-primary"
                                 >커리 S.</span
                               >
@@ -40738,7 +40677,7 @@
                         </div>
                       </div>
                       <div class="fragment column">
-                        <ul class="content icon" style="height: auto">
+                        <ul class="content icon">
                           <li>
                             <div class="tooltip_wrap">
                               <div class="match_wrap">
@@ -40749,12 +40688,12 @@
                               </div>
                             </div>
                           </li>
-                          <li class="td no-border no-padding">
+                          <li>
                             <div class="match_wrap">
                               <i type="youtube" class="match"></i>
                             </div>
                           </li>
-                          <li class="td no-border no-padding">
+                          <li>
                             <div class="match_wrap">
                               <i
                                 type="lm-tracker"
@@ -40771,7 +40710,7 @@
                               </ul>
                             </div>
                           </li>
-                          <li class="td no-border no-padding">
+                          <li>
                             <div class="match_wrap">
                               <i
                                 type="lineup"
@@ -42190,12 +42129,6 @@
                                 </ul>
                               </div>
                               <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
                                 <div class="table_wrap_header">
                                   <div class="th">
                                     <span class="body-01-semibold">경기장</span>
@@ -42216,12 +42149,6 @@
                                       >
                                     </div>
                                   </li>
-                                </ul>
-                              </div>
-                              <div class="table_wrap">
-                                <div class="table_wrap_header"></div>
-                                <ul class="table_wrap_body">
-                                  <li></li>
                                 </ul>
                               </div>
                               <div class="table_wrap">

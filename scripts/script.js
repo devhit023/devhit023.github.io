@@ -84,6 +84,7 @@ $(document).ready(function () {
 
   // main - td
   $(".td").click(function () {
+    console.log("cc", $(this).closest(".row_container"));
     // match_wrap - i[type='lm-tracker']
     if (
       $(this).children(".match_wrap").children("i[type='lm-tracker']").length >
@@ -126,6 +127,74 @@ $(document).ready(function () {
           .each(function (index, item) {
             $(item).addClass("expand");
           });
+        $(this)
+          .closest(".row_container")
+          .parent()
+          .children(".lineup_container")
+          .removeClass("hide");
+      } else {
+        $(this)
+          .children(".match_wrap")
+          .children("i[type='lineup']")
+          .attr("change", "false");
+        $(this).removeClass("expand");
+        $(".main_box > .table:not(.hide) > .table_body > ul > li")
+          .has("i[type='lineup'][change='false']")
+          .each(function (index, item) {
+            $(item).removeClass("expand");
+          });
+        $(this)
+          .closest(".row_container")
+          .parent()
+          .children(".lineup_container")
+          .addClass("hide");
+      }
+    }
+  });
+  $("li").click(function () {
+    // match_wrap - i[type='lm-tracker']
+    if (
+      $(this).children(".match_wrap").children("i[type='lm-tracker']").length >
+      0
+    ) {
+      if (
+        $(this)
+          .children(".match_wrap")
+          .children("i[type='lm-tracker'][change='false']").length > 0
+      ) {
+        $(this)
+          .children(".match_wrap")
+          .children("i[type='lm-tracker']")
+          .attr("change", "true");
+      } else {
+        $(this)
+          .children(".match_wrap")
+          .children("i[type='lm-tracker']")
+          .attr("change", "false");
+      }
+    }
+
+    // match_wrap - i[type='lineup']
+    if (
+      $(this).children(".match_wrap").children("i[type='lineup']").length > 0
+    ) {
+      if (
+        $(this)
+          .children(".match_wrap")
+          .children("i[type='lineup'][change='false']").length > 0
+      ) {
+        $(this)
+          .children(".match_wrap")
+          .children("i[type='lineup']")
+          .attr("change", "true");
+        $(this).addClass("expand");
+        $(this).parent().parent().addClass("expand");
+        $(".main_box > .table:not(.hide) > .table_body > ul > li")
+          .has("i[type='lineup'][change='true']")
+          .each(function (index, item) {
+            $(item).addClass("expand");
+          });
+        console.log("??", $(this).closest(".row_container"));
         $(this)
           .closest(".row_container")
           .parent()
@@ -222,10 +291,12 @@ $(document).ready(function () {
   $(".table_body > .league_container .expand_button").click(function () {
     if ($(this).attr("status") == "change") {
       $(this).attr("status", "");
-      $(this).parent().parent().parent().children("ul").addClass("hide");
+      $(this).closest(".league_container").removeClass("expand");
+      $(this).closest(".league_container").children("ul").addClass("hide");
     } else {
       $(this).attr("status", "change");
-      $(this).parent().parent().parent().children("ul").removeClass("hide");
+      $(this).closest(".league_container").addClass("expand");
+      $(this).closest(".league_container").children("ul").removeClass("hide");
     }
   });
 
