@@ -577,6 +577,7 @@
   .tooltip_wrap {
     > .rank_wrap + .tooltip {
       left: 0;
+      top: calc(100% + 14px);
       padding: 0px var(--spacing-spacing-layout-md, 15px);
       &::after {
         left: 9.5008px;
@@ -7387,7 +7388,7 @@
             justify-content: center;
             align-items: center;
             > .tooltip {
-              top: 40px;
+              top: calc(100% + 4px);
               right: 0;
               padding: 0px var(--spacing-spacing-layout-md, 15px);
               &::after {
@@ -9474,7 +9475,7 @@
                   justify-content: center;
                   align-items: center;
                   > .tooltip {
-                    top: 40px;
+                    top: calc(100% + 4px);
                     right: 0;
                     padding: 0px var(--spacing-spacing-layout-md, 15px);
                     &::after {
@@ -11117,7 +11118,7 @@
                 justify-content: center;
                 align-items: center;
                 > .tooltip {
-                  top: 40px;
+                  top: calc(100% + 4px);
                   right: 0;
                   padding: 0px var(--spacing-spacing-layout-md, 15px);
                   &::after {

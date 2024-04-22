@@ -455,6 +455,7 @@
 
 .league-table .league-table_body .table .table_body .td .tooltip_wrap > .rank_wrap + .tooltip {
   left: 0;
+  top: calc(100% + 14px);
   padding: 0px var(--spacing-spacing-layout-md, 15px);
 }
 .league-table .league-table_body .table .table_body .td .tooltip_wrap > .rank_wrap + .tooltip::after {
@@ -5868,7 +5869,7 @@
   align-items: center;
 }
 .main.livescore-soccer.h2h section:nth-child(5) .table_body ul > li .td:nth-child(8) > .tooltip_wrap > .tooltip {
-  top: 40px;
+  top: calc(100% + 4px);
   right: 0;
   padding: 0px var(--spacing-spacing-layout-md, 15px);
 }
@@ -7751,7 +7752,7 @@
   align-items: center;
 }
 .main.livescore-baseball.h2h section:nth-child(6) .table .table_body ul > li .td:nth-child(8) > .tooltip_wrap > .tooltip {
-  top: 40px;
+  top: calc(100% + 4px);
   right: 0;
   padding: 0px var(--spacing-spacing-layout-md, 15px);
 }
@@ -9284,7 +9285,7 @@
   align-items: center;
 }
 .main.livescore-basketball.h2h section:nth-child(5) .table .table_body ul > li .td > .tooltip_wrap > .tooltip {
-  top: 40px;
+  top: calc(100% + 4px);
   right: 0;
   padding: 0px var(--spacing-spacing-layout-md, 15px);
 }
