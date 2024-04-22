@@ -106,14 +106,14 @@ html[data-theme="dark"] .tooltip_wrap .tooltip::after {
     z-index: 1;
     height: 8px;
     border-radius: var(--radius-radius-md, 10px);
-    background: var(--decorative-user-user-exp, #66c61c);
+    background: var(--interactive-user-user-exp, #66c61c);
     box-shadow: var(--shadow-xs-box-shadow,
             0px 2px 2px 0px rgba(25, 28, 38, 0.06),
             0px 2px 4px 0px rgba(25, 28, 38, 0.1));
 }
 
 .progress_wrap:hover>.progress-bar {
-    background: var(--decorative-user-user-exp-hover, #4ca30d);
+    background: var(--interactive-user-user-exp-hover, #4ca30d);
 }
 
 .progress_wrap+.tooltip[position="bottom left"] {

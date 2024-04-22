@@ -184,12 +184,12 @@
 
 .rank[type="silver"] {
     background: var(--decorative-rank-rank-silver);
-    color: var(--decorative-rank-rank-silver-rank);
+    color: var(--text-text-rank-silver);
 }
 
 .rank[type="bronze"] {
     background: var(--decorative-rank-rank-bronze);
-    color: var(--decorative-rank-rank-bronze-rank);
+    color: var(--text-text-rank-bronze);
 }
 
 .rank[type="base"] {

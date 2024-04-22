@@ -22,7 +22,7 @@
 }
 
 .toggle_wrap:hover label {
-    background-color: var(--interactive-toggle-toggle-disabled-hover, #ededef);
+    background-color: var(--interactive-button-button-toggle-disabled-hover, #ededef);
 }
 
 .toggle_wrap label:before {
