@@ -49,13 +49,13 @@
 .tooltip_wrap .tooltip::after {
     content: "";
     position: absolute;
-    background: url("../images/Icon/tooltip-light.svg");
+    background: url("../images/Icon/arrow-up-light.svg");
     width: 16px;
     height: 8px;
 }
 
 html[data-theme="dark"] .tooltip_wrap .tooltip::after {
-    background: url("../images/Icon/tooltip-dark.svg");
+    background: url("../images/Icon/arrow-up-dark.svg");
 }
 
 .tooltip_wrap .tooltip[position="top"]::after {

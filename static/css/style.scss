@@ -2281,12 +2281,12 @@
               height: 100%;
               & > .fragment {
                 width: 69px;
-                &:nth-child(2) {
-                  width: 69px;
-                }
                 &:not(:last-child) {
                   width: 70px;
                   border-right: 1px solid var(--border-border-default);
+                }
+                &:nth-child(2) {
+                  width: 69px;
                 }
                 .item {
                   position: relative;
@@ -2625,7 +2625,6 @@
 
           &.expand {
             position: relative;
-            border-left-width: 1px;
             background: var(--background-background-header, #0b0c12);
             > .match_wrap {
               pointer-events: none;
@@ -3283,6 +3282,11 @@
       .row_container {
         height: 50px;
         border-bottom: 1px solid var(--border-border-default, #d3d4d9);
+        > .td:nth-last-child(2) {
+          margin-right: 0;
+          border-right-width: 1px;
+          width: 70px;
+        }
       }
       .lineup_container .lineup_wrap {
         > .roster {
@@ -3725,7 +3729,7 @@
                   &.text-relay {
                     justify-content: flex-start;
                     gap: var(--spacing-spacing-content-sm, 4px);
-                    color: var(--text-text-chat-notice, #9e77ed);
+                    color: var(--text-text-notice, #6941c6);
                     padding: var(--spacing-spacing-layout-sm, 10px)
                       var(--spacing-spacing-layout-lg, 20px);
                   }
@@ -12341,7 +12345,7 @@
     }
 
     .chat_body .chat[type="notice"] {
-      color: var(--text-text-chat-notice, #9e77ed);
+      color: var(--text-text-notice, #6941c6);
     }
 
     .chat_body .chat[type="subscribe"] {
@@ -12647,7 +12651,7 @@
     }
 
     &.message {
-      color: var(--text-text-chat-notice, #9e77ed);
+      color: var(--text-text-notice, #6941c6);
     }
   }
 }

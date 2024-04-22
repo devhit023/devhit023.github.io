@@ -346,6 +346,10 @@ html[data-theme="dark"] .dropdown_wrap[type="calendar"] .dropdown-menu>.month_wr
     background-image: url("../images/Icon/next-hover-dark.svg");
 }
 
+.dropdown_wrap[type="calendar"] .dropdown-menu_list {
+    position: relative;
+}
+
 .dropdown_wrap[type="calendar"] .dropdown-menu_list>.dropdown-menu_item {
     padding: 0px calc(var(--spacing-spacing-layout-xl, 25px) - 1px);
     gap: var(--spacing-spacing-content-sm, 4px);
