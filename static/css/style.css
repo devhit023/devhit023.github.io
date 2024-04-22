@@ -3836,6 +3836,7 @@
   border-radius: var(--radius-radius-md, 10px);
   border: 1px solid var(--border-border-window, #b1b3bb);
   margin-top: var(--spacing-spacing-layout-2xl, 30px);
+  overflow: hidden;
 }
 .analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap {
   display: flex;
@@ -3843,7 +3844,7 @@
   align-items: center;
 }
 .analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:first-child {
-  height: 29px;
+  height: 30px;
   color: var(--text-text-secondary, #525461);
 }
 .analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child {
@@ -3852,14 +3853,18 @@
   flex-direction: row;
 }
 .analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 139px;
 }
 .analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:not(:last-child) {
+  width: 140px;
   border-right: 1px solid var(--border-border-window, #b1b3bb);
+}
+.analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:nth-child(2) {
+  width: 139px;
 }
 .analysis-soccer .main_box .table .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:not(:last-child) {
   border-bottom: 1px solid var(--border-border-window, #b1b3bb);
@@ -3879,8 +3884,9 @@
 }
 .analysis-soccer .main_box .table .table_body > ul > li,
 .analysis-soccer .main_box .table .table_body .league_container > ul > li {
+  width: 1280px;
   height: 150px;
-  margin: 0 9px;
+  margin: auto;
   border-radius: var(--radius-radius-md, 10px);
   border: 1px solid var(--border-border-window, #b1b3bb);
   background: var(--background-background-primary, #191c26);
@@ -3890,8 +3896,10 @@
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container {
   display: flex;
   flex-direction: row;
+}
+.analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .fragment.column,
+.analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .fragment.column {
   width: 100%;
-  height: 100%;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .matchup_container,
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .matchup_container {
@@ -3899,6 +3907,8 @@
   flex-direction: row;
   border-top-left-radius: var(--radius-radius-md, 10px);
   border-bottom-left-radius: var(--radius-radius-md, 10px);
+  border-right: 1px solid var(--border-border-window, #b1b3bb);
+  width: 860px;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .matchup_container > .bookmark,
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .matchup_container .lineup,
@@ -4006,11 +4016,9 @@
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container,
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .odds_container {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 9px;
-  border-left: 1px solid var(--border-border-window, #b1b3bb);
   cursor: pointer;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .content,
@@ -4031,12 +4039,14 @@
   flex-direction: row;
   border-top-right-radius: var(--radius-radius-md, 10px);
   border-bottom: 1px solid var(--border-border-window, #b1b3bb);
+  height: 70px;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap,
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  width: 139px;
+  height: 100%;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap > .content,
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap > .content {
@@ -4074,6 +4084,7 @@
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap:not(:last-child),
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap:not(:last-child) {
+  width: 140px;
   border-right: 1px solid var(--border-border-window, #b1b3bb);
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .volume_wrap,
@@ -4082,15 +4093,18 @@
   flex-direction: row;
   border-bottom-right-radius: var(--radius-radius-md, 10px);
   border-top: 1px solid var(--border-border-window, #b1b3bb);
+  height: 70px;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .volume_wrap > .content_wrap,
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .odds_container .volume_wrap > .content_wrap {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  width: 139px;
+  height: 100%;
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container .volume_wrap > .content_wrap:not(:last-child),
 .analysis-soccer .main_box .table .table_body .league_container > ul > li .betting-volume_container > .odds_container .volume_wrap > .content_wrap:not(:last-child) {
+  width: 140px;
   border-right: 1px solid var(--border-border-window, #b1b3bb);
 }
 .analysis-soccer .main_box .table .table_body > ul > li .betting-volume_container > .odds_container:hover > .moneyline_wrap,
@@ -4160,7 +4174,6 @@
 }
 .analysis-soccer .main_box .table[type=dropping-odds] .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:first-child {
   background: var(--decorative-odds-text-odds-drop, #d92d20);
-  border-bottom-left-radius: var(--radius-radius-md, 10px);
 }
 .analysis-soccer .main_box .table[type=dropping-odds] .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:nth-child(2) {
   background: var(--text-odds-text-odds-drop-30, #f79009);
@@ -4170,7 +4183,6 @@
 }
 .analysis-soccer .main_box .table[type=dropping-odds] .table_header .table_search_container .table_search_container_middle > .note_container > .note_wrap:last-child > .condition_wrap:last-child {
   background: var(--text-odds-text-odds-rise-70, #6941c6);
-  border-bottom-right-radius: var(--radius-radius-md, 10px);
 }
 .analysis-soccer .main_box .table[type=dropping-odds] .table_body > ul > li .betting-volume_container > .odds_container .moneyline_wrap .odds_wrap > .content {
   position: relative;
@@ -4315,12 +4327,16 @@
   border-bottom-right-radius: var(--radius-radius-md, 10px);
   border-bottom-left-radius: var(--radius-radius-md, 10px);
 }
-.analysis-soccer .main_box .table[type=date] .table_body .league_container:last-child > ul {
-  border-bottom-width: 0;
+.analysis-soccer .main_box .table[type=date] .table_body .league_container:last-child:not(.expand) > .league_content {
+  border-bottom-right-radius: var(--radius-radius-md, 10px);
+  border-bottom-left-radius: var(--radius-radius-md, 10px);
+}
+.analysis-soccer .main_box .table[type=date] .table_body .league_container:last-child.expand > ul {
+  border-bottom-right-radius: var(--radius-radius-md, 10px);
+  border-bottom-left-radius: var(--radius-radius-md, 10px);
 }
 .analysis-soccer .main_box .table[type=date] .table_body > ul,
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul {
-  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
   background: var(--background-background-header, #fff);
   padding: var(--spacing-spacing-layout-lg, 20px) 0px;
 }
@@ -4346,16 +4362,11 @@
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .matchup_container .away .team_wrap {
   height: 39px;
 }
-.analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment,
-.analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment {
-  width: 100%;
-  border-left: 1px solid var(--border-border-window, #b1b3bb);
-}
 .analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .odds_container,
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .odds_container {
   display: flex;
   flex-direction: row;
-  height: 49px;
+  height: 50px;
   border-style: solid;
   border-color: var(--border-border-window, #b1b3bb);
   border-bottom-width: 1px;
@@ -4364,6 +4375,7 @@
 .analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .odds_container > .odds_wrap,
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .odds_container > .odds_wrap {
   width: 139px;
+  height: 49px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4375,10 +4387,6 @@
   border-style: solid;
   border-color: var(--border-border-window, #b1b3bb);
   border-right-width: 1px;
-}
-.analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .odds_container > .odds_wrap:nth-child(2),
-.analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .odds_container > .odds_wrap:nth-child(2) {
-  width: 139px;
 }
 .analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .odds_container > .odds_wrap > .content,
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .odds_container > .odds_wrap > .content {
@@ -4430,16 +4438,12 @@
 }
 .analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap,
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap {
-  width: 140px;
+  width: 139px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: var(--text-text-accent-primary, #2b2e39);
-}
-.analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap:nth-child(2),
-.analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap:nth-child(2) {
-  width: 138px;
 }
 .analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap button[type=vote],
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap button[type=vote] {
@@ -4480,6 +4484,11 @@
 .analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap button[type=vote]:active,
 .analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap button[type=vote]:active {
   background: var(--background-background-quaternary, #f5fbff);
+}
+.analysis-soccer .main_box .table[type=date] .table_body > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap:not(:last-child),
+.analysis-soccer .main_box .table[type=date] .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap:not(:last-child) {
+  width: 139px;
+  margin-right: 1px;
 }
 .analysis-soccer .main_box .table[type=result] .table_header .table_search_container {
   height: 90px;
@@ -4568,12 +4577,16 @@
   border-bottom-right-radius: var(--radius-radius-md, 10px);
   border-bottom-left-radius: var(--radius-radius-md, 10px);
 }
-.analysis-soccer .main_box .table[type=result] .table_body .league_container:last-child > ul {
-  border-bottom-width: 0;
+.analysis-soccer .main_box .table[type=result] .table_body .league_container:last-child:not(.expand) > .league_content {
+  border-bottom-right-radius: var(--radius-radius-md, 10px);
+  border-bottom-left-radius: var(--radius-radius-md, 10px);
+}
+.analysis-soccer .main_box .table[type=result] .table_body .league_container:last-child.expand > ul {
+  border-bottom-right-radius: var(--radius-radius-md, 10px);
+  border-bottom-left-radius: var(--radius-radius-md, 10px);
 }
 .analysis-soccer .main_box .table[type=result] .table_body > ul,
 .analysis-soccer .main_box .table[type=result] .table_body .league_container > ul {
-  border-bottom: 1px solid var(--border-border-default, #d3d4d9);
   background: var(--background-background-header, #fff);
   padding: var(--spacing-spacing-layout-lg, 20px) 0px;
 }
@@ -4643,7 +4656,6 @@
 .analysis-soccer .main_box .table[type=result] .table_body > ul > li .betting-volume_container > .fragment,
 .analysis-soccer .main_box .table[type=result] .table_body .league_container > ul > li .betting-volume_container > .fragment {
   width: 100%;
-  border-left: 1px solid var(--border-border-window, #b1b3bb);
 }
 .analysis-soccer .main_box .table[type=result] .table_body > ul > li .betting-volume_container > .fragment > .odds_container,
 .analysis-soccer .main_box .table[type=result] .table_body .league_container > ul > li .betting-volume_container > .fragment > .odds_container {
@@ -4758,6 +4770,9 @@
 }
 .analysis-soccer .main_box[type=missing-player] .table .table_body .league_container > ul > li .betting-volume_container {
   height: 98px;
+}
+.analysis-soccer .main_box[type=missing-player] .table .table_body .league_container > ul > li .betting-volume_container > .matchup_container {
+  border-bottom-left-radius: 0;
 }
 .analysis-soccer .main_box[type=missing-player] .table .table_body .league_container > ul > li .missing-player_container {
   height: 471px;
@@ -4901,7 +4916,12 @@
   align-items: center;
 }
 .analysis-soccer .main_box[type=fact-check] .table .table_body .league_container > ul > li .fact_container .fact_wrap {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 860px;
+  height: 100%;
+  border-right: 1px solid var(--border-border-window, #b1b3bb);
   padding-left: var(--spacing-spacing-layout-lg, 20px);
 }
 .analysis-soccer .main_box[type=fact-check] .table .table_body .league_container > ul > li .fact_container .fact_form {
@@ -4912,7 +4932,6 @@
   padding: 0px var(--spacing-spacing-layout-sm, 10px);
   gap: var(--spacing-spacing-content-lg, 12px);
   background: var(--background-background-quaternary, #f5f5f8);
-  border-left: 1px solid var(--border-border-window, #b1b3bb);
   border-bottom-right-radius: var(--radius-radius-md, 10px);
   width: 419px;
 }
@@ -4929,6 +4948,11 @@
   justify-content: space-between;
   align-items: center;
   height: 29px;
+}
+.analysis-soccer .main_box[type=consensus-pick] .table .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap > .content > span {
+  height: 19px;
+  display: flex;
+  align-items: center;
 }
 .analysis-soccer .main_box[type=consensus-pick] .table .table_body .league_container > ul > li .betting-volume_container > .fragment > .vote_container > .vote_wrap > .content .bar {
   width: 100%;
@@ -4958,6 +4982,7 @@
   background: var(--decorative-progress-progress-draw, #d3d4d9);
 }
 .analysis-soccer .main_box[type=prediction-tips] .table .table_body > ul {
+  background: var(--background-background-primary, #191c26);
   padding-top: 0;
   padding-bottom: var(--spacing-spacing-layout-lg, 20px);
 }
@@ -4967,6 +4992,7 @@
   height: auto;
 }
 .analysis-soccer .main_box[type=prediction-tips] .table .table_body > ul > li .betting-volume_container {
+  width: 100%;
   height: 100px;
   border-bottom: 1px solid var(--border-border-window, #b1b3bb);
 }
@@ -5020,7 +5046,12 @@
   align-items: center;
 }
 .analysis-soccer .main_box[type=prediction-tips] .table .table_body > ul > li .fact_container .fact_wrap {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 860px;
+  height: 100%;
+  border-right: 1px solid var(--border-border-window, #b1b3bb);
   padding-left: var(--spacing-spacing-layout-lg, 20px);
 }
 .analysis-soccer .main_box[type=prediction-tips] .table .table_body > ul > li .fact_container .fact_form {
@@ -5031,9 +5062,7 @@
   padding: 0px var(--spacing-spacing-layout-sm, 10px);
   gap: var(--spacing-spacing-content-lg, 12px);
   background: var(--background-background-quaternary, #f5f5f8);
-  border-left: 1px solid var(--border-border-window, #b1b3bb);
-  border-bottom-right-radius: var(--radius-radius-md, 10px);
-  width: 419px;
+  flex: 1;
 }
 .analysis-soccer .main_box[type=prediction-tips] .table .table_body > ul > li .fact_container .fact_form .badge-form {
   position: initial;
@@ -10715,7 +10744,7 @@ span.right {
 
 /* margin */
 .margin-r-1 {
-  margin-bottom: 1px;
+  margin-right: 1px;
 }
 
 .margin-b-1 {
