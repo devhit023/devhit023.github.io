@@ -416,4 +416,20 @@ $(document).ready(function () {
       $(this).parent().removeClass("focus");
     }
   );
+
+  // match_wrap
+  $(".tooltip_wrap i.match").hover(
+    function () {
+      $(this)
+        .closest(".tooltip_wrap")
+        .children(".tooltip")
+        .attr("status", "visible");
+    },
+    function () {
+      $(this)
+        .closest(".tooltip_wrap")
+        .children(".tooltip")
+        .attr("status", "hidden");
+    }
+  );
 });

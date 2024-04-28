@@ -76,7 +76,11 @@ html[data-theme="dark"] .tooltip_wrap .tooltip::after {
     border-color: transparent transparent var(--background-background-tooltip, #2b2e39) transparent;
 }
 
-.tooltip_wrap:hover .tooltip {
+/* .tooltip_wrap:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+} */
+.tooltip[status="visible"] {
     visibility: visible;
     opacity: 1;
 }

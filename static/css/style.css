@@ -3327,7 +3327,7 @@
   background: var(--decorative-progress-progress-away, #ee46bc);
 }
 .livescore-basketball .main_box .live-tracker_container > .live-tracker_container_left .shooting_container {
-  flex: 1;
+  width: 354px;
 }
 .livescore-basketball .main_box .live-tracker_container > .live-tracker_container_left .shooting_container .shooting_wrap {
   position: relative;
